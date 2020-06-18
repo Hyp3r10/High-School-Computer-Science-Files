@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Recursion104&apos; to &apos;Factorial&apos;&#x0D;&#x0A;- Original project: &apos;Examples&apos;&#x0D;&#x0A;- Original element: &apos;Recursion104&apos;&#x0D;&#x0A;- Renamed element: &apos;Factorial&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Recursion104&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Recursion104.java[Recursion104" matchStrategy="1" name="Factorial" qualified="false" references="true" similarDeclarations="false" stamp="1523468963566" textual="false" version="1.0"/>
+</session>

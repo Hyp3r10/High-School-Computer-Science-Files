@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Appointment()
+comment1.params=m\ d\ y\ t
+comment1.target=Appointment(int,\ int,\ int,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getText()
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

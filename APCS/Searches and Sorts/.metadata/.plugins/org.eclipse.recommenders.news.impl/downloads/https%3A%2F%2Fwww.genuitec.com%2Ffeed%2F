@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Genuitec</title>
+	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.genuitec.com</link>
+	<description>The Cloud Control Company</description>
+	<lastBuildDate>Tue, 17 Sep 2019 17:48:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>CodeMix 2019.8.21 Performance Update</title>
+		<link>https://www.genuitec.com/codemix-2019-8-21-performance-update/</link>
+		<pubDate>Fri, 23 Aug 2019 13:13:46 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=621293</guid>
+		<description><![CDATA[<p>The CodeMix 2019.8.21 release included a major update on the performance and CPU utilization during development. As reported previously, we have been working through some lingering CPU consumption impacting a subset of our users. We are happy to report strong improvements in this release.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-8-21-performance-update/">CodeMix 2019.8.21 Performance Update</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019.8.21 is Here — Bringing Flexibility and Speed!</title>
+		<link>https://www.genuitec.com/codemix-2019-8-21-is-here/</link>
+		<pubDate>Wed, 21 Aug 2019 20:55:58 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=621279</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-8-21-is-here/">CodeMix 2019.8.21 is Here — Bringing Flexibility and Speed!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Upload files using Vue and Firebase</title>
+		<link>https://www.genuitec.com/upload-files-using-vue-and-firebase/</link>
+		<pubDate>Tue, 13 Aug 2019 17:57:54 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Firebase]]></category>
+		<category><![CDATA[vue]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=620223</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/upload-files-using-vue-and-firebase/">Upload files using Vue and Firebase</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Ingenuity + Awesome Customers = Optimal CodeMix Performance</title>
+		<link>https://www.genuitec.com/optimal-codemix-performance/</link>
+		<pubDate>Thu, 01 Aug 2019 15:03:14 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[codemix release]]></category>
+		<category><![CDATA[software release]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=619206</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/optimal-codemix-performance/">Ingenuity + Awesome Customers = Optimal CodeMix Performance</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Angular Library Tutorial</title>
+		<link>https://www.genuitec.com/angular-library-tutorial/</link>
+		<pubDate>Tue, 30 Jul 2019 15:14:03 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=619045</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/angular-library-tutorial/">Angular Library Tutorial</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Build a simple Cryptocurrency App using Angular 8</title>
+		<link>https://www.genuitec.com/build-a-simple-cryptocurrency-app-using-angular-8/</link>
+		<pubDate>Tue, 23 Jul 2019 20:35:44 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[How-to's]]></category>
+		<category><![CDATA[Angular]]></category>
+		<category><![CDATA[angular ide]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=618081</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/build-a-simple-cryptocurrency-app-using-angular-8/">Build a simple Cryptocurrency App using Angular 8</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix Fun Friday Links</title>
+		<link>https://www.genuitec.com/codemix-fun-friday-links-1/</link>
+		<pubDate>Fri, 12 Jul 2019 19:00:19 +0000</pubDate>
+		<dc:creator><![CDATA[Mauricio Valenzuela]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Fun/Funny]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=615134</guid>
+		<description><![CDATA[<p>Hi folks, Welcome to CodeMix Fun Friday Links, where you can find a lot of interesting code Developers are having fun with, we wanted to check out some of those projects and see them working using our latest CodeMix release. Here are 5 examples of things we found interesting and wanted to share them, don&#8217;t [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-fun-friday-links-1/">CodeMix Fun Friday Links</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Beginner&#8217;s Guide to Vue Modals</title>
+		<link>https://www.genuitec.com/beginners-guide-to-vue-modals/</link>
+		<pubDate>Fri, 05 Jul 2019 15:02:57 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=616831</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/beginners-guide-to-vue-modals/">Beginner&#8217;s Guide to Vue Modals</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Stop Slow Eclipse and MyEclipse Startups on Windows 10</title>
+		<link>https://www.genuitec.com/stop-slow-eclipse-myeclipse-startups/</link>
+		<pubDate>Tue, 25 Jun 2019 23:15:34 +0000</pubDate>
+		<dc:creator><![CDATA[Mauricio Valenzuela]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[General]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=616624</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/stop-slow-eclipse-myeclipse-startups/">Stop Slow Eclipse and MyEclipse Startups on Windows 10</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Big Release, Big Thank You!</title>
+		<link>https://www.genuitec.com/big-release-big-thank-you/</link>
+		<pubDate>Wed, 19 Jun 2019 19:52:03 +0000</pubDate>
+		<dc:creator><![CDATA[Rocio Trujillo]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=616355</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/big-release-big-thank-you/">Big Release, Big Thank You!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019 Summer Refresh</title>
+		<link>https://www.genuitec.com/codemix-2019-summer-refresh/</link>
+		<pubDate>Tue, 11 Jun 2019 17:17:54 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[codemix release]]></category>
+		<category><![CDATA[software release]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=615548</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-summer-refresh/">CodeMix 2019 Summer Refresh</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019.4.11 is Here—Delivering the Best Coding Experience Yet!</title>
+		<link>https://www.genuitec.com/codemix-2019-4-11-is-here/</link>
+		<pubDate>Mon, 15 Apr 2019 16:05:46 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[codemix release]]></category>
+		<category><![CDATA[software release]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=612585</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-4-11-is-here/">CodeMix 2019.4.11 is Here—Delivering the Best Coding Experience Yet!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse 2019.4.0 Is Here &#8211; Java 11 and More</title>
+		<link>https://www.genuitec.com/myeclipse-2019-4-0-is-here-java-11-and-more/</link>
+		<pubDate>Fri, 05 Apr 2019 17:40:39 +0000</pubDate>
+		<dc:creator><![CDATA[Wanda Muriy]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[MyEclipse 2019.4.0 release]]></category>
+		<category><![CDATA[myeclipse release]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=612056</guid>
+		<description><![CDATA[<p>Our latest release of MyEclipse, CI 2019.4.0, is here, bringing you Java 11 support, performance improvements, and new server connectors. We have also updated to Eclipse’s 2018-12 release train, including updates to all integrated tooling, from JPA support and reporting, to Maven and Spring.Java EnhancementsJava 11An integrated OpenJDK 11 build is part of this release: [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2019-4-0-is-here-java-11-and-more/">MyEclipse 2019.4.0 Is Here &#8211; Java 11 and More</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Angular 7 Uploads Backed by Node.js</title>
+		<link>https://www.genuitec.com/angular-7-uploads-node-js/</link>
+		<pubDate>Tue, 02 Apr 2019 13:42:03 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[Angular]]></category>
+		<category><![CDATA[Angular uploads]]></category>
+		<category><![CDATA[node.js]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=611558</guid>
+		<description><![CDATA[<p>Web development has become more dynamic with time, mostly due to the continued development of various languages, tools, and frameworks, one of them being Angular. The recent release of Angular 7 comes with new features, such as virtual scrolling, drag and drop, and some CLI updates, among others.In this article, we will be building an [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/angular-7-uploads-node-js/">Angular 7 Uploads Backed by Node.js</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Benchmarking JavaScript: STS, Red Hat Dev Studio &#038; CodeMix</title>
+		<link>https://www.genuitec.com/benchmarking-javascript-sts-red-hat-dev-studio-codemix/</link>
+		<pubDate>Tue, 19 Mar 2019 22:51:47 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=611210</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/benchmarking-javascript-sts-red-hat-dev-studio-codemix/">Benchmarking JavaScript: STS, Red Hat Dev Studio &#038; CodeMix</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Content Delivery Network via resources.cloud.genuitec.com
+
+Served from: www.genuitec.com @ 2019-09-17 13:58:53 by W3 Total Cache
+-->

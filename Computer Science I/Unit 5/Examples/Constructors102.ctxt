@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=n1\ n2
+comment0.target=Constructors102(int,\ int)
+comment0.text=\r\n\ How\ to\ create\ and\ recognze\ a\ constructor\r\n\ \ 1.\ Same\ name\ as\ the\ class\r\n\ \ 2.\ No\ return\ typ.\ (not\ even\ void)\r\n
+comment1.params=
+comment1.target=void\ outputValues()
+numComments=2

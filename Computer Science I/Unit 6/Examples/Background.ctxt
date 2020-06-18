@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=g\ bC1\ bC2\ bC3\ bC4\ bC5\ bC6\ bC7\ bC8\ bC9\ bC10\ bC11\ bC12\ bC13\ bC14\ bC15\ bC16\ bC17\ bC18\ bC19\ bC20\ bC21\ bC22
+comment0.target=Background(java.awt.Graphics,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ drawBackground(java.awt.Graphics)
+numComments=2

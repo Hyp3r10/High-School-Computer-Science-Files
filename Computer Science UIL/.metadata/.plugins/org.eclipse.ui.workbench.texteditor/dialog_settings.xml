@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="combineOverlappingTimeInterval" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="add"/>
+			<item value="combineTimeInterval"/>
+			<item value="combinedTimes"/>
+			<item value="int i"/>
+			<item value="int"/>
+			<item value="weight"/>
+			<item value="queue"/>
+			<item value="a"/>
+		</list>
+		<list key="replacehistory">
+			<item value="combineOverlappingTimeInterval"/>
+			<item value="overlappingTimes"/>
+			<item value="long"/>
+			<item value="maxEpisodeCount"/>
+			<item value="c"/>
+			<item value="int"/>
+			<item value="arr"/>
+			<item value="lcm"/>
+		</list>
+	</section>
+</section>

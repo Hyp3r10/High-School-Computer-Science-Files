@@ -1,0 +1,54 @@
+/*
+ID: punchwo1
+LANG: JAVA
+TASK: gift1
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class gift1 {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("gift1.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("gift1.out")))) {
+				int numNames = scan.nextInt(); scan.nextLine();
+				Person[] people = new Person[numNames];
+				for(int i = 0; i < numNames; i++) {
+					people[i] = new Person(scan.nextLine());
+				}
+				String line = scan.nextLine();
+				while(!line.equals("0 0")) {
+					String donatingName = line;
+					int numMoneyDonating = scan.nextInt();
+					int numFriends = scan.nextInt();
+					String[] namesToDonateTo = new String[numFriends];
+					for(int i = 0; i < numFriends; i++) {
+						namesToDonateTo[i] = scan.nextLine();
+					}
+					int moneyForFriends = numMoneyDonating/numFriends;
+					
+				}
+			}
+		}
+	}
+}
+class Person {
+	public int money;
+	public String name;
+	public Person(String name) {
+		this.name = name;
+	}
+	public void addMoney(int money) {
+		this.money += money;
+	}
+	public boolean equals(String other) {
+		return this.name.equals(other);
+	}
+	public String toString() {
+		return this.name + " " + this.money;
+	}
+}

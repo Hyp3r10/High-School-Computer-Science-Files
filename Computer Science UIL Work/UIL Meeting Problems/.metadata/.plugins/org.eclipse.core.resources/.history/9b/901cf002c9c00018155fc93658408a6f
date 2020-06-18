@@ -1,0 +1,32 @@
+
+public class BasicQueue {
+	import java.io.File;
+	import java.io.IOException;
+	import java.util.ArrayList;
+	import java.util.Scanner;
+	import java.lang.System.*;
+	public static void main( String args[] ) throws IOException {
+		Scanner file = new Scanner(new File("maze.dat"));
+		while(file.hasNext()) {
+			// size of the board
+			int size = file.nextInt();
+			file.nextLine();
+
+			// The whole board as one string
+			String temp = file.nextLine();
+
+			// Break up the tring into its respective size
+			Scanner scan = new Scanner(temp);
+			int[][] board = new int[size][size];
+			for(int k = 0; k < size; k++) {
+				for(int j = 0; j < size; j++) {
+					board[k][j] = scan.nextInt();
+				}
+			}
+
+			// Create a new Maze object with the board and size
+			Maze maze = new Maze(size, board);
+			System.out.println(maze);
+		}
+	}
+}

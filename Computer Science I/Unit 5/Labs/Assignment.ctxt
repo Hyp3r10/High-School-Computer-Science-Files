@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Assignment()
+comment0.text=\r\n\ @param\ name,\ type\ \:\:\ ask\ Stites\ for\ null\ v.\ ""\r\n
+comment1.params=t\ n\ s
+comment1.target=Assignment(java.lang.String,\ java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=java.lang.String\ getType()
+comment4.params=
+comment4.target=int\ getScore()
+comment5.params=n
+comment5.target=java.lang.String\ changeName(java.lang.String)
+comment6.params=t
+comment6.target=java.lang.String\ changeType(java.lang.String)
+comment7.params=s
+comment7.target=int\ changeScore(int)
+comment8.params=
+comment8.target=char\ getLetterGrade()
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

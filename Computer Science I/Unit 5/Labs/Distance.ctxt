@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Distance()
+comment1.params=x1\ y1\ x2\ y2
+comment1.target=Distance(int,\ int,\ int,\ int)
+comment2.params=x1\ y1\ x2\ y2
+comment2.target=void\ setCoordinates(int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ calcDistance()
+comment4.params=
+comment4.target=void\ print()
+numComments=5

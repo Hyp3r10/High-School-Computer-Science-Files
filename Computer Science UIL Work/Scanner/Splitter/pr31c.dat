@@ -1,0 +1,5 @@
+4
+/* Program author: Nick */ import java.io.*;
+public class Fun() { /*This is a fun program*/
+public static void main (String[] args) {
+int x, /* Number of cases */y;

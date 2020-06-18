@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.params=
+comment0.target=State()
+comment0.text=\r\n\ @param\ name,\ bird,\ flower,\ song,\ motto,\ tree\ \:\:\ ask\ Stites\ for\ null\ v.\ ""\r\n
+comment1.params=n\ b\ f\ s\ m\ t
+comment1.target=State(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

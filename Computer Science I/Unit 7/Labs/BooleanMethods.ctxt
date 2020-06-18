@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=str
+comment0.target=boolean\ firstLast(java.lang.String)
+comment0.text=\ @return\ compares\ the\ first\ and\ last\ letter\ of\ parameter\ str;\ if\r\n\ \ \ they\ are\ the\ same\ letter\ it\ returns\ true;\ otherwise\ returns\ false\r\n\ \ @param\ str1\ first\ string\ to\ determine\ length\ of\r\n\ \ MUST\ CONTAIN\ AN\ IF\ ELSE\ STATEMENT\r\n
+comment1.params=str1\ str2
+comment1.target=boolean\ sameLength(java.lang.String,\ java.lang.String)
+comment1.text=\ @return\ compares\ the\ lengths\ of\ str1\ and\ str2\ and\ returns\r\n\ \ \ true\ if\ they\ are\ the\ same\ length;\ otherwise\ returns\ false\r\n\ \ @param\ str1\ first\ string\ to\ determine\ length\ of\r\n\ \ @param\ str2\ second\ string\ to\ determine\ length\ of\r\n\ \ MUST\ CONTAIN\ AN\ IF\ ELSE\ STATEMENT\r\n
+comment2.params=str
+comment2.target=boolean\ firstLast2(java.lang.String)
+comment2.text=\ @return\ compares\ the\ first\ and\ last\ letter\ of\ parameter\ str;\ if\r\n\ \ \ they\ are\ the\ same\ letter\ it\ returns\ true;\ otherwise\ returns\ false\r\n\ \ @param\ str1\ first\ string\ to\ determine\ length\ of\r\n\ \ CANNOT\ CONTAIN\ AN\ IF\ ELSE\ STATEMENT\r\n
+comment3.params=str1\ str2
+comment3.target=boolean\ sameLength2(java.lang.String,\ java.lang.String)
+comment3.text=\ @return\ compares\ the\ lengths\ of\ str1\ and\ str2\ and\ returns\r\n\ \ \ true\ if\ they\ are\ the\ same\ length;\ otherwise\ returns\ false\r\n\ \ @param\ str1\ first\ string\ to\ determine\ length\ of\r\n\ \ @param\ str2\ second\ string\ to\ determine\ length\ of\r\n\ \ CANNOT\ CONTAIN\ AN\ IF\ ELSE\ STATEMENT\r\n
+numComments=4

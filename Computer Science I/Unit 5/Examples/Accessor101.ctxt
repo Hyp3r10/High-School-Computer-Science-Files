@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=n1\ n2
+comment0.target=Accessor101(int,\ int)
+comment1.params=
+comment1.target=int\ getNum1()
+comment2.params=
+comment2.target=int\ getNum2()
+numComments=3

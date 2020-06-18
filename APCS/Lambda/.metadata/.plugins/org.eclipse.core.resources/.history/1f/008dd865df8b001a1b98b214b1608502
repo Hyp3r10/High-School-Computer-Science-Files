@@ -1,0 +1,7 @@
+import java.util.TreeMap;
+
+public class CoutnWordsInText {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,12 @@
+import java.util.TreeMap;
+
+public class CoutnWordsInText {
+	public static void main(String[] args) {
+		TreeMap<String, Integer> map = new TreeMap<String, Integer>();
+		map.put("Hello", 5);
+		map.put("?", 4);
+		map.put("1", 1);
+		map.put("?", 8);
+		System.out.print(map);
+	}
+}

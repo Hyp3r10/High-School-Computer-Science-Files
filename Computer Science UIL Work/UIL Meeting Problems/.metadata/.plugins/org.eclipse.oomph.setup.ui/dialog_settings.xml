@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.oomph.setup.ui.P2TaskUIServicesPrompter$UnsatisifiedRequirementsPrompter">
+		<item value="500" key="dialogHeight"/>
+		<item value="700" key="dialogWidth"/>
+	</section>
+</section>

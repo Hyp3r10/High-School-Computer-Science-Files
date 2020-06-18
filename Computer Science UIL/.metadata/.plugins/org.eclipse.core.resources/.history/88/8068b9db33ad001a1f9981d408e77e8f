@@ -1,0 +1,56 @@
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class OddDivisors {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); 
+		int T = scan.nextInt(); scan.nextLine();
+		for(int i = 0; i < T; i++) {
+			Scanner line = new Scanner(scan.nextLine());
+			long N = line.nextLong();
+			long M = line.nextLong();
+			System.out.println(getSum(N).mod(BigInteger.valueOf(M)));
+		}
+	}
+	public static BigInteger getSum(long N) {
+		BigInteger result = BigInteger.ONE;
+		for(long i = 1; i <= N; i++) {
+			BigInteger curr = getGreatestOdd(i);
+			System.out.println(curr);
+			result.add(curr);
+			System.out.println(result);
+		}
+		return result;
+	}
+	public static BigInteger getGreatestOdd(long index) {
+		BigInteger greatestOdd;
+		if(index % 2 == 1) {
+			greatestOdd = (BigInteger.valueOf(index));
+		}
+		else {
+			greatestOdd = BigInteger.ONE;
+			Long[] primeFactors = getPrimeFactors(index);
+			for(int i = 0; i < primeFactors.length; i++) {
+				if(primeFactors[i] % 2 == 1) {
+					greatestOdd.multiply(BigInteger.valueOf((long) primeFactors[i]));
+				}
+			}
+		}
+		//System.out.println(greatestOdd);
+		return greatestOdd;
+	}
+	public static Long[] getPrimeFactors(long number) {
+		ArrayList<Long> factors = new ArrayList<Long>();
+		for(long i = 2; i < number; i++) {
+			while(number%i == 0) {
+				factors.add(i);
+				number = number/i;
+			}
+		}
+		if(number > 2) {
+			factors.add(number);
+		}
+		return factors.toArray(new Long[factors.size()]);
+	}
+ }

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=g\ wC1\ wC2\ wC3\ wC4\ wC5
+comment0.target=Eye(java.awt.Graphics,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ drawEye(java.awt.Graphics)
+numComments=2

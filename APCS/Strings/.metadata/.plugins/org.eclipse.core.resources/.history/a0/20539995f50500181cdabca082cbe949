@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Stringercise {
+	private static Scanner scan;
+	public static void main(String[] args) {
+		scan = new Scanner(System.in);
+		
+		Stringercise.getName();
+		
+		scan.close();
+	}
+	private static void getName() {
+		scan = new Scanner(System.in);
+		System.out.print("Enter in a First Name :: ");
+		String name = scan.nextLine();
+		System.out.println("1. " + name);
+		
+		System.out.print("\nEnter in a Middle Name :: ");
+		name += scan.nextLine();
+		System.out.println("\n2. " + name);
+		
+		System.out.print("\nEnter in a Last Name :: ");
+		name.concat(scan.nextLine());
+		System.out.println("\n3. " + name);
+	}
+}

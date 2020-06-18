@@ -1,0 +1,23 @@
+2018-06-03 12:23:23,764 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-06-03 12:26:51,551 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: maven:Jackson:0.0.1-SNAPSHOT @ D:\Kids\Documents\GitHub\Project-Exile\pom.xml.
+2018-06-03 12:26:52,071 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:26:52,072 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\main\resources
+2018-06-03 12:26:52,074 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:26:52,075 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\test\resources
+2018-06-03 12:26:53,032 [Worker-18] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: maven:Jackson:0.0.1-SNAPSHOT @ D:\Kids\Documents\GitHub\Project-Exile\pom.xml.
+2018-06-03 12:26:54,115 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:26:54,115 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\main\resources
+2018-06-03 12:26:54,117 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:26:54,117 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\test\resources
+2018-06-03 12:29:19,908 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:29:19,908 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\main\resources
+2018-06-03 12:29:19,909 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:29:19,909 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\test\resources
+2018-06-03 12:29:24,283 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:29:24,283 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\main\resources
+2018-06-03 12:29:24,284 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:29:24,284 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\test\resources
+2018-06-03 12:30:53,077 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:30:53,077 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\main\resources
+2018-06-03 12:30:53,078 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-06-03 12:30:53,079 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Kids\Documents\GitHub\Project-Exile\src\test\resources

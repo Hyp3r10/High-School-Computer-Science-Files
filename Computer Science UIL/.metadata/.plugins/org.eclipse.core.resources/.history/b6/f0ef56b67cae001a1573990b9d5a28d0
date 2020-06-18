@@ -1,0 +1,46 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class milk2 {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("milk2.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("milk2.out")))) {
+				int numTimes = scan.nextInt();
+				int[][] times = new int[numTimes][2];
+				for(int i = 0; i < numTimes; i++) {
+					times[i][0] = scan.nextInt();
+					times[i][1] = scan.nextInt();
+				}
+				
+			}
+		}
+	}
+}
+class TimeInterval {
+	public int startTime;
+	public int endTime;
+	public int totalTime;
+	public TimeInterval(int startTime, int endTime) {
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.totalTime = endTime - startTime;
+	}
+	public boolean overlaps(TimeInterval other) {
+		return other.startTime <= this.endTime;
+	}
+	public TimeInterval combineTimeInterval(TimeInterval other) {
+		TimeInterval newTime;
+		if(this.overlaps(other)) {
+			newTime = new TimeInterval(this.startTime, other.endTime);
+		}
+		else {
+			return null;
+		}
+		return newTime;
+	}
+}

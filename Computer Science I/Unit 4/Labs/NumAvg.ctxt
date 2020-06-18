@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=num1\ num2
+comment0.target=void\ avgV(double,\ double)
+comment1.params=num1\ num2
+comment1.target=double\ avgR(double,\ double)
+numComments=2

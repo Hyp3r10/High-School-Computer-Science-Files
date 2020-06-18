@@ -1,0 +1,37 @@
+/*
+ID: punchwo1
+LANG: JAVA
+TASK: beads
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class beads {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("beads.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("beads.out")))) {
+				int N = scan.nextInt(); scan.nextLine();
+				String necklace = scan.nextLine();
+				necklace += necklace;
+				int max = 0; 
+				for(int i = 0; i < N; i++) {
+					int current = countBeads(necklace, i));
+					if(current > max) {
+						if(current >= N) {
+							max = N;
+						}
+						else {
+							max = current;
+						}
+					}
+				}
+				out.println(max);
+			}
+		}
+	}
+}

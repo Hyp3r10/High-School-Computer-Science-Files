@@ -1,0 +1,89 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+public class BasicQueue {
+	public static void main(String args[]) throws IOException {
+		Scanner file = new Scanner(new File("maze.dat"));
+		while(file.hasNext()) {
+			// size of the board
+			int size = file.nextInt();
+			file.nextLine();
+
+			// The whole board as one string
+			String temp = file.nextLine();
+
+			// Break up the tring into its respective size
+			Scanner scan = new Scanner(temp);
+			int[][] maze = new int[size][size];
+			for(int k = 0; k < size; k++) {
+				for(int j = 0; j < size; j++) {
+					maze[k][j] = scan.nextInt();
+				}
+			}
+			
+			Queue<Path> queue = new LinkedList<>();
+			queue.offer(new Path(maze, new boolean[maze.length][maze.length],  0, 0));
+			
+			boolean found = false;
+			boolean[][] shortest = null;
+			
+			while(!found) {
+				
+				if(queue.size() == 0) {
+					break;
+				}
+				
+				Path curr = queue.poll();
+				int r = curr.currR;
+				int c = curr.currC;
+				boolean[][] previous = curr.previous;
+				
+				if(c == maze[r].length-1 && maze[r][c] == 1) {
+					shortest = curr.previous;
+				}
+				
+				if(c > -1 && r > -1 && r < maze.length && c < maze.length) {
+					if(r > 0 && !previous[r][c]) {
+						queue.offer(curr.move(r-1, c));
+					}
+					if(c > 0 && !previous[r][c]) {
+						queue.offer(curr.move(r, c-1));
+					}
+					if(r < maze.length-1 && !previous[r][c]) {
+						queue.offer(curr.move(r+1, c));
+					}
+					if(c < maze[r].length-1 && !previous[r][c]) {
+						queue.offer(curr.move(r, c+1));
+					}
+				}
+			}
+			
+			if(found) {
+				System.out.println("path found\n");
+			}
+			else {
+				System.out.println("path not found\n");
+			} 
+		}
+	}
+}
+class Path {
+	public boolean[][] previous; 
+	public int[][] maze;
+	public int currR;
+	public int currC;
+	
+	public Path(int[][] maze, boolean[][] previous, int r, int c) {
+		this.previous = previous;
+		currR = r;
+		currC = c;
+		this.maze = maze;
+		
+	}
+	public Path move(int r, int c) {
+		previous[r][c] = true;
+		return new Path(maze, previous, r, c);
+	}
+}

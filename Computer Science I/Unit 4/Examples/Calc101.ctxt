@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=num1\ num2
+comment0.target=void\ addV(double,\ double)
+comment1.params=operand1\ operand2
+comment1.target=void\ subV(double,\ double)
+comment2.params=operand1\ operand2
+comment2.target=void\ mulV(double,\ double)
+comment3.params=operand1\ operand2
+comment3.target=void\ divV(double,\ double)
+comment4.params=num1\ num2
+comment4.target=double\ addR(double,\ double)
+comment5.params=operand1\ operand2
+comment5.target=double\ subR(double,\ double)
+comment6.params=operand1\ operand2
+comment6.target=double\ mulR(double,\ double)
+comment7.params=operand1\ operand2
+comment7.target=double\ divR(double,\ double)
+numComments=8

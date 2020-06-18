@@ -1,0 +1,22 @@
+
+public class Calc101 {
+	private double sum;
+	private double diff;
+	
+	private double prod;
+	
+	public void add(double num1, double num2) {
+		sum = num1 + num2;
+		System.out.println(num1 + " + " + num2 + " = " + sum);
+	}
+	public void subtract(double operand1, double operand2) {
+		diff = operand1 - operand2;
+		System.out.println(operand1 + " - " + operand2 + " = " + diff);
+	}
+	public void multiply() {
+		
+	}
+	public void divide() {
+		
+	}
+}

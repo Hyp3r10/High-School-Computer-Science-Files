@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="javax.sound.sampled.AudioInputStream"/>
+<fullyQualifiedTypeName name="javax.sound.sampled.AudioSystem"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="javax.sound.sampled.Clip"/>
+<fullyQualifiedTypeName name="com.gluonhq.charm.down.plugins.desktop.audio.DesktopMusic"/>
+<fullyQualifiedTypeName name="javafx.scene.media.MediaPlayer"/>
+<fullyQualifiedTypeName name="javafx.scene.media.Media"/>
+<fullyQualifiedTypeName name="com.gluonhq.charm.down.plugins.desktop.audio.DesktopSound"/>
+<fullyQualifiedTypeName name="javafx.scene.media.AudioClip"/>
+<fullyQualifiedTypeName name="com.almasb.fxgl.app.FXGL"/>
+<fullyQualifiedTypeName name="com.almasb.fxgl.audio.AudioPlayer"/>
+<fullyQualifiedTypeName name="com.gluonhq.charm.down.plugins.audio.Audio"/>
+<fullyQualifiedTypeName name="com.almasb.fxgl.audio.Music"/>
+<fullyQualifiedTypeName name="com.almasb.fxgl.audio.Sound"/>
+<fullyQualifiedTypeName name="Conversation"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="com.almasb.fxgl.app.GameApplication"/>
+</qualifiedTypeNameHistroy>

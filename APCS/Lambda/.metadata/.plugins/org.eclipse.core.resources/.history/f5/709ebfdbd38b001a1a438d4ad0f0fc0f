@@ -1,0 +1,4 @@
+
+public class Example101 {
+	doubleNumberFunction = (int a) ->  a * 2;
+}

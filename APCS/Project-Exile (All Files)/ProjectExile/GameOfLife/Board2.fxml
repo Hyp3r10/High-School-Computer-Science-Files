@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1316.0" text="Board For Two" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Board2Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="374.0" prefWidth="437.0">
+         <children>
+            <ImageView fitHeight="925.0" fitWidth="875.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../board.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="spin" alignment="CENTER" layoutX="100.0" layoutY="105.0" prefHeight="71.0" prefWidth="72.0" style="-fx-background-color: rgba(95,173,91,1); -fx-font-family: tahoma; -fx-font-size: 22;" />
+            <Button layoutX="68.0" layoutY="14.0" mnemonicParsing="false" onAction="#spin" prefHeight="20.0" prefWidth="137.0" style="-fx-background-color: rgb(237,0,0); -fx-text-fill: rgb(255,255,255); -fx-font-family: tohoma; -fx-font-size: 14;" text="Spin" />
+            <TabPane layoutX="887.0" layoutY="14.0" prefHeight="533.0" prefWidth="420.0" style="-fx-background-color: rgb(214,214,214); -fx-border-color: rgb(200,200,200); -fx-border-width: 3;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Player 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="504.0" prefWidth="420.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="119.0" prefWidth="420.0" spacing="75.0">
+                                       <children>
+                                          <Label fx:id="homePlayer1" prefHeight="53.0" prefWidth="495.0" text="Home: You are currently a hobo. ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="97.0" prefWidth="420.0" spacing="75.0">
+                                       <children>
+                                          <Text fx:id="careerPlayer1" strokeType="OUTSIDE" strokeWidth="0.0" text="Career: " wrappingWidth="403.13671875">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="172.0" prefWidth="420.0" spacing="75.0">
+                                       <children>
+                                          <Label fx:id="moneyPlayer1" prefHeight="28.0" prefWidth="238.0" text="Money: $200000">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font></Label>
+                                          <Label fx:id="childrenPlayer1" prefHeight="26.0" prefWidth="137.0" text="Children # :  0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="45.0" prefWidth="420.0">
+                                       <children>
+                                          <Label fx:id="player1Info" prefHeight="18.0" prefWidth="369.0" text="Hello Player1, you're in the red car. ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Player 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="504.0" prefWidth="420.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="123.0" prefWidth="420.0" spacing="75.0">
+                                       <children>
+                                          <Label fx:id="homePlayer2" prefHeight="91.0" prefWidth="501.0" text="Home: You are currently a hobo. ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="75.0">
+                                       <children>
+                                          <Text fx:id="careerPlayer2" strokeType="OUTSIDE" strokeWidth="0.0" text="Career: " wrappingWidth="403.13671875">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="171.0" prefWidth="420.0" spacing="75.0">
+                                       <children>
+                                          <Label fx:id="moneyPlayer2" prefHeight="28.0" prefWidth="236.0" text="Money: $200000">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font></Label>
+                                          <Label fx:id="childrenPlayer2" prefHeight="30.0" prefWidth="129.0" text="Children #:  0">
+                                             <font>
+                                                <Font size="17.0" />
+                                             </font></Label>
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="player2Info" prefHeight="29.0" prefWidth="378.0" text="Hello Player2, you're in the blue car!">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <ImageView fx:id="playerOne" fitHeight="36.0" fitWidth="59.0" layoutX="770.0" layoutY="764.0" pickOnBounds="true" preserveRatio="true" rotate="-129.8">
+               <image>
+                  <Image url="@../redcar.png.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="playerTwo" fitHeight="31.0" fitWidth="71.0" layoutX="746.0" layoutY="787.0" pickOnBounds="true" preserveRatio="true" rotate="-131.6">
+               <image>
+                  <Image url="@../bluecar.png.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="action" layoutX="944.0" layoutY="528.0" prefHeight="98.0" prefWidth="397.0" text="Welcome to the Game of Life!" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="actionCard" fitHeight="263.0" fitWidth="200.0" layoutX="917.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../actionCard1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="houseCard" fitHeight="260.0" fitWidth="179.0" layoutX="1121.0" layoutY="601.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../houseCard1.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </content>
+</TitledPane>

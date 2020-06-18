@@ -1,0 +1,125 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Solution {
+	public static void main(String[] args) {
+		System.out.println(minDays(new int[] {1000000000,1000000000}, 1, 1));
+	}
+	public static int minDays(int[] bloomDay, int m, int k) {
+		if((m * k) > bloomDay.length) {
+			return -1;
+		}
+		else if(m == 1) {
+			Arrays.sort(bloomDay);
+			return bloomDay[0];
+		}
+		/*else {
+			ArrayList<Flower> flowers = new ArrayList<Flower>();
+			for(int days : bloomDay) {
+				flowers.add(new Flower(days, k));
+			}
+			boolean allBouquetsMade = false;
+			int numMade = 0;
+			int time = 0;
+			while(!allBouquetsMade) {
+				if(numMade >= m) {
+					allBouquetsMade = true;
+				}
+				else {
+					flowers = increaseDay(flowers);
+					numMade = getNumBouquets(flowers, k);
+					time++;
+					System.out.println(numMade + " " + time);
+				}
+			}
+			return time;
+		}*/
+		else {
+			ArrayList<Temp> list = new ArrayList<Temp>();
+			for(int i = 0; i < bloomDay.length-k+1; i++) {
+				int sum = 0;
+				for(int j = 0; j < k; j++) {
+					sum+= bloomDay[i+j];
+				}
+				
+			}
+		}
+		
+	}
+}
+class Temp implements Comparable<Temp>{
+	public int average;
+	public Temp(int num) {
+		this.average = num;
+	}
+	public int compareTo(Temp other) {
+		return Integer.compare(this.average, other.average);
+	}
+}
+	/*public static 
+	
+	
+	
+	
+	public static ArrayList<Flower> increaseDay(ArrayList<Flower> flowers) {
+		for(int i = 0; i < flowers.size(); i++) {
+			Flower temp = flowers.get(i);
+			temp.decreaseDays();
+			flowers.set(i, temp);
+		}
+		return flowers;
+	}
+	public static int getNumBouquets(ArrayList<Flower> flowers, int k) {
+		int numBouquets = 0;
+		for(int i = 0; i < flowers.size();) {
+			if(flowers.get(i).isBloomed()) {
+				if(k == 1) {
+					numBouquets++;
+					i++;
+				}
+				else {
+					int count = 1;
+					for(int j = 1; j < k && i+j < flowers.size(); j++) {
+						if(!flowers.get(i+j).isBloomed()) {
+							i = i+j;
+							j = k;
+						}
+						else {
+							count++;
+						}
+					}
+					if(count == k) {
+						numBouquets++;
+						i = i + k;
+					}
+					else {
+						i++;
+					}
+				}
+			}
+			else {
+				i++;
+			}
+		}
+		return numBouquets;
+	}
+}
+class Flower {
+	public int numDaysTillBloom;
+	public int orriginalDaysTillBloom;
+	public int numFlowersInBoquet;
+	public Flower(int orriginalDays, int num) {
+		this.numDaysTillBloom = orriginalDays;
+		this.orriginalDaysTillBloom = orriginalDays;
+		this.numFlowersInBoquet = num;
+	}
+	public void decreaseDays() {
+		numDaysTillBloom--;
+	}
+	public boolean isBloomed() {
+		return numDaysTillBloom <= 0;
+	}
+	public String toString() {
+		return "" + numDaysTillBloom;
+	}
+}*/

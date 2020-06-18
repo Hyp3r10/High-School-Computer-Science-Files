@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=rows\ cols
+comment0.target=KittyMap100pt(int,\ int)
+comment0.text=\r\nthis\ constructor\ loads\ in\ random\ true\ and\ false\ values\r\n
+comment1.params=
+comment1.target=void\ printKittyCount()
+comment1.text=\r\nthis\ method\ will\ call\ getKittyCounts\r\nto\ retrieve\ the\ total\ count\ of\ kitties\ in\ the\ grid\r\n
+comment2.params=r\ c
+comment2.target=int\ getKittyCount(int,\ int)
+comment2.text=\r\nThis\ method\ will\ return\ the\ total\ count\ of\ kitties\ in\ the\ the\ grid\r\n
+comment3.params=
+comment3.target=int[][]\ getKittyCountsGrid()
+comment3.text=\r\nthis\ method\ will\ calculate\ the\ kitty\ counts\ for\ each\ cell\r\nif\ cell\ is\ true\ set\ int\ value\ to\ 9\r\nif\ cell\ is\ not\ true\ set\ int\ value\ to\ cnt\ of\ kitties\ in\ adjacent\ cells\r\n
+comment4.params=r\ c
+comment4.target=boolean\ inBounds(int,\ int)
+comment4.text=\r\ncheck\ r\ and\ c\ to\ ensure\ they\ are\ inside\ the\ grid\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\nreturn\ the\ kitty\ grid\ as\ a\ string\r\n
+numComments=6

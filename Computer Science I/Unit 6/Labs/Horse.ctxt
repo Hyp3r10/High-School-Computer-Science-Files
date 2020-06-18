@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Horse()
+comment1.params=o\ a\ v
+comment1.target=Horse(java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

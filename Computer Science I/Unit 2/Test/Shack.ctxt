@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Shack()
+comment1.params=
+comment1.target=void\ prompt()
+comment2.params=it
+comment2.target=boolean\ hasItem(java.lang.String)
+comment3.params=
+comment3.target=void\ execute()
+numComments=4

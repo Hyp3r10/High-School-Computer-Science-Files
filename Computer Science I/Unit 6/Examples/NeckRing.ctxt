@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=g\ gC1\ gC2\ gC3\ gC4\ gC5\ gC6\ gC7
+comment0.target=NeckRing(java.awt.Graphics,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ drawNeckRing(java.awt.Graphics)
+numComments=2

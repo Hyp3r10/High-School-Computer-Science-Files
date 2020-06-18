@@ -1,0 +1,28 @@
+//� A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+//import static java.lang.System.*;
+
+public class SocialRunner
+{
+	public static void main( String args[] )
+	{
+		//add test cases
+		Social test1 = new Social("456-56-234");
+		System.out.println(test1);
+		
+		Social test2 = new Social("1-1-1");
+		System.out.println(test2);
+		
+		Social test3 = new Social("102-2-12");
+		System.out.println(test3);
+		
+		Social test4 = new Social("0-0-0");
+		System.out.println(test4);
+		
+		
+	}
+}

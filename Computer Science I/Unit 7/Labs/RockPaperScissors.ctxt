@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RockPaperScissors()
+comment1.params=player
+comment1.target=RockPaperScissors(java.lang.String)
+comment2.params=player
+comment2.target=void\ setPlayers(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ determineWinner()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

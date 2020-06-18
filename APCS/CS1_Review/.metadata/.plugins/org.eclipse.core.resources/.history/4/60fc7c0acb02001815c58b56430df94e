@@ -1,0 +1,17 @@
+import java.util.*;
+public class Calc101Runner {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Calc101 calc = new Calc101();
+	   
+		System.out.print("Enter the first number :: ");
+	    double num1 = scan.nextDouble();
+	    System.out.print("Enter the second number :: ");
+	    double num2 = scan.nextDouble();
+	   
+	    calc.add(num1, num2);
+	    scan.close();
+	    
+	    calc.subtract(num1, num2);
+	} 
+}

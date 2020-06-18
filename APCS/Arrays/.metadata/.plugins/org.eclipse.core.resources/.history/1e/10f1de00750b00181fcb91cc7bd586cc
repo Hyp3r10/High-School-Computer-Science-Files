@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class Team {
+    // instance variables
+
+    // constructor
+
+
+    /* This method allows a user to input up to 20 basketball players and 
+     *  stores them in an array.
+     */
+    public void addPlayers() {
+        Scanner keyboard = new Scanner(System.in);
+
+
+    }
+    /* This method displays each Player in the array 
+     */
+    public void printPlayers() {
+
+    }
+    public static void main(String[] args) {
+        Team app = new Team();
+        app.addPlayers();
+        app.printPlayers();
+    }
+}

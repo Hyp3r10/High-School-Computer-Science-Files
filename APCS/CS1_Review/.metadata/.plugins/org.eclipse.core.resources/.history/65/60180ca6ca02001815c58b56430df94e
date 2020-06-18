@@ -1,0 +1,17 @@
+
+public class Calc101 {
+	private double sum;
+	public void add(double num1, double num2) {
+		sum = num1 + num2;
+		System.out.println(num1 + " + " + num2 + " = " + sum);
+	}
+	public void subtract() {
+		
+	}
+	public void multiply() {
+		
+	}
+	public void divide() {
+		
+	}
+}

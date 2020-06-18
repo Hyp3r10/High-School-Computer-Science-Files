@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Student101Runner
+{
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("Enter in your name :: "); 
+		String name = scan.nextLine();
+		System.out.print(name + ", enter in your grade level :: "); 
+		int gradeLevel = scan.nextInt();
+		scan.nextLine();
+		System.out.print(name + ", enter in your GPA :: "); 
+		double gPA = scan.nextDouble();
+		scan.nextLine();
+		
+		scan.close();
+		Student101 student1 = new Student101(name, gradeLevel, gPA);
+		System.out.println(student1);
+	}
+}

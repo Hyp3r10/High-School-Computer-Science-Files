@@ -1,0 +1,9 @@
+import java.awt.*;  
+public class ButtonListenerNewWay {  
+   public static void main(String[] args) {  
+      Frame frame=new Frame("ActionListener java8");  
+     
+      e -> System.out.println("Hello World!"); 
+      
+   }  
+}

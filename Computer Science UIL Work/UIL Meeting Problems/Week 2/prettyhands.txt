@@ -1,0 +1,20 @@
+5
+1
+Ace of Spades
+3
+Ace of Spades
+King of Hearts
+King of Hearts
+4
+Two of Diamonds
+Two of Diamonds
+Ten of Diamonds
+Seven of Hearts
+3
+Ace of Diamonds
+Ten of Diamonds
+Seven of Hearts
+3
+Seven of Spades
+Three of Hearts
+Nine of Diamonds

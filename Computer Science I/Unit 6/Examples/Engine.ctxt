@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=hp
+comment0.target=Engine(int)
+comment1.params=
+comment1.target=int\ getHorsePower()
+numComments=2

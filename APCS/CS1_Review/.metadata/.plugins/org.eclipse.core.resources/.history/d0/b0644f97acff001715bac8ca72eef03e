@@ -1,0 +1,73 @@
+// A class defines the attributes (fields) and capabilities (methods) of a real world object
+
+public class Animal {
+
+	// final means that this value can't be changed
+	public final double FAVNUMBER = 1.6180;
+
+	// Variables (Fields) start with a letter, underscore or $
+	// Private fields can only be accessed by other methods in the class
+
+	// Strings are objects that hold a series of characters
+	private String name;
+	
+	// An integer can hold values from -2 ^ 31 to (2 ^ 31) -1
+	private int weight = 19;
+
+	// Booleans have a value of true or false
+	private boolean hasOwner = false;
+
+	// Bytes can hold the values between -128 to 127
+	private byte age = 1;
+
+	// Longs can hold the values between -2 ^ 63 to (2 ^ 63) - 1
+	private long uniqueID;
+
+	// Chars are unsigned ints that represent UTF-16 codes from 0 to 65,535
+	private char favoriteChar;
+
+	// Doubles are 64 bit IEEE 754 floating points with decimal values
+	private double speed;
+
+	// Floats are 32 bit IEEE 754 floating points with decimal values
+	private float height = 3.5f;
+
+
+
+		/*  Escape sequences
+		\t	Inserts a tab in the text at this point.
+		\b	Inserts a backspace in the text at this point.
+		\n	Inserts a newline in the text at this point.
+		\r	Inserts a carriage return in the text at this point.
+		\'	Inserts a single quote character in the text at this point.
+		\"	Inserts a double quote character in the text at this point.
+		\\	Inserts a backslash character in the text at this point.
+		*/
+
+
+
+		// Logical operators
+		// ! : Converts the boolean value to its right to its opposite form ie. true to false
+		// & : Returns true if boolean value on the right and left are both true (Always evaluates both boolean values)
+		// && : Returns true if boolean value on the right and left are both true (Stops evaluating after first false)
+		// | : Returns true if either boolean value on the right or left are true (Always evaluates both boolean values)
+		// || : Returns true if either boolean value on the right or left are true (Stops evaluating after first true)
+		// ^ : Returns true if there is 1 true and 1 false boolean value on the right or left
+
+
+
+	// public allows other classes to use this method
+	// static means that only a class can call for this to execute
+	// void means it doesn't return a value when it finishes executing
+	// This method can except Strings that can be stored in the String array args when it is executed
+
+	public static void main(String[] args)
+	{
+
+
+
+
+
+	}
+
+}

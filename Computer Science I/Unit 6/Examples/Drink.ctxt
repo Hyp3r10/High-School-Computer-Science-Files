@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=g\ dlC1\ dlC2\ dlC3\ dlC4\ dlC5\ dlC6\ dlC7
+comment0.target=Drink(java.awt.Graphics,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ drawLiquid(java.awt.Graphics)
+comment2.params=g
+comment2.target=void\ drawGlass(java.awt.Graphics)
+numComments=3

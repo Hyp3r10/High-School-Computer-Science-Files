@@ -1,0 +1,15 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Team {
+	public static void main(String[] args) throws IOException {
+		Scanner file = new Scanner(new File("team.dat"));
+		int numTimes = file.nextInt();
+		file.nextLine();
+		System.out.println(numTimes);
+		for(int i = 0; i < numTimes; i++) {
+			
+		}
+	}
+}

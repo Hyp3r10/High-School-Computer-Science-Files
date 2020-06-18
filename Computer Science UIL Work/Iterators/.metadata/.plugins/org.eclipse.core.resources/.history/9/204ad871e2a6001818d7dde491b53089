@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.ListIterator;
+
+public class IteratorRemover
+{
+	private ArrayList<String> list;
+	private String toRemove;
+	private int size = 0;
+
+	public IteratorRemover(String line, String rem)
+	{
+		setTest(line, rem);
+	}
+
+	public void setTest(String line, String rem)
+	{
+		toRemove = rem;
+		String[] letters = line.split("[ ]");
+		list = new ArrayList<String>(Arrays.asList(letters));
+		
+
+		remove();
+	}
+
+	public void remove()
+	{
+		iterate = list.listIterator();
+		while(iterate.hasNext()) {
+			if(iterate.next().equals(toRemove)) {
+				iterate.remove();
+			}
+		}
+		while(iterate.hasPrevious()) {
+			iterate.previous();
+			size++;
+		}
+		
+		
+	}
+
+	public String toString()
+	{
+		String temp = "[";
+		for(int i = 0; i < size; i++) {
+			if(i != size-1) {
+				temp += iterate.next() + ", ";
+			}
+			else {
+				temp += iterate.next();
+			}
+		}
+		return temp + "]";
+	}
+}

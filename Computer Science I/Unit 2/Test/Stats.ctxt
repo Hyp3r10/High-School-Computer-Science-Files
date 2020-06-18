@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stats()
+comment1.params=index
+comment1.target=boolean\ getStat(int)
+comment1.text=\r\n\ Return\ a\ boolean\ value\ indicating\ the\ state\ of\ the\ players\ statistic\ at\ the\ specified\ index\ of\ the\ array\ "stats".\ \r\n\ \r\n\ @param\ index\t\tthe\ index\ of\ the\ array\ "stats"\ that\ should\ be\ accessed\r\n\ @return\ \t\t\tthe\ boolean\ value\ corresponding\ to\ the\ state\ of\ the\ statistic\ at\ "index"\ of\ "stats"\r\n
+comment2.params=index\ changeTo
+comment2.target=void\ setStat(int,\ boolean)
+comment2.text=\r\n\ Sets\ a\ boolean\ value\ in\ the\ array\ "stats"\ at\ the\ specified\ index\ to\ the\ opposite\ of\ itself.\ \r\n\ \r\n\ @param\ index\t\tthe\ index\ of\ the\ array\ that\ should\ be\ accessed\r\n
+numComments=3

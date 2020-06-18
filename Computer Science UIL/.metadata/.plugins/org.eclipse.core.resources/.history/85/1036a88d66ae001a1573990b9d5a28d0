@@ -1,0 +1,21 @@
+/*
+ID: punchwo1
+LANG: JAVA
+TASK: gift1
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class gift1 {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("ride.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ride.out")))) {
+			}
+		}
+	}
+}

@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Everlight()
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=item
+comment2.target=boolean\ hasItem(java.lang.String)
+comment2.text=\r\n\ Determines\ whether\ or\ not\ an\ item\ is\ in\ the\ inventory.\r\n\ \r\n\ @param\ item\tThe\ name\ of\ the\ item\ specified.\r\n\ @return\t\tTrue\ if\ the\ item\ is\ in\ the\ ArrayList\ "inv";\ false\ otherwise.\r\n
+comment3.params=item
+comment3.target=void\ removeItem(java.lang.String)
+comment3.text=\r\n\ Removes\ an\ item\ from\ the\ inventory.\r\n\ \r\n\ @param\ item\tThe\ name\ of\ the\ item\ specified.\r\n
+comment4.params=
+comment4.target=void\ prompt()
+comment4.text=\r\n\ Prompts\ the\ user\ for\ input.\r\n\ Then\ sends\ the\ input\ to\ determineWords()\ to\ check\ if\ is\ acceptable.\r\n\ Then\ runs\ through\ a\ switch\ statement\ with\ the\ universally-accepted\ commands.\r\n\ After\ this\ method\ is\ called,\ a\ class'\ execute()\ method\ is\ called\ (not\ in\ Everlight).\r\n
+comment5.params=
+comment5.target=java.lang.String\ getOutput()
+comment5.text=\r\n\ Returns\ output,\ giving\ other\ classes\ besides\ Everlight\ access\ to\ output.\r\n\ \r\n\ @return\tReturns\ the\ variable\ output,\ the\ representation\ of\ an\ input\ that\ is\ recognized\ by\ Words.\r\n
+numComments=6

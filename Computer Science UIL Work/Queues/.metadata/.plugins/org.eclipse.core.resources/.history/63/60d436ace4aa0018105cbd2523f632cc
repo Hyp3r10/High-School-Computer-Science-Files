@@ -1,0 +1,13 @@
+
+public class PostFixEvaluator {
+	/* evaluates the postfix expression exp
+	 * @param exp the postfix expression to be evaluated
+	 * @return the total of exp
+	 *    Precondition: exp is a well-formed postfix expression
+	 */
+	public int evaluate(String exp)
+	{
+
+
+	}
+}

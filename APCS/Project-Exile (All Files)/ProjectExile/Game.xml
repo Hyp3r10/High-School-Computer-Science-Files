@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Project-Exile">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="${dir.buildfile}"/>
+    <property name="dir.jarfile" value="D:/Kids/Desktop"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/ProjectExile.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="GUI"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="D:/Kids/Documents/GitHub/Project-Exile/target/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/github/almasb/fxgl/0.5.0/fxgl-0.5.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/github/almasb/fxgl-base/0.5.0/fxgl-base-0.5.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/jetbrains/kotlinx/kotlinx-coroutines-core/0.22.3/kotlinx-coroutines-core-0.22.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.0/jackson-databind-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.0/jackson-core-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/fasterxml/jackson/module/jackson-module-kotlin/2.9.0/jackson-module-kotlin-2.9.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.1.3/kotlin-reflect-1.1.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/gluonhq/charm-down-plugin-storage/3.7.0/charm-down-plugin-storage-3.7.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/gluonhq/charm-down-core/3.7.0/charm-down-core-3.7.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/gluonhq/charm-down-plugin-storage-desktop/3.7.0/charm-down-plugin-storage-desktop-3.7.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/github/almasb/fxgl-plugin-audio/0.0.2/fxgl-plugin-audio-0.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/com/github/almasb/fxgl-plugin-audio-desktop/0.0.2/fxgl-plugin-audio-desktop-0.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.2.30/kotlin-stdlib-1.2.30.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kids/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar"/>
+        </jar>
+    </target>
+</project>

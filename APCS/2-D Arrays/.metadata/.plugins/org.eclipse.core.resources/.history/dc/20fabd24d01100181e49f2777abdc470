@@ -1,0 +1,67 @@
+
+//Name -
+//Date -
+//Class - 
+//Lab  -
+
+import java.util.Scanner;
+import static java.lang.System.*;
+import java.io.File;
+import java.io.IOException;
+
+public class TicTacToe
+{
+	private char[][] mat;
+	private int numRows;
+	private int numCols;
+	
+	public TicTacToe()
+	{
+		numRows = 3;
+		numCols = 3;
+		mat = new char[numRows][numCols];
+	}
+	public TicTacToe(String game)
+	{
+		int index = 0;
+		for( int out = 0; out < numRows; out++)
+		{
+			for( int in = 0; in < numCols; in++)
+			{
+				mat[out][in] = game.charAt(index);
+				System.out.println(mat[out][in]);
+				index++;
+			}
+		}
+	}
+	public String getWinner()
+	{
+
+
+
+
+
+
+
+
+
+
+
+
+		return "Test";
+	}
+	@Override
+	public String toString()
+	{
+		String output = "";
+		for(int out = 0; out < numRows; out++) {
+			for(int in = 0; in < numCols; in++) {
+				output += mat[out][in] + " ";
+			}
+			output += "\n";
+		}
+		output += getWinner();
+		output += "\n\n";
+		return output;
+	}
+}

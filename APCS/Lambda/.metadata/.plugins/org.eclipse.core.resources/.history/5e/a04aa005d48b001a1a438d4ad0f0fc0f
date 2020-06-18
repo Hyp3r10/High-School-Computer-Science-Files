@@ -1,0 +1,10 @@
+import java.awt.*;  
+public class ButtonListenerNewWay {  
+   public static void main(String[] args) {  
+	   MyFunctionalInterface msg = () -> {
+   		return "Hello";
+   	};
+
+      
+   }  
+}

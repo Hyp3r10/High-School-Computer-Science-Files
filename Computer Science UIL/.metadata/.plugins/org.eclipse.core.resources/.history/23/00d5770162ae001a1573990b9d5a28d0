@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class YourRideIsHere {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String alphabet ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		char[] line1 = scan.nextLine().toCharArray();
+		char[] line2 = scan.nextLine().toCharArray();
+		int num1 = 1;
+		int num2 = 1;
+		for(char curr : line1) {
+			num1 *= (alphabet.indexOf(curr) + 1);
+		}
+		for(char curr : line2) {
+			num2 *= (alphabet.indexOf(curr) + 1);
+		}
+		if(num1 == num2) {
+			System.out.println("GO");
+		}
+		else {
+			System.out.println("STAY");
+		}
+		
+	}
+}

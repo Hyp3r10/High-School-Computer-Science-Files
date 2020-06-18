@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=num1\ num2
+comment0.target=Constructors103(int,\ int)
+comment0.text=\r\n\ How\ to\ create\ and\ recognze\ a\ constructor\r\n\ \ 1.\ Same\ name\ as\ the\ class\r\n\ \ 2.\ No\ return\ typ.\ (not\ even\ void)\r\n
+comment1.params=
+comment1.target=void\ outputValues()
+comment1.text=public\ Constructors103(int\ n1,\ int\ n2)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ //\ Technique\ \#1,\ preferable\r\n\ \ \ \ \ \ \ \ //\ Use\ different\ names\ for\ the\ local\ and\ instance\ variables\r\n\ \ \ \ \ \ \ \ num1\ \=\ n1;\r\n\ \ \ \ \ \ \ \ num2\ \=\ n2;\r\n\ \ \ \ }\r\n\ \ \ \ \ public\ Constructors103(int\ num1,\ int\ num2)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ //\ Technique\ \#2\r\n\ \ \ \ \ \ \ \ //\ "this"\ refrences\ the\ instance\ variables\r\n\ \ \ \ \ \ \ \ //instance\ \=\ local\r\n\ \ \ \ \ \ \ \ this.num1\ \=\ num1;\r\n\ \ \ \ \ \ \ \ this.num2\ \=\ num2;\r\n}
+numComments=2

@@ -1,0 +1,55 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class milk2 {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("milk2.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("milk2.out")))) {
+				int numTimes = scan.nextInt();
+				ArrayList<TimeInterval> orriginalTimes = new ArrayList<TimeInterval>();
+				for(int i = 0; i < numTimes; i++) {
+					orriginalTimes.add(new TimeInterval(scan.nextInt(), scan.nextInt()));
+				}
+				ArrayList<TimeInterval> combinedTimes = new ArrayList<TimeInterval>();
+				combinedTimes.add(orriginalTimes.get(0));
+				for(int i = 0; i < orriginalTimes.size()-1; i++) {
+					for(int j = i+1; j < orriginalTimes.size(); j++) {
+						if(combinedTimes.get(i).overlaps(orriginalTimes.get(i+j))) {
+							combinedTimes.set(i, combinedTimes.get(i).combineTimeInterval(orriginalTimes.get(i+1)));
+						}
+					}
+				}
+				Collections.sort(orriginalTimes);
+				Collections.sort(combinedTimes);
+				out.println(combinedTimes.get(combinedTimes.size()-1).totalTime + " " + orriginalTimes.get(0).totalTime);
+			}
+		}
+	}
+}
+class TimeInterval implements Comparable<TimeInterval> {
+	public int startTime;
+	public int endTime;
+	public int totalTime;
+	public TimeInterval(int startTime, int endTime) {
+		this.startTime = startTime;
+		this.endTime = endTime;
+		this.totalTime = endTime - startTime;
+	}
+	public boolean overlaps(TimeInterval other) {
+		return other.startTime <= this.endTime;
+	}
+	public TimeInterval combineTimeInterval(TimeInterval other) {
+		TimeInterval newTime = new TimeInterval(this.startTime, other.endTime);
+		return newTime;
+	}
+	public int compareTo(TimeInterval other) {
+		return Integer.compare(this.totalTime, other.totalTime);
+	}
+}

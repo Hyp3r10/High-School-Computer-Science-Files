@@ -1,0 +1,64 @@
+import java.util.*;
+
+public class Team {
+    // instance variables
+	private Player[] players;
+	private int numPlayers;
+    // constructor
+	
+    /* This method allows a user to input up to 20 basketball players and 
+     *  stores them in an array.
+     */
+    public void addPlayers() {
+        Scanner keyboard = new Scanner(System.in);
+        players = new Player[20];
+        int len = players.length;
+        String response = "";
+        
+        System.out.println("************************");
+        System.out.println("*      addPlayers      *");
+        System.out.println("************************");  
+        
+        do {
+        	System.out.print("Enter player name--> ");
+        	String playerName = keyboard.nextLine();
+        	System.out.print("Enter free throws made --> ");
+        	String ftm = keyboard.nextLine();
+        	System.out.print("Enter free throws attempted --> ");
+        	String fta = keyboard.nextLine();
+        	System.out.print("Enter 2 pt field goals made --> ");
+        	String fg2m = keyboard.nextLine();
+        	System.out.print("Enter 2 pt field goals attempted --> ");
+        	String fg2a = keyboard.nextLine();
+        	System.out.print("Enter 3 pt fields goals made --> ");
+        	String fg3m = keyboard.nextLine();
+        	System.out.print("Enter 3 pt fields goals attempted --> ");
+        	String fg3a = keyboard.nextLine();
+        	
+        	players[numPlayers] = new Player(playerName, ftm, fta, fg2m, fg2a, fg3m, fg3a);
+        	
+        	numPlayers++;
+        	
+        	System.out.print("\nEnter another player? <y/n> :: ");
+        	response = keyboard.nextLine();
+        	
+        	System.out.println();
+        } while(numPlayers < len && response.equalsIgnoreCase("y"));
+        keyboard.close();
+    }
+    /* This method displays each Player in the array 
+     */
+    public void printPlayers() {
+    	System.out.println("************************");
+        System.out.println("*     printPlayers     *");
+        System.out.println("************************"); 
+    	for(int i = 0; i < numPlayers; i++) {
+    		System.out.println(players[i] + "\n");
+    	}
+    }
+    public static void main(String[] args) {
+        Team app = new Team();
+        app.addPlayers();
+        app.printPlayers();
+    }
+}

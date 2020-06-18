@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=n1\ n2
+comment0.target=Mutator101(int,\ int)
+comment1.params=
+comment1.target=int\ getNum1()
+comment2.params=
+comment2.target=int\ getNum2()
+comment3.params=n1
+comment3.target=void\ SetNum1(int)
+comment4.params=n2
+comment4.target=void\ SetNum2(int)
+numComments=5

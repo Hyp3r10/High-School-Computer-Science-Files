@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="465.0" text="Two Player Screen" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TwoPlayerScreenController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="344.0" prefWidth="434.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" layoutX="9.6" layoutY="-4.0" prefHeight="352.0" prefWidth="465.0" spacing="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="306.0" prefWidth="117.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="59.0" text="Player One" />
+                        <TextField fx:id="name1" prefHeight="25.0" prefWidth="111.0" promptText="Enter Name" />
+                        <TextField fx:id="gender1" promptText="Enter Gender" />
+                        <HBox alignment="CENTER" prefHeight="17.0" prefWidth="100.0" spacing="7.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#addPlayer1" text="Enter" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#openBoard" prefHeight="25.0" prefWidth="71.0" text="Done" />
+                  <VBox alignment="CENTER" prefHeight="312.0" prefWidth="112.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="43.0" prefWidth="62.0" text="Player Two" />
+                        <TextField fx:id="name2" promptText="Enter Name" />
+                        <TextField fx:id="gender2" promptText="Enter Gender" />
+                        <HBox alignment="CENTER" prefHeight="17.0" prefWidth="100.0" spacing="7.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#addPlayer2" text="Enter" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" />
+               </padding>
+            </HBox>
+         </children></AnchorPane>
+  </content>
+</TitledPane>

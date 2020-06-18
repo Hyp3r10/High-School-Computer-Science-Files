@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=operand1\ operand2\ operand3
+comment0.target=double\ averageThree(int,\ int,\ int)
+comment1.params=operand1\ operand2\ operand3
+comment1.target=int\ sumThree(int,\ int,\ int)
+comment2.params=operand4
+comment2.target=double\ devideThree(int)
+numComments=3

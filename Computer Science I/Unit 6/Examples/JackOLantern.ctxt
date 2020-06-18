@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=g\ c
+comment0.target=JackOLantern(java.awt.Graphics,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ caption(java.awt.Graphics)
+comment1.text=\r\n\ Caption\r\n
+numComments=2

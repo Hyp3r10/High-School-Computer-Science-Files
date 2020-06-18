@@ -1,0 +1,17 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class milk2 {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("milk2.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("milk2.out")))) {
+			
+			}
+		}
+	}
+}

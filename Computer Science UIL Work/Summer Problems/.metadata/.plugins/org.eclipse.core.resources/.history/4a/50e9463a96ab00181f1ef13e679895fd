@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class GuessingGame {
+	private static int targetNumber;
+	public static void main(String[] args) {
+		setNumber(5);
+		guessNumber();
+		setNumber(0);
+		guessNumber();
+	}
+	public static void setNumber(int n) {
+		targetNumber = n;
+	}
+	public static void guessNumber() {
+		Scanner scan = new Scanner(System.in);
+		int numGuessed = 0;
+		while(numGuessed != targetNumber) {
+			numGuessed = scan.nextInt();
+			if(numGuessed == targetNumber) {
+				System.out.println("right on");
+			}
+		}
+		scan.close();
+	}
+
+}

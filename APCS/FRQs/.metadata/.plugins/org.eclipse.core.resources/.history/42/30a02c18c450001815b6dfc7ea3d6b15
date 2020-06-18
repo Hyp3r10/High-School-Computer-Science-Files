@@ -1,0 +1,14 @@
+import java.util.*;
+public class Perishable extends InventoryItem {
+
+	public Perishable(Date entryDate, double price, Date expirationDate) {
+		super(entryDate, getPrice(price, entryDate, expirationDate));
+	}
+	public static double getPrice(double price, Date entryDate, Date expirationDate) {
+		if(expirationDate.compareTo(entryDate) < 0) {
+			price *= 0.9;
+		}
+		return price;
+	}
+	
+}

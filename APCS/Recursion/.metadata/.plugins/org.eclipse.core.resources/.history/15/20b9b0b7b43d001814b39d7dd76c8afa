@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		System.out.println("fib(5) == " + fib(5));
+	}
+	public static int fib1(int num) {
+		ArrayList<Integer> fib = new ArrayList<Integer>();
+		
+		for(int i = 1; i <= num; i++) {
+			fib.set(i, 1+fib1(num-1));
+		}
+		return fib.get(num);
+	}
+}

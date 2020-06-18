@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+D:\Kids\Desktop\APCS\Lambda\.metadata\.plugins\org.eclipse.jdt.core
+870353216.index
+4283470539.index

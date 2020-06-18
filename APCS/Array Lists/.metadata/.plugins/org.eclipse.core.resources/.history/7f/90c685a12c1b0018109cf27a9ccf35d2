@@ -1,0 +1,36 @@
+public class Number {
+	private Integer number;
+
+	public Number() {
+		number = 0;
+	}
+	public Number(int num) {
+		number = num;
+	}
+	public void setNumber(int num) {
+		number = num;
+	}
+	public int getNumber() {
+		return number;
+	}	
+	public boolean isOdd() {
+		if(number % 2 == 0) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+	public boolean isPerfect() {
+		int total=0;
+
+
+
+
+		return (number==total);
+	}	
+	@Override
+	public String toString( ) {
+		return "";
+	}
+}

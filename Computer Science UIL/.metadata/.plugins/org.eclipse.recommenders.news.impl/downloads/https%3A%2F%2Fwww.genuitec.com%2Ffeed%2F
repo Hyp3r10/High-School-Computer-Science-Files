@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Genuitec</title>
+	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.genuitec.com</link>
+	<description>The Cloud Control Company</description>
+	<lastBuildDate>Fri, 12 Jun 2020 13:41:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	
+	<item>
+		<title>CodeTogether 1.2: End-to-End Secured Remote Pair Programming</title>
+		<link>https://www.genuitec.com/codetogether-1-2-end-to-end-secured-remote-pair-programming/</link>
+		<pubDate>Thu, 21 May 2020 20:45:42 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=659148</guid>
+		<description><![CDATA[<p>We’re happy to announce the release of CodeTogether 1.2 with some fundamental improvements and key fixes that we’re sure you’ll appreciate &#8230; because you asked for them! Over the last few weeks, we’ve seen our user base grow by a few thousand users, many of whom have sent in great feedback that we’ve incorporated into [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-1-2-end-to-end-secured-remote-pair-programming/">CodeTogether 1.2: End-to-End Secured Remote Pair Programming</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse 2020.5.18 is Here &#8211; Java 14, Eclipse 2020-03 and More</title>
+		<link>https://www.genuitec.com/myeclipse-2020-5-18/</link>
+		<pubDate>Mon, 18 May 2020 17:18:48 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=658845</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2020-5-18/">MyEclipse 2020.5.18 is Here &#8211; Java 14, Eclipse 2020-03 and More</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeTogether 1.1: Now with Seamless Pair Programming for Eclipse, VS Code, and IntelliJ</title>
+		<link>https://www.genuitec.com/codetogether-1-1/</link>
+		<pubDate>Wed, 29 Apr 2020 19:15:54 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=656024</guid>
+		<description><![CDATA[<p>CodeTogether 1.1 now available - for pair programming from anywhere! This release includes new features and key fixes. It concludes the early access phase for our Eclipse and VS Code solutions, and introduces early access support for IntelliJ-based IDEs.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-1-1/">CodeTogether 1.1: Now with Seamless Pair Programming for Eclipse, VS Code, and IntelliJ</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Pair Programming from Anywhere with CodeTogether!</title>
+		<link>https://www.genuitec.com/pair-programming-codetogether/</link>
+		<pubDate>Thu, 09 Apr 2020 16:30:04 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=651821</guid>
+		<description><![CDATA[<p>We are happy to introduce CodeTogether, a great solution for pair programming from anywhere. Currently supports Eclipse, VS Code, and IntelliJ. Download and use CodeTogether now - it's free! </p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/pair-programming-codetogether/">Pair Programming from Anywhere with CodeTogether!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Minor Security Update for MyEclipse and Angular IDE on macOS Catalina</title>
+		<link>https://www.genuitec.com/security-update-macos-catalina/</link>
+		<pubDate>Mon, 23 Mar 2020 22:26:23 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=648274</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/security-update-macos-catalina/">Minor Security Update for MyEclipse and Angular IDE on macOS Catalina</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Genuitec and COVID-19</title>
+		<link>https://www.genuitec.com/genuitec-and-covid-19/</link>
+		<pubDate>Fri, 13 Mar 2020 20:16:58 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=645115</guid>
+		<description><![CDATA[<p>Many of us are feeling the direct impact of the Coronavirus in our lives and work. Our hearts and thoughts are with all dealing with the brunt of this novel virus. We understand the disruption this can have on you and your loved ones. We want to assure our user base that Genuitec will continue [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/genuitec-and-covid-19/">Genuitec and COVID-19</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2020.2.25 &#8211; Angular 9 and More!</title>
+		<link>https://www.genuitec.com/codemix-2020-2-25-angular-9-and-more/</link>
+		<pubDate>Wed, 26 Feb 2020 11:34:59 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=643272</guid>
+		<description><![CDATA[<p>In this CodeMix release we’re introducing a quick access control panel in the editor for all supported CodeMix file types, Angular 9 support, an updated Chromium browser for Live Preview, along with a number of other improvements and fixes.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2020-2-25-angular-9-and-more/">CodeMix 2020.2.25 &#8211; Angular 9 and More!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>How to Build a CRUD application using React and Django</title>
+		<link>https://www.genuitec.com/how-to-build-crud-application-using-react-and-django/</link>
+		<pubDate>Thu, 30 Jan 2020 17:58:29 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[CRUD]]></category>
+		<category><![CDATA[django]]></category>
+		<category><![CDATA[react]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=637495</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/how-to-build-crud-application-using-react-and-django/">How to Build a CRUD application using React and Django</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Building Applications With The Vue 3 Composition API</title>
+		<link>https://www.genuitec.com/building-applications-vue-3-composition-api/</link>
+		<pubDate>Thu, 19 Dec 2019 21:17:34 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[vue]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=634396</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/building-applications-vue-3-composition-api/">Building Applications With The Vue 3 Composition API</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse 2019.12.5 &#8211; Now, Just MyEclipse</title>
+		<link>https://www.genuitec.com/myeclipse-2019-12-5-now-just-myeclipse/</link>
+		<pubDate>Thu, 05 Dec 2019 18:48:51 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=633459</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2019-12-5-now-just-myeclipse/">MyEclipse 2019.12.5 &#8211; Now, Just MyEclipse</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Creating a Django Authentication App</title>
+		<link>https://www.genuitec.com/creating-a-django-authentication-app/</link>
+		<pubDate>Thu, 07 Nov 2019 18:02:36 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=628698</guid>
+		<description><![CDATA[<p>Learn how to use the Django authentication system to manage users and build an app from scratch to authenticate them with a username and password - all using CodeMix.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/creating-a-django-authentication-app/">Creating a Django Authentication App</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019.10.29 &#8211; You Code, We Build</title>
+		<link>https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/</link>
+		<pubDate>Tue, 29 Oct 2019 20:36:14 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=629280</guid>
+		<description><![CDATA[<p>In this release we’re introducing a quick access control panel for Angular, a vastly improved validation and build pipeline, and we’ve made loads of reliability and stability fixes to the product, in response to your feedback. Core changes made in this version improve the efficiency of communication between CodeMix and the underlying Code OSS engine, resulting in a smoother dev experience.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/">CodeMix 2019.10.29 &#8211; You Code, We Build</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>React Native Authentication with Facebook</title>
+		<link>https://www.genuitec.com/react-native-authentication-with-facebook/</link>
+		<pubDate>Thu, 26 Sep 2019 20:05:49 +0000</pubDate>
+		<dc:creator><![CDATA[dunebook7]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+		<category><![CDATA[react native]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=623558</guid>
+		<description><![CDATA[<p>Learn how to create a simple React Native app that uses Facebook for authentication. We use CodeMix for development and the Expo toolchain to make this possible without needing XCode or Android Studio. Check out our newest Blog and see how it's done!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/react-native-authentication-with-facebook/">React Native Authentication with Facebook</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019.9.19 &#8211; It&#8217;s Go Time!</title>
+		<link>https://www.genuitec.com/codemix-2019-9-19/</link>
+		<pubDate>Thu, 19 Sep 2019 16:01:24 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[codemix]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=625180</guid>
+		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-9-19/">CodeMix 2019.9.19 &#8211; It&#8217;s Go Time!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2019.8.21 Performance Update</title>
+		<link>https://www.genuitec.com/codemix-2019-8-21-performance-update/</link>
+		<pubDate>Fri, 23 Aug 2019 13:13:46 +0000</pubDate>
+		<dc:creator><![CDATA[timwebb]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=621293</guid>
+		<description><![CDATA[<p>The CodeMix 2019.8.21 release included a major update on the performance and CPU utilization during development. As reported previously, we have been working through some lingering CPU consumption impacting a subset of our users. We are happy to report strong improvements in this release.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-8-21-performance-update/">CodeMix 2019.8.21 Performance Update</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+	</channel>
+</rss>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Content Delivery Network via resources.cloud.genuitec.com
+
+Served from: www.genuitec.com @ 2020-06-14 02:49:47 by W3 Total Cache
+-->

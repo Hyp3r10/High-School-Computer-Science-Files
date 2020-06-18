@@ -1,0 +1,26 @@
+/*
+ID: punchwo1
+LANG: JAVA
+TASK: friday
+ */
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.time.LocalDate;
+import java.util.Scanner;
+
+
+public class friday {
+	public static void main(String[] args) throws IOException {
+		try (Scanner scan = new Scanner(new BufferedReader(new FileReader("friday.in")))) {
+			try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("friday.out")))) {
+				int N = scan.nextInt();
+				LocalDate start = LocalDate.of(1900, 1, 1);
+				LocalDate end = LocalDate.of((1900+N-1), 12, 31);
+			}
+		}
+	}
+}

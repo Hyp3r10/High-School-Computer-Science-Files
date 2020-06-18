@@ -1,0 +1,37 @@
+public class Stringercise {
+	private static String name;
+	public static void main(String[] args) {
+		Stringercise.part1_2_3_4_5();
+		Stringercise.part6_7_8_9_10();
+		Stringercise.part11_12_13();
+	}
+	private static void part1_2_3_4_5() {
+		name = "Matthew";
+		System.out.println("1. " + name);
+		
+		System.out.print("\nEnter in a Middle Name :: ");
+		name += " Terry";
+		System.out.println("2. " + name);
+		
+		System.out.print("\nEnter in a Last Name :: ");
+		name = name.concat(" Sheldon");
+		System.out.println("3. " + name);
+		
+		name = name.toLowerCase();
+		System.out.println("4. " + name);
+		
+		name = name.toUpperCase();
+		System.out.println("5. " + name);
+	}
+	private static void part6_7_8_9_10() {
+		System.out.println("6. " + name.length());
+		
+		System.out.println("7. " + name.substring(0,7) + 
+						 "\n   " + name.substring(8,14) + 
+						 "\n   " + name.substring(14));
+		
+	}
+	private static void part11_12_13() {
+		
+	}
+}

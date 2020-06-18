@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Triangle()
+comment1.params=a\ b\ c
+comment1.target=Triangle(int,\ int,\ int)
+comment2.params=a\ b\ c
+comment2.target=void\ setSides(int,\ int,\ int)
+comment3.params=
+comment3.target=void\ calcPerimeter()
+comment4.params=perimeter
+comment4.target=void\ calcArea(double)
+comment5.params=
+comment5.target=void\ print()
+numComments=6

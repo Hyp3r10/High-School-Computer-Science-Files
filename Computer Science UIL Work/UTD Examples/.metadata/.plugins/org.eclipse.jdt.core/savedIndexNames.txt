@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+D:\Computer Science UIL Work\UTD Examples\.metadata\.plugins\org.eclipse.jdt.core
+1385157362.index
+3996102163.index
+1037155046.index

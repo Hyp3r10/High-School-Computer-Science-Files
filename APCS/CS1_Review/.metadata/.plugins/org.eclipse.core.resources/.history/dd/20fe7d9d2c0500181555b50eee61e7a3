@@ -1,0 +1,16 @@
+public class Monster
+{
+	private String type;
+	private int scareFactor;
+	private double size;
+
+	public Monster(String t, int sf, double s)
+	{
+		type = t;		
+		scareFactor = sf;
+		size = s;
+	}
+
+	// write method equals below
+		
+}

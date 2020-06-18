@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=numArray\ start\ stop
+comment0.target=int\ getSum(int[],\ int,\ int)
+comment1.params=numArray\ val
+comment1.target=int\ getCount(int[],\ int)
+numComments=2

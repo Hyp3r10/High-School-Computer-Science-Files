@@ -1,0 +1,6 @@
+INDEX VERSION 1.130+G:\Independent Studies\.metadata\.plugins\org.eclipse.jdt.core
+632948331.index
+2198925796.index
+3716777220.index
+4128088985.index
+3506224144.index

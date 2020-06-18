@@ -1,0 +1,24 @@
+
+public class Calc101 {
+	private double sum;
+	private double diff;
+	
+	
+	public void add(double num1, double num2) {
+		sum = num1 + num2;
+		System.out.println(num1 + " + " + num2 + " = " + sum);
+	}
+	// Variable names can be different from class to class, but the data type can't
+	public void subtract(double operand1, double operand2) {
+		diff = operand1 - operand2;
+		System.out.println(operand1 + " - " + operand2 + " = " + diff);
+	}
+	public void multiply(double operand1, double operand2) {
+		double product = operand1 * operand2;
+		System.out.println(operand1 + " * " + operand2 + " = " + diff);
+	}
+	public void divide(double operand1, double operand2) {
+		double quotient = operand1 / operand2;
+		System.out.println(operand1 + " / " + operand2 + " = " + diff);
+	}
+}

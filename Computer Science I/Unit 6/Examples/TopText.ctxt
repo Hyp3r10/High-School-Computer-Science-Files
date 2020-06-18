@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=g\ tC1\ tC2\ tC3\ tC4\ tC5\ tC6
+comment0.target=TopText(java.awt.Graphics,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment1.params=g
+comment1.target=void\ drawTopText(java.awt.Graphics)
+numComments=2

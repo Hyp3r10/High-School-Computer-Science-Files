@@ -1,0 +1,200 @@
+Alabama
+Montgomery
+Yellowhammer State
+4447100
+Alaska
+Juneau
+The Last Frontier
+626932
+Arizona
+Phoenix
+Grand Canyon State
+5130632
+Arkansas
+Little Rock
+The Natural State
+2673400
+California
+Sacramento
+Golden State
+33871648
+Colorado
+Denver
+Centennial State
+4301261
+Connecticut
+Hartford
+Constitution State
+3405565
+Delaware
+Dover
+The First State
+783600
+Florida
+Tallahassee
+Sunshine State
+15982378
+Georgia
+Atlanta
+Peach State
+8186453
+Hawaii
+Honolulu
+Aloha State
+1233537
+Idaho
+Boise
+Gem State
+1293953
+Illinois
+Springfield
+Prairie State
+12419293
+Indiana
+Indianapolis
+Hoosier State
+6080485
+Iowa
+Des Moines
+Hawkeye State
+2926324
+Kansas
+Topeka
+Sunflower State
+2688418
+Kentucky
+Frankfort
+Bluegrass State
+4041769
+Louisiana
+Baton Rouge
+Pelican State
+4468976
+Maine
+Augusta
+Pine Tree State
+1274923
+Maryland
+Annapolis
+Old Line State
+5296486
+Massachusetts
+Boston
+Bay State
+6349097
+Michigan
+Lansing
+Wolverine State
+9938444
+Minnesota
+Saint Paul
+North Star State
+4919479
+Mississippi
+Jackson
+Magnolia State
+2844658
+Missouri
+Jefferson City
+Show Me State
+595211
+Montana
+Helena
+Treasure State
+902195
+Nebraska
+Lincoln
+Cornhusker State
+1711263
+Nevada
+Carson City
+The Silver State
+1998257
+New Hampshire
+Concord
+Granite State
+1235786
+New Jersey
+Trenton
+Garden State
+8414350
+New Mexico
+Santa Fe
+Land of Enchantment
+1819046
+New York
+Albany
+Empire State
+18976457
+North Carolina
+Raleigh
+Tar Heel State
+8049313
+North Dakota
+Bismarck
+Peace Garden State
+642200
+Ohio
+Columbus
+Buckeye State
+11353140
+Oklahoma
+Oklahoma City
+Sooner State
+3450654
+Oregon
+Salem
+Beaver State
+3421399
+Pennsylvania
+Harrisburg
+Keystone State
+12281054
+Rhode Island
+Providence
+The Ocean State
+1048319
+South Carolina
+Columbia
+Palmetto State
+4012012
+South Dakota
+Pierre
+Mount Rushmore State
+754844
+Tennessee
+Nashville
+Volunteer State
+5689283
+Texas
+Austin
+Lone Star State
+20851820
+Utah
+Salt Lake City
+The Beehive State
+2233169
+Vermont
+Montpelier
+Green Mountain State
+608827
+Virginia
+Richmond
+Old Dominion State
+7078515
+Washington
+Olympia
+The Evergreen State
+5894121
+West Virginia
+Charleston
+Mountain State
+1808344
+Wisconsin
+Madison
+Badger State
+5363675
+Wyoming
+Cheyenne
+Equality State
+493782
