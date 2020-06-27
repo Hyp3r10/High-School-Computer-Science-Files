@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item value="907" key="DIALOG_X_ORIGIN"/>
-		<item value="340" key="DIALOG_Y_ORIGIN"/>
+		<item key="DIALOG_X_ORIGIN" value="907"/>
+		<item key="DIALOG_Y_ORIGIN" value="340"/>
 	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
-		<item value="-1" key="dialogHeight"/>
-		<item value="-1" key="dialogWidth"/>
+		<item key="dialogHeight" value="-1"/>
+		<item key="dialogWidth" value="-1"/>
 		<list key="textEntries">
 		</list>
 		<list key="orderedElements">
@@ -17,7 +17,7 @@
 		</list>
 	</section>
 	<section name="PreferencesImportWizard">
-		<item value="C:\Users\sm10095178\Documents\Matthew&apos;s Preferences.epf" key=""/>
+		<item key="" value="C:\Users\sm10095178\Documents\Matthew&apos;s Preferences.epf"/>
 		<list key="WizardPreferencesExportPage1.STORE_DESTINATION_NAMES_ID">
 			<item value="C:\Users\sm10095178\Documents\Matthew&apos;s Preferences.epf"/>
 		</list>
@@ -25,7 +25,7 @@
 	<section name="NewWizardAction">
 	</section>
 	<section name="ImportExportAction">
-		<item value="org.eclipse.ui.wizards.import.Preferences" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.Preferences"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
