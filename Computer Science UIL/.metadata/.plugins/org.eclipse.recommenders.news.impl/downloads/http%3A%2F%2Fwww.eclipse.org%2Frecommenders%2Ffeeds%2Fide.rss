@@ -252,10 +252,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="row">
           <div class="col-sm-24">
-            <h4 class='margin-top-10 margin-bottom-0 fw-200'>2020 IOT DEVELOPER SURVEY</h4>
-            <h2 style='margin-top:10px;'><strong>TAKE THE IOT INDUSTRY'S LEADING DEVELOPER SURVEY TODAY</strong></h2>
-            <p>May 11 - June 26, 2020</p>
-            <a class='btn btn-primary btn-lg' href='https://www.surveymonkey.com/r/Eclipsebanner'>Take the Survey</a>
+            
+            <h2 class='margin-top-30'><strong>The Eclipse IDE 2020-06 is now available!</strong></h2>
+            <p></p>
+            <a class='btn btn-primary btn-lg' href='https://www.eclipse.org/downloads'>Download Now</a>
           </div>
           
         </div>
