@@ -21,6 +21,7 @@ public class Perms {
 				i = permutations.size();
 			}
 		}
+		
 	}
 }
 class Permutation { 

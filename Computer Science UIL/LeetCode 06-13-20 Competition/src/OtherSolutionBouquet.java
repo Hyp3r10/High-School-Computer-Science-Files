@@ -1,9 +1,3 @@
-import java.io.*;
-import java.util.*;
-import java.math.*;
-import java.util.stream.*;
-
-
 public class OtherSolutionBouquet {
     public int minDays(int[] bloomDay, int m, int k) {
         int l = 0, r = 1000000010;

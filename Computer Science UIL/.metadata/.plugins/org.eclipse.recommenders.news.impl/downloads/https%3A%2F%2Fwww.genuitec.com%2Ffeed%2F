@@ -12,12 +12,65 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Sat, 20 Jun 2020 10:46:22 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 14 Aug 2020 17:31:10 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	
 	<item>
+		<title>CodeTogether 2.1 is Here with Popular Feature Requests</title>
+		<link>https://www.genuitec.com/codetogether-2-1-is-here/</link>
+		<pubDate>Thu, 06 Aug 2020 20:38:01 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=661753</guid>
+		<description><![CDATA[<p>CodeTogether 2.1 adds highlighting for additional languages (Elixir, Dart, and COBOL), the ability to upload files to the host, and the ability to choose which resources can be seen. Also, key fixes included one highly recommended for IntelliJ users that use the Coding Alone mode.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-1-is-here/">CodeTogether 2.1 is Here with Popular Feature Requests</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeMix 2020.7.22 &#8211; Angular 10 and Quasar in Eclipse</title>
+		<link>https://www.genuitec.com/codemix-2020-7-22-angular-10-quasar/</link>
+		<pubDate>Wed, 22 Jul 2020 19:55:49 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=661240</guid>
+		<description><![CDATA[<p>CodeMix 2020.7.22 adds support for Angular 10, Quasar (a new Vue.js based framework), and includes key fixes that keep CodeMix running smoothly with the latest versions of Eclipse.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2020-7-22-angular-10-quasar/">CodeMix 2020.7.22 &#8211; Angular 10 and Quasar in Eclipse</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>We Heard You—CodeTogether 2.0 Now with Simultaneous Coding!</title>
+		<link>https://www.genuitec.com/codetogether-2-0-is-here/</link>
+		<pubDate>Mon, 06 Jul 2020 20:28:36 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[In Product]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=660568</guid>
+		<description><![CDATA[<p>CodeTogether 2.0 provides such a superlative “coolaborative” programming experience, that once you try it, you won’t be able to settle for anything else. There’s a lot coming in this version, from support for additional languages to being able to use your favorite key bindings, and a new shared control framework!</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-0-is-here/">We Heard You—CodeTogether 2.0 Now with Simultaneous Coding!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>CodeTogether 2.0 Sneak Peek</title>
+		<link>https://www.genuitec.com/codetogether-2-0-gets-simultaneous-coding/</link>
+		<pubDate>Wed, 24 Jun 2020 20:47:45 +0000</pubDate>
+		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
+				<category><![CDATA[CodeTogether]]></category>
+		<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=660263</guid>
+		<description><![CDATA[<p>CodeTogether 2.0 is coming soon, check out this sneak peek! Simultaneous coding, a more intuitive UI, and an on-premises enterprise solution make this our best release yet. Plus, a host of other enhancements, including the ability to select a preferred IDE theme in the browser, along with your preferred keybindings.</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/codetogether-2-0-gets-simultaneous-coding/">CodeTogether 2.0 Sneak Peek</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>CodeTogether 1.2: End-to-End Secured Remote Pair Programming</title>
 		<link>https://www.genuitec.com/codetogether-1-2-end-to-end-secured-remote-pair-programming/</link>
 		<pubDate>Thu, 21 May 2020 20:45:42 +0000</pubDate>
@@ -157,58 +210,6 @@
 <p>The post <a rel="nofollow" href="https://www.genuitec.com/creating-a-django-authentication-app/">Creating a Django Authentication App</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>CodeMix 2019.10.29 &#8211; You Code, We Build</title>
-		<link>https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/</link>
-		<pubDate>Tue, 29 Oct 2019 20:36:14 +0000</pubDate>
-		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[In Product]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=629280</guid>
-		<description><![CDATA[<p>In this release we’re introducing a quick access control panel for Angular, a vastly improved validation and build pipeline, and we’ve made loads of reliability and stability fixes to the product, in response to your feedback. Core changes made in this version improve the efficiency of communication between CodeMix and the underlying Code OSS engine, resulting in a smoother dev experience.</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-10-29-you-code-we-build/">CodeMix 2019.10.29 &#8211; You Code, We Build</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>React Native Authentication with Facebook</title>
-		<link>https://www.genuitec.com/react-native-authentication-with-facebook/</link>
-		<pubDate>Thu, 26 Sep 2019 20:05:49 +0000</pubDate>
-		<dc:creator><![CDATA[dunebook7]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[codemix]]></category>
-		<category><![CDATA[react native]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=623558</guid>
-		<description><![CDATA[<p>Learn how to create a simple React Native app that uses Facebook for authentication. We use CodeMix for development and the Expo toolchain to make this possible without needing XCode or Android Studio. Check out our newest Blog and see how it's done!</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/react-native-authentication-with-facebook/">React Native Authentication with Facebook</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>CodeMix 2019.9.19 &#8211; It&#8217;s Go Time!</title>
-		<link>https://www.genuitec.com/codemix-2019-9-19/</link>
-		<pubDate>Thu, 19 Sep 2019 16:01:24 +0000</pubDate>
-		<dc:creator><![CDATA[Brian Fernandes]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[codemix]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=625180</guid>
-		<description><![CDATA[<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-9-19/">CodeMix 2019.9.19 &#8211; It&#8217;s Go Time!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
-		<item>
-		<title>CodeMix 2019.8.21 Performance Update</title>
-		<link>https://www.genuitec.com/codemix-2019-8-21-performance-update/</link>
-		<pubDate>Fri, 23 Aug 2019 13:13:46 +0000</pubDate>
-		<dc:creator><![CDATA[timwebb]]></dc:creator>
-				<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[In Product]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=621293</guid>
-		<description><![CDATA[<p>The CodeMix 2019.8.21 release included a major update on the performance and CPU utilization during development. As reported previously, we have been working through some lingering CPU consumption impacting a subset of our users. We are happy to report strong improvements in this release.</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/codemix-2019-8-21-performance-update/">CodeMix 2019.8.21 Performance Update</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -217,5 +218,5 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Content Delivery Network via resources.cloud.genuitec.com
 
-Served from: www.genuitec.com @ 2020-06-20 06:15:01 by W3 Total Cache
+Served from: www.genuitec.com @ 2020-08-14 13:00:03 by W3 Total Cache
 -->
