@@ -6,10 +6,14 @@ import java.util.ArrayList;
  * @author MatthewSheldon
  */
 public class Catalog {
-	// the name of the catalog
-	public String catalogName;
-	// the list of Items in this catalog
-	public ArrayList<Item> catalog;
+	/**
+	 * The name of the catalog
+	 */
+	private String catalogName;
+	/**
+	 * The list of Items in this catalog
+	 */
+	private ArrayList<Item> catalog;
 	/**
 	 * Constructs a Catalog Object instantiating the global variables 
 	 * catalogName and catalog

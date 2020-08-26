@@ -4,10 +4,14 @@ package ShoppingCart;
  * @author MatthewSheldon
  */
 public class ItemOrder {
-	// the Item that is being bought
-	public Item item;
-	// the number of this item that is being bought
-	public int quantity;
+	/**
+	 * The Item that is being bought
+	 */
+	private Item item;
+	/**
+	 * The number of this item that is being bought
+	 */
+	private int quantity;
 	/**
 	 * Constructs an ItemOrder object instantiating the global variables
 	 * item and quantity. Sets the number of items being bought in the 

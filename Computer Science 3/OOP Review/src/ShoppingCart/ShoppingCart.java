@@ -6,8 +6,10 @@ import java.util.ArrayList;
  * @author MatthewSheldon
  */
 public class ShoppingCart {
-	// a list of ItemOrder objects containing the current list of Items being bought
-	ArrayList<ItemOrder> shoppingCart;
+	/**
+	 * A list of ItemOrder objects containing the current list of Items being bought
+	 */
+	private ArrayList<ItemOrder> shoppingCart;
 	/**
 	 * Constructs a ShoppingCart object instantiating the global variable
 	 * shoppingCart

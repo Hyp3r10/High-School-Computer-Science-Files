@@ -3,14 +3,22 @@ package ShoppingCart;
  * @author MatthewSheldon
  */
 public class Item {
-	// the name of the Item 
-	public String name;
-	// the price of the Item being created without discount
-	public double price;
-	// the number of items needed to be bought for a bulk discount to be active
-	public int bulkQty;
-	// the price of each item when the bulkQty condition is met
-	public double bulkPrice;
+	/**
+	 * The name of the Item 
+	 */
+	private String name;
+	/**
+	 * The price of the Item being created without discount
+	 */
+	private double price;
+	/**
+	 * The number of items needed to be bought for a bulk discount to be active
+	 */
+	private int bulkQty;
+	/**
+	 * The price of each item when the bulkQty condition is met
+	 */
+	private double bulkPrice;
 	/**
 	 * Passes name and price to the overloaded constructor with four values. 
 	 * Sets the bulk quantity and bulk price to be the equivalent of no bulk 
@@ -41,7 +49,7 @@ public class Item {
 			this.price = price;
 			this.bulkQty = bulkQty;
 			this.bulkPrice = bulkPrice;
-		}		
+		}
 	}
 	/**
 	 * Returns the cost of buying quantity number of this current Item
