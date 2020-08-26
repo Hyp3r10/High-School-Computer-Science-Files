@@ -1,3 +1,5 @@
+package Zeckendorf;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,7 +11,6 @@ import java.util.Scanner;
 public class Zeckendorf {
 	// A list of the fibonacci numbers needed for the zeckendorf sequence.
 	public ArrayList<Integer> fibNumbers;
-	
 	/**
 	 * Constructs a Zeckendorf object and instantiates the 
 	 * list for the fibonacci numbers to be stored in.
