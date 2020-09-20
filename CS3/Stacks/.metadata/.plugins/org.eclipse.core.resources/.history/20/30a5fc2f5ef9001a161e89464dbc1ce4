@@ -1,0 +1,24 @@
+public class SyntaxChecker
+{
+	private String exp;
+	private Stack<Character> symbols;
+
+	public SyntaxChecker()
+	{
+	}
+
+	public SyntaxChecker(String s)
+	{
+	}
+	
+	public void setExpression(String s)
+	{
+	}
+
+	public boolean checkExpression()
+	{
+		return false;
+	}
+
+	//write a toString
+}

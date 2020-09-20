@@ -1,0 +1,28 @@
+package UniquesAndDups;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class UniquesDupes {
+	public static Set<String> getUniques(String input) {
+		Set<String> uniques = new TreeSet<String>();
+		List<String> asList = asList(String input);
+		return uniques;
+	}
+
+	public static Set<String> getDupes(String input) {
+		//add code
+		
+		return null;
+	}
+	
+	private static ArrayList<String> asList(String input) {
+		String[] arr = input.split(" ");
+		List<String> asList = new ArrayList<String>();
+		for(String temp : arr) {
+			asList.add(temp);
+		}
+	}
+}

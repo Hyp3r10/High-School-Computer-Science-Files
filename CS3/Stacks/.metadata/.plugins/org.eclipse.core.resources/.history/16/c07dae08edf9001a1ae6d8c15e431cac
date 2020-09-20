@@ -1,0 +1,71 @@
+import java.util.Arrays;
+import java.util.EmptyStackException;
+
+public class MyStack {
+	/**
+	 * Variable to store the stack-like data structure
+	 */
+	public Integer[] stack;
+	/**
+	 * Sores the current size of the stack and is used as an index
+	 * variable for remembering the index of the top of the stack
+	 */
+	public int size;
+	public MyStack() {
+
+	}
+	public MyStack(int initCap) {
+
+	}
+	public boolean isEmpty() {
+
+	}
+	public Integer peek() {
+
+	}
+	/**
+	 * Removes the top element and returns the value removed
+	 * Throws an exception if stack.length is equal to 0
+	 * @return	The top element of the stack array
+	 */
+	public Integer pop() {
+		if(size == 0) {
+			throw new EmptyStackException();
+		}
+		Integer pop = stack[size];
+		stack[size] = null;
+		return pop;
+	}
+	/**
+	 * Pushes an item onto the top of the stack variable.
+	 * Calls the doubleCapacity method if the size is needed to be
+	 * increased in order to perform the operation.
+	 * @param item	The element to push onto the top of the stack
+	 */
+	public void push(Integer item) {
+		if(stack[size] != null)  {
+			doubleCapacity();
+		}
+		stack[size] = item;
+		size++;
+	}
+	/**
+	 * Doubles the size of the backing array
+	 */
+	private void doubleCapacity() {
+		Integer[] temp = new Integer[size*2];
+		for(int i = 0; i < size; i++) {
+			temp[i] = stack[i];
+		} 
+		this.size++;
+		this.stack = temp;
+	}
+	/**
+	 * Shows the state of the stack (in a stack-like way)
+	 */
+	@Override
+	public String toString() {
+		return Arrays.toString(stack);
+
+	}
+}

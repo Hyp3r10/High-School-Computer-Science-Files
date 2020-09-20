@@ -1,0 +1,38 @@
+package OddsAndEvens;
+
+import java.util.Set;
+import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+import static java.lang.System.*;
+
+public class OddEvenSets {
+	private Set<Integer> odds;
+	private Set<Integer> evens;
+
+	public OddEvenSets() {
+		odds = new TreeSet<Integer>();
+	}
+	public OddEvenSets(String line) {
+		List<Integer> asList = asList(line);
+	}
+	/**
+	 * Helper method to take in the String input and parse it into a List Object
+	 * for the Stack to be instantiated
+	 * @param input	A String that represents the input
+	 * @return		A List that represents the input as a List
+	 */
+	private static List<Integer> asList(String input) {
+		String[] arr = input.split(" ");
+		List<Integer> asList = new ArrayList<Integer>();
+		for(String temp : arr) {
+			asList.add(Integer.parseInt(temp));
+		}
+		return asList;
+	}
+	public String toString() {
+		return "ODDS : " + odds + "\nEVENS : " + evens + "\n\n";
+	}
+}

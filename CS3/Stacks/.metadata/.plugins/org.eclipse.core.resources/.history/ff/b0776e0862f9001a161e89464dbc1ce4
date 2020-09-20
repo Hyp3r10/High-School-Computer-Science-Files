@@ -1,0 +1,5 @@
+public class SyntaxCheckRunner {
+	public static void main ( String[] args ) {
+		//add test cases		
+	}
+}

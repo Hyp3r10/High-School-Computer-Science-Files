@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\punch\Desktop\For School Computer CS3\CS3\Iterators\.metadata\.plugins\org.eclipse.jdt.core
+202992607.index
+2515252918.index
+1312937252.index

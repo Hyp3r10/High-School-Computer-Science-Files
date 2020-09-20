@@ -1,0 +1,18 @@
+package UnionDifferenceIntersection;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class MathSetRunner {
+	public static void main(String args[]) throws IOException {
+		MathSet tester = new MathSet();
+		Scanner scan = new Scanner(new File("mathsetdata.dat"));
+		while(scan.hasNextLine()) {
+			String one = scan.nextLine();
+			String two = scan.nextLine();
+			tester = new MathSet(one, two);
+			System.out.println(tester);
+		}
+	}
+}

@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\punch\Desktop\For School Computer CS3\CS3\Exceptions\.metadata\.plugins\org.eclipse.jdt.core
+2737867257.index
+2515252918.index

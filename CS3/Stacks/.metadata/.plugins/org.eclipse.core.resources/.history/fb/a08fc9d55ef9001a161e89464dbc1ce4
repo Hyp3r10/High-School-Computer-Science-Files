@@ -1,0 +1,35 @@
+import java.util.Stack;
+
+public class SyntaxChecker
+{
+	private String exp;
+	private Stack<Character> symbols;
+
+	/**
+	 * Default constructor that creates the symbols object as an
+	 * empty Stack and the exp object as an empty String
+	 */
+	public SyntaxChecker() {
+		this.exp = "";
+		this.symbols = new Stack<Character>();
+	}
+	/**
+	 * Overloaded constructor that initializes the exp to be equal to
+	 * the passed String object s. 
+	 * @param s	A String denoting the expression
+	 */
+	public SyntaxChecker(String s) {
+		this.exp = exp;
+		this.symbols = new Stack<Character>();
+		this.setExpression(this.exp);
+	}
+	public void setExpression(String s) {
+		
+	}
+
+	public boolean checkExpression() {
+		return false;
+	}
+
+	//write a toString
+}

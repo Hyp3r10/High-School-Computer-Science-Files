@@ -1,0 +1,13 @@
+public class SyntaxCheckRunner {
+	public static void main ( String[] args ) {
+		String test1 = "(abc(*def)";	
+		String test2 = "[{}]";
+		String test3 = "[";
+		String test4 = "[{<()>}]";
+		String test5 = "{<html[value=4]*(12)>{$x}}";
+		String test6 = "[one]<two>{three}(four)";
+		String test7 = "car(cdr(a)(b)))";
+		String test8 = "car(cdr(a)(b))";
+		SyntaxChecker tester = new SyntaxChecker();
+	}
+}

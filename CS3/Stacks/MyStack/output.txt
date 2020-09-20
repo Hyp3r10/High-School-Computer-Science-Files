@@ -1,0 +1,1 @@
+trueAttempting to pop an empty stack works!In the stack:[4, 6, 3, 7]<----- TOP7 3 3 6false
