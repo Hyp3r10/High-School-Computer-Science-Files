@@ -1,0 +1,14 @@
+[]
+[true]
+[3.14159, 1.0, 1.0]
+[does, this, work]
+3
+2
+I've
+[does, this, work, I've, absolutely, no, idea]
+[does, this, work, I've, positively, no, idea]
+7
+[does, this, work, I've, no, idea]
+[does, this, even, work, I've, no, idea]
+does this even work I've no idea 
+0

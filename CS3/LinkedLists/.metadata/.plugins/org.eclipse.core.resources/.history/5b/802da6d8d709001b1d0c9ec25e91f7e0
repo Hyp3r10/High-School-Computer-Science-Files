@@ -1,0 +1,4 @@
+
+public class MazeSolverQueue implements MazeSolver<T> {
+
+}

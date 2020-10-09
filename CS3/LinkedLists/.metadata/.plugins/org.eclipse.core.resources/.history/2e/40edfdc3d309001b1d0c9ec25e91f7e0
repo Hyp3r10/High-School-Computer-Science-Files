@@ -1,0 +1,36 @@
+
+public class MyQueue<T> implements QueueADT<T> {
+	/**
+	 * This is the backbone for storing the data in this MYQueue Object
+	 */
+	public MyLinkedList<T> queue;
+	@Override
+	public void offer(T item) {
+		this.queue.add(item);
+	}
+	@Override
+	public T poll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public T peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class StackRunner 
 {
 	public static void main(String[] args)
@@ -18,6 +20,7 @@ public class StackRunner
 		System.out.println(m.peek());
 		
 		m.push(20); m.push(12); m.push(6);
+		
 				
 		m.pop(); m.pop(); m.pop();
 		

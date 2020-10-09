@@ -1,0 +1,37 @@
+
+public class MazeSolverQueue extends MazeSolver {
+	/**
+	 * Global variable that denotes the remaining cells needed to
+	 * be explored or the path to the exit
+	 */
+	private MyQueue worklist;
+	
+	MazeSolverQueue(Maze maze) {
+		super(maze);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	void makeEmpty() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	void add(Square s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	Square next() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

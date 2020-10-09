@@ -1,0 +1,16 @@
+Found a ladder! >>> [dears, fears]
+Found a ladder! >>> [heart]
+Found a ladder! >>> [sail, rail, rain, ruin]
+No ladder between mikhail and jeff
+Found a ladder! >>> [slow, flow, flaw, flat, fiat, fist, fast]
+Found a ladder! >>> [blue, flue, flus, feus, fens, pens, pins, pink]
+No ladder between bluw and pink
+Found a ladder! >>> [stone, atone, alone, clone, clons, coons, conns, cones, coney, money]
+Found a ladder! >>> [money, motey, motes, motts, moots, soots, scots, scats, scars, scart, smart]
+Found a ladder! >>> [devil, devel, level, lever, leger, lager, eager, egger, agger, anger, angel]
+No ladder between atlas and zebra
+Found a ladder! >>> [babes, bares, cares, carns, cains, chins, chine, chile, child]
+No ladder between mumbo and ghost
+Found a ladder! >>> [train, brain, brawn, braws, brats, beats, bents, benes, bines, bikes]
+Found a ladder! >>> [babies, rabies, ramies, ramees, rakees, rakers, sakers, sayers, shyers, sheers, sheets, sleets, sleeps, sleepy]
+Found a ladder! >>> [brewing, crewing, crowing, chowing, choking, cooking, cocking, pocking, pecking, perking, jerking, jerkins, jerkies, jerkier, perkier, peakier, peatier, platier, slatier, slather, slasher, clasher, clasper, clapper, clipper, chipper, whipper, whisper, whisker, whiskey]
