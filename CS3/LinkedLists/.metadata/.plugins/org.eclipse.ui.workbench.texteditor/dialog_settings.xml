@@ -6,6 +6,8 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value=".x"/>
+			<item value="xtoIndex"/>
 			<item value="current"/>
 		</list>
 		<list key="replacehistory">

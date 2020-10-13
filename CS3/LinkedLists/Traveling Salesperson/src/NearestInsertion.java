@@ -24,7 +24,7 @@ public class NearestInsertion
     	Scanner in = null;
     	
     	try {
-    		in = new Scanner(new File("tsp1000.txt")); //change to test other files
+    		in = new Scanner(new File("circuit1290.txt")); //change to test other files
     	}
     	catch (IOException ex) {}
     	
@@ -38,21 +38,20 @@ public class NearestInsertion
         StdDraw.enableDoubleBuffering();
         // run smallest insertion heuristic
         Tour tour = new Tour();
-        
+
         while (in.hasNextLine()) {
             double x = in.nextDouble();
             double y = in.nextDouble();
             Point p = new Point(x, y);
             tour.insertNearest(p);
-
             /*
              * uncomment the 4 lines below to animate
              */
-//            StdDraw.clear();
-//            tour.draw();
-//            StdDraw.show();
-//            StdDraw.text(100, 0, "" + tour.distance());
-//            StdDraw.pause(1);
+            StdDraw.clear();
+            tour.draw();
+            StdDraw.show();
+            StdDraw.text(100, 0, "" + tour.distance());
+            StdDraw.pause(1);
         }
 
         // draw to standard draw

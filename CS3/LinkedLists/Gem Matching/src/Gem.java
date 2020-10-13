@@ -14,6 +14,9 @@ public class Gem {
 	 * Stores the number of points associated with this current gem
 	 */
 	private int points;
+	/**
+	 * Used for storing the current location on the screen of the gem
+	 */
 	/** Tester main method */
 	public static void main(String [] args)
 	{
@@ -108,6 +111,7 @@ public class Gem {
 		}
 		// Places the image on the board at (x,y)
 		StdDraw.picture(x, y, fileName);
+		StdDraw.setFont(new Font("SansSerif", Font.BOLD, 14));
 		StdDraw.setPenColor(Color.WHITE);
 		StdDraw.text(x, y, "" + this.points);
 	}

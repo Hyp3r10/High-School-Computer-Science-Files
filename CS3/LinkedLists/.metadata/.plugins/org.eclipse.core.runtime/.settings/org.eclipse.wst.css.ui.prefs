@@ -20,4 +20,4 @@ STRING=\#CC9393 | null | null | null | null | null
 UNIVERSAL=\#DFBE95 | null | null | null | null | null
 URI=\#CC9393 | null | null | null | null | null
 eclipse.preferences.version=1
-overriddenByCSS=,MEDIA,ATTRIBUTE_DELIM,ATTRIBUTE_VALUE,COLON,CLASS,URI,CURLY_BRACE,STRING,ATTRIBUTE_OPERATOR,
+overriddenByCSS=,ATTRIBUTE_DELIM,ATTRIBUTE_VALUE,COLON,CLASS,URI,CURLY_BRACE,STRING,MEDIA,ATTRIBUTE_OPERATOR,

@@ -25,6 +25,6 @@ htmTableTagColor=212,196,169
 htmTagColor=212,196,169
 javascriptColor=226,226,226
 javascriptFunction=223,190,149
-overriddenByCSS=,cfscriptKeywordColor,cfcommentBackgroundColor,currentLineColor,AbstractTextEditor.Color.Background,cfkeywordColor,SQLKeywordColor,cftaglibColor,htmFormTagColor,SQLOperatorColor,htmCommentColor,cfscriptfunctionColor,cfscriptStringColor,cftagColor,cfstringColor,SQLCommentColor,SQLStringColor,cfnumberColor,SQLTextColor,cfcommentColor,stringColor,
+overriddenByCSS=,cfscriptKeywordColor,cftaglibColor,htmFormTagColor,SQLOperatorColor,cfcommentBackgroundColor,currentLineColor,htmCommentColor,cfscriptfunctionColor,cfscriptStringColor,cftagColor,AbstractTextEditor.Color.Background,cfstringColor,SQLCommentColor,SQLStringColor,cfnumberColor,cfkeywordColor,SQLTextColor,SQLKeywordColor,cfcommentColor,stringColor,
 stringColor=204,147,147
 unknowTagColors=255,255,255
