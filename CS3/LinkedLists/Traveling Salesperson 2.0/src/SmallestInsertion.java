@@ -25,7 +25,7 @@ public class SmallestInsertion
     	Scanner in = null;
     	
     	try {
-    		in = new Scanner(new File("tsp1000.txt")); //change to test other files
+    		in = new Scanner(new File("mona-50k.txt")); //change to test other files
     	}
     	catch (IOException ex) {}
     	
@@ -57,6 +57,7 @@ public class SmallestInsertion
         }
         // draw to standard draw
         tour.draw();
+        
         StdDraw.show();
         
         // print tour to standard output

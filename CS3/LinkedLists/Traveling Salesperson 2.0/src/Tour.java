@@ -55,18 +55,18 @@ public class Tour {
 	/** print tour (one point per line) to std output */
 	public void show() {
 		Node temp = this.head;
-		while(temp != null) {
+		do {
 			System.out.println(temp.p);
 			temp = temp.next;
-		}
+		} while(temp != this.head);
 	}
 
 	/** draw the tour using StdDraw */
 	public void draw() {
 		Node pred = this.head;
 		Node succ = pred.next;
-		// Draw a line between points until the next element equals the null.
-		while(succ != null) {
+		// Draw a line between points until the next element equals the beginning.
+		while(succ != this.head) {
 			pred.p.drawTo(succ.p);
 			pred = succ;
 			succ = pred.next;
@@ -85,8 +85,8 @@ public class Tour {
 		double distance = 0.0;
 		Node pred = this.head;
 		Node succ = pred.next;
-		// Add up the distance until the next element equals the null.
-		while(succ != null) {
+		// Add up the distance until the next element equals the beginning.
+		while(succ != this.head) {
 			distance += pred.p.distanceTo(succ.p);
 			pred = succ;
 			succ = pred.next;
@@ -109,15 +109,16 @@ public class Tour {
 	/** insert p using nearest neighbor heuristic */
 	public void insertNearest(Point p) {
 		if(size == 0) {
-			this.head = new Node(p);
-			this.head.next = null;
+			Node pAsNode = new Node(p);
+			this.head = pAsNode;
+			pAsNode.next = this.head;
 		}
 		else {
 			// Determine which node is closest to the passed Point p
 			Node nearestNodeToP = null;
 			double nearestDistanceToP = Double.MAX_VALUE;
 			Node temp = this.head;
-			while(temp != null) {
+			while(temp != this.head) {
 				double distance = p.distanceTo(temp.p);
 				if(distance < nearestDistanceToP) {
 					nearestDistanceToP = distance;
@@ -132,58 +133,50 @@ public class Tour {
 		}
 		this.size++;
 	}
-	
+	/** insert p using smallest increase heuristic 
+	 *  Version II -- Incredibly fast and finds the shortest path,
+	 *  but a different shortest path than most other peopele's.
+	 */
 	public void insertSmallest(Point p) {
-		// If this is the first element being inserted, add it at the front.
+		// Make p a Node object
+		Node pAsNode = new Node(p);
+		// If this is the first time adding an element
 		if(this.size == 0) {
-			this.head = new Node(p);
-			this.head.next = null;
+			this.head = pAsNode;
+			// Make this a circular linked list
+			pAsNode.next = this.head;
 		}
 		else {
-			/*
-			 * Iterate through the LinkedList inserting the point p at every index
-			 * 
-			 * As it is iterating, store the smallest distance of the graph
-			 * 
-			 * For each index visited, if the distance of the graph when the point p
-			 * is added at the index is less than the current smallest distance, store the
-			 * index of where p is currently being stored.
-			 * 
-			 * Regardless of whether or not the distance created when P is added at the index
-			 * it currently is, reset the chain of Nodes to be what it used to be.
-			 * 
-			 * At the end of iterating through the list, add the Point p where the smallest 
-			 * distance is created stored in index.
-			 */
-			double smallestDeltaDistance = Double.MAX_VALUE;
-			Node smallestPred = this.head;
-			Node smallestSucc = this.head;
+			// Use temp as the node to iterate through the CLL
 			Node temp = this.head;
-			Node pAsNode = new Node(p);
-			// Find the index where we need to insert P into for the smallest delta distance of the graph
-			while(temp != null) {
-				// Store the original state of the temporary Node's next value
-				Node tempNext = temp.next;
-				// Temporarily insert the element P into the linked list for calculations
-				pAsNode.next = tempNext;
-				temp.next = pAsNode;
-				// Calculate the distance with P where it currently is
-				double distance = this.distance();
-				// If we have a smaller change in distance than a different node, change what
-				// index we will insert p to
-				if(distance < smallestDeltaDistance) {
-					smallestPred = temp;
-					smallestSucc = tempNext;
-					smallestDeltaDistance = distance;
+			// Use smallestSucc to store the node that we are inserting the new node before
+			Node smallestSucc = this.head;
+			// Iterate through the CLL size number of indexes
+			for(int i = 0; i < this.size; i++) {
+				/*
+				 * This distance represents the distance from the proposed new node's two neighbors
+				 * The first part gets the distance from the current node to the new node
+				 * The second part gets the distance from the current node's neighbor to the new node
+				 * The third part gets the distance from the current node to the neighbor
+				 * 
+				 * Add the first two to represent the chain created from the current node, to the new node, 
+				 * to the neighbor node, then subtract the distance that was originally factored into from
+				 * the current node to the neighbor node. This last part is important because it is the difference
+				 * from the insertNearest method in the sense that it takes into consideration the node's neighbor.
+				 */
+				double distance1 = temp.p.distanceTo(p) + temp.next.p.distanceTo(p) - temp.p.distanceTo(temp.next.p);
+				// Repeat the above calculations, except with the currently smallest node to insert into (used for determinging new smallest node)
+				double distance2 = smallestSucc.p.distanceTo(p) + smallestSucc.next.p.distanceTo(p) - smallestSucc.p.distanceTo(smallestSucc.next.p);
+				// If the proposed node is shorter than the currently smallest one, replace it. 
+				if(distance1 < distance2) {
+					smallestSucc = temp;
 				}
-				// Reset the LinkedList to its original state
-				temp.next = tempNext;
-				// Advance the search by changing the node that we are currently looking at
+				// Progress through the loop
 				temp = temp.next;
 			}
-			// Insert the Point p into the LinkedList where delta distance is the smallest
-			pAsNode.next = smallestSucc;
-			smallestPred.next = pAsNode;
+			// Alter the CLL to have the new element's neighbor point to the smallest node's neighbor and then the smallest neighbor point to the new node
+			pAsNode.next = smallestSucc.next;
+			smallestSucc.next = pAsNode;
 		}
 		this.size++;
 	}
