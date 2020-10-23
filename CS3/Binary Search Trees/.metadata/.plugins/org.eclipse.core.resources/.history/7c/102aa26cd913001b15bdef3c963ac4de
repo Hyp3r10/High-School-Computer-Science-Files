@@ -1,0 +1,23 @@
+
+public class SearchTree {
+	public IntTreeNode overallRoot;
+	
+	public boolean contians(int val) {
+		return this.contains(this.overallRoot, val);
+	} 
+	
+	private boolean contains(IntTreeNode root, int val) {
+		if(root != null) {
+			if(root.val == val) {
+				return true;
+			}
+			else {
+				if(val < root.val) {
+					return contains(root.left, val);
+				}
+				return contains(root.right, val);
+			}
+		}
+		return false;
+	}
+}

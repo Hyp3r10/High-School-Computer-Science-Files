@@ -1,0 +1,227 @@
+import java.util.NoSuchElementException;
+
+public class MyBST {
+	/**
+	 * Private class that handles the node aspect of the
+	 * Binary Search Tree.
+	 */
+	private class BSTNode {
+		public Integer val;
+		public BSTNode left, right;
+		public BSTNode(Integer val) {
+			this.val = val;
+			left = right = null;
+		}
+		@Override
+		public String toString() { return "" + this.val; }
+	}
+	/**
+	 * A reference to the overall root node in the tree
+	 */
+	public BSTNode root;
+	/**
+	 * A reference to the size of the tree. Should be the same
+	 * as the size() method. Calling this variable will retrieve
+	 * the size of the tree in O(1) while size() will retrieve 
+	 * the size of the tree in O(n)
+	 */
+	public int size;
+	/**
+	 * Public pair of size that calls the private pair.
+	 * Calculates and returns the size of the tree.
+	 * @return	The size of the BST
+	 */
+	public int size() {
+		return this.size(this.root);
+	}
+	/**
+	 * Private pair of size that recursively searches the BST
+	 * for nodes and calculates and returns the size.
+	 * @param root	The current node being searched
+	 * @return		The size of the BST
+	 */
+	private int size(BSTNode root) {
+		if(root == null) {
+			return 0;
+		}
+		else {
+			return 1 + size(root.left) + size(root.right);
+		}
+	}
+	/**
+	 * Public pair of insert that calls the private pair.
+	 * Inserts the passed integer, n, into the BST while
+	 * still satisfying the conditions of a BST
+	 * @param n	The element being added
+	 */
+	public void insert(Integer n) {
+		this.root = this.insert(n, this.root);
+	}
+	/**
+	 * Private pair of insert that calls itself recursively.
+	 * Inserts the passed integer, n, into the BST by finding
+	 * where in the BST it satisfies the conditions of a BST.
+	 * Increases the local size variable for constant retrieval.
+	 * @param val	The value to insert into the BST
+	 * @param root	The current node being searched
+	 * @return		The new BST with the new element added
+	 */
+	private BSTNode insert(Integer val, BSTNode root) {
+		if(root == null) {
+			root = new BSTNode(val);
+			this.size++;
+		}
+		else {
+			if(val < root.val) {
+				root.left = insert(val, root.left);
+			}
+			else if(val > root.val) {
+				root.right = insert(val, root.right);
+			}
+		}
+		return root;
+	}
+	/**
+	 * Public pair of contains that calls the private pair.
+	 * Determines if the passed value, val, is contained
+	 * within the BST
+	 * @param val	The element being searched for
+	 * @return		Whether or not the element was found
+	 */
+	public boolean contains(int val) {
+		return this.contains(this.root, val);
+	} 
+	/**
+	 * Private pair of contains that calls itself recursively
+	 * until the given element is found or determined to not
+	 * be contained within the BST
+	 * @param root	The current node bing searched
+	 * @param val	The value being searched for
+	 * @return		Whether or not the element was found
+	 */
+	private boolean contains(BSTNode root, int val) {
+		if(root != null) {
+			if(root.val == val) {
+				return true;
+			}
+			else {
+				if(val < root.val) {
+					return contains(root.left, val);
+				}
+				return contains(root.right, val);
+			}
+		}
+		return false;
+	}
+	/**
+	 * Public pair of getMax that calls the private pair.
+	 * Calculates and returns the largest element in the BST
+	 * @return	The largest element in the BST
+	 * @throws NoSuchElementException
+	 */
+	public int getMax() throws NoSuchElementException {
+		if(this.root == null) {
+			throw new NoSuchElementException();
+		}
+		return this.getMax(this.root);
+	}
+	/**
+	 * Private pair of getMax that calls itself recursively
+	 * as far right as it can go until it hits a non-existent
+	 * node and returns the current value.
+	 * @param root	The current node
+	 * @return		The largest value in the BST
+	 */
+	private int getMax(BSTNode root) {
+		if(root.right == null) {
+			return root.val;
+		}
+		else {
+			return this.getMin(root.right);
+		}
+	}
+	/**
+	 * Public pair of getMin that calls the private pair.
+	 * Calculates and returns the smallest element in the BST
+	 * @return	The smallest element in the BST
+	 * @throws NoSuchElementException
+	 */
+	public int getMin() throws NoSuchElementException {
+		if(this.root == null) {
+			throw new NoSuchElementException();
+		}
+		return this.getMin(this.root);
+	}
+	/**
+	 * Private pair of getMin that calls itself recursively
+	 * as far left as it can go until it hits a non-existent
+	 * node and returns the current value.
+	 * @param root	The current node
+	 * @return		The smallest value in the BST
+	 */
+	private int getMin(BSTNode root) {
+		if(root.left == null) {
+			return root.val;
+		}
+		else {
+			return this.getMin(root.left);
+		}
+	}
+	public void delete(Integer n) {
+		this.delete(this.root, this.root, n);
+	}
+	private void delete(BSTNode root, BSTNode parent, Integer n) {
+		
+	}
+	/**
+	 * Public pair of inOrder that calls the private pair.
+	 * Prints the contents of the BST in a in-order traversal
+	 */
+	public void inOrder() {
+		System.out.println(inOrder(this.root));
+	}
+	/**
+	 * Private pair of inOrder that calls itself recursively
+	 * in order to traverse the tree in-order manner.
+	 * @param root	The current node being looked at
+	 */
+	private String inOrder(BSTNode root, Srting output) {
+		if(root != null) {
+			output += inOrder(root.left);
+			output += System.out.print(root.val + " ");
+			output += inOrder(root.right);
+			return output;
+		}
+		else {
+			return output
+		}
+	}
+	/**
+	 * Public pair of print that calls the private pair.
+	 * Prints the contents of the BST in a "tree like" 
+	 * format. 
+	 */
+	public void print() {
+		this.print(this.root, 0);
+	}
+	/**
+	 * Private pair of print that calls itself recursively
+	 * searching as far right as possible, then printing the
+	 * current node, and then searching as far right as possible
+	 * @param root	The current node
+	 * @param level	The level of the current node 
+	 */
+	private void print(BSTNode root, int level) {
+		if(root != null) {
+			// Search the right node
+			this.print(root.right, level + 1); 
+			// Print the current node
+			for(int i = 0; i < level; i++) {
+				System.out.print("\t");
+			}
+			System.out.print(root.val + "\n");
+			// Search the left node
+			this.print(root.left, level + 1);
+		}
+	}
+}

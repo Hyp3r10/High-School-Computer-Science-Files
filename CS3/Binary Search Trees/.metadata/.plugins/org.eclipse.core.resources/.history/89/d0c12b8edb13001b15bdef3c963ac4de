@@ -1,0 +1,11 @@
+
+public class Temp {
+	public static void main(String[] args) {
+		int p = 12;
+		change(p);
+		System.out.println(p);
+	}
+	public void change(int x) {
+		x = 13;
+	}
+}

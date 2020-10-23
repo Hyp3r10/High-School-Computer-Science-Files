@@ -1,0 +1,17 @@
+
+public class IntTree {
+	private IntTreeNode overallRoot;
+	private void print() {
+		print(this.overallRoot);
+	}
+	private void print(IntTreeNode root) {
+		if(root.left == null) {
+			System.out.print(root.val + " ");
+		}
+		else {
+			print(root.left);
+			System.out.print(root.val + " ");
+			print(root.right);
+		}
+	}
+}

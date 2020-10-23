@@ -1,0 +1,88 @@
+Size of tree: 11
+
+Check if Node with value 4 exists:   true
+Check if Node with value -1 exists:  false
+
+Min value: 0
+Max value: 11
+
+Original Tree: 
+			11
+		10
+			9
+	8
+				6
+			5
+		4
+3
+		2
+	1
+		0
+
+In-order traversal: 
+[0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11]
+
+
+Delete node that doesn't exist (shouldn't change): 
+			11
+		10
+			9
+	8
+				6
+			5
+		4
+3
+		2
+	1
+		0
+
+Delete leaf node (value 2): 
+			11
+		10
+			9
+	8
+				6
+			5
+		4
+3
+	1
+		0
+
+Delete node (value 1) with one child: 
+			11
+		10
+			9
+	8
+				6
+			5
+		4
+3
+	0
+
+Delete node (value 4) with one child: 
+			11
+		10
+			9
+	8
+			6
+		5
+3
+	0
+
+Delete node (value 8) with two children: 
+			11
+		10
+	9
+			6
+		5
+3
+	0
+
+
+The tree from the print method example: 
+		9
+	6
+5
+		3
+	2
+		1
