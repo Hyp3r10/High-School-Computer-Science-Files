@@ -112,48 +112,48 @@ public class GameTreeTest
 		assertTrue(aGame.foundAnswer());
 	}
 
-//	@Test
-//	public void test07_testSaveGame() {
-//		GameTree aGame = new GameTree(PATH + "animals.txt");
-//		aGame.playerSelected(Choice.Yes);
-//		aGame.playerSelected(Choice.Yes);
-//		// Add new question and make the current data the new answer
-//		aGame.add("Can it swim?", "goose");
-//		assertEquals("Can it swim?", aGame.getCurrent());
-//		aGame.saveGame();
-//
-//		// Add another answer
-//		aGame.reStart();
-//		aGame.playerSelected(Choice.Yes);
-//		aGame.playerSelected(Choice.Yes);
-//		aGame.playerSelected(Choice.Yes);
-//		assertEquals("goose", aGame.getCurrent());
-//		assertTrue(aGame.foundAnswer());
-//		aGame.add("Does it croak?", "frog");
-//
-//		// Read from a changed file and verify the same questions/answers
-//		aGame.saveGame();
-//		GameTree anotherGame = new GameTree(PATH + "animals.txt");
-//
-//		anotherGame.playerSelected(Choice.Yes);
-//		anotherGame.playerSelected(Choice.Yes);
-//		aGame.add("Can it swim?", "goose");
-//		assertEquals("Can it swim?", aGame.getCurrent());
-//		anotherGame.playerSelected(Choice.Yes);
-//		assertEquals("Does it croak?", anotherGame.getCurrent());
-//		assertFalse(anotherGame.foundAnswer());
-//		anotherGame.playerSelected(Choice.No);
-//		assertTrue(anotherGame.foundAnswer());
-//		assertEquals("goose", anotherGame.getCurrent());
-//
-//		anotherGame.reStart();
-//		anotherGame.playerSelected(Choice.Yes);
-//		anotherGame.playerSelected(Choice.Yes);
-//		anotherGame.playerSelected(Choice.Yes);
-//		assertEquals("Does it croak?", anotherGame.getCurrent());
-//		assertFalse(anotherGame.foundAnswer());
-//		anotherGame.playerSelected(Choice.No);
-//		assertTrue(anotherGame.foundAnswer());
-//		assertEquals("goose", anotherGame.getCurrent());
-//	}
+	@Test
+	public void test07_testSaveGame() {
+		GameTree aGame = new GameTree(PATH + "animals.txt");
+		aGame.playerSelected(Choice.Yes);
+		aGame.playerSelected(Choice.Yes);
+		// Add new question and make the current data the new answer
+		aGame.add("Can it swim?", "goose");
+		assertEquals("Can it swim?", aGame.getCurrent());
+		aGame.saveGame();
+
+		// Add another answer
+		aGame.reStart();
+		aGame.playerSelected(Choice.Yes);
+		aGame.playerSelected(Choice.Yes);
+		aGame.playerSelected(Choice.Yes);
+		assertEquals("goose", aGame.getCurrent());
+		assertTrue(aGame.foundAnswer());
+		aGame.add("Does it croak?", "frog");
+
+		// Read from a changed file and verify the same questions/answers
+		aGame.saveGame();
+		GameTree anotherGame = new GameTree(PATH + "animals.txt");
+
+		anotherGame.playerSelected(Choice.Yes);
+		anotherGame.playerSelected(Choice.Yes);
+		aGame.add("Can it swim?", "goose");
+		assertEquals("Can it swim?", aGame.getCurrent());
+		anotherGame.playerSelected(Choice.Yes);
+		assertEquals("Does it croak?", anotherGame.getCurrent());
+		assertFalse(anotherGame.foundAnswer());
+		anotherGame.playerSelected(Choice.No);
+		assertTrue(anotherGame.foundAnswer());
+		assertEquals("goose", anotherGame.getCurrent());
+
+		anotherGame.reStart();
+		anotherGame.playerSelected(Choice.Yes);
+		anotherGame.playerSelected(Choice.Yes);
+		anotherGame.playerSelected(Choice.Yes);
+		assertEquals("Does it croak?", anotherGame.getCurrent());
+		assertFalse(anotherGame.foundAnswer());
+		anotherGame.playerSelected(Choice.No);
+		assertTrue(anotherGame.foundAnswer());
+		assertEquals("goose", anotherGame.getCurrent());
+	}
 }

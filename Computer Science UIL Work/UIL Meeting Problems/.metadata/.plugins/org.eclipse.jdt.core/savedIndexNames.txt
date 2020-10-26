@@ -1,26 +1,7 @@
-INDEX VERSION 1.130+G:\Computer Science UIL Work\UIL Meeting Problems\.metadata\.plugins\org.eclipse.jdt.core
-715107097.index
+INDEX VERSION 1.131+C:\Users\punch\Documents\GitHub\High-School-Computer-Science-Files\Computer Science UIL Work\UIL Meeting Problems\.metadata\.plugins\org.eclipse.jdt.core
 3854659303.index
-3104340509.index
-2987220926.index
-124558605.index
-3579902010.index
-721686020.index
-2111512668.index
-177638979.index
-791502038.index
-3032694404.index
 745130525.index
-3745837425.index
 3305795368.index
-1303184529.index
-1296103107.index
-2605561000.index
-2624726496.index
-2686296187.index
-1713172528.index
 1533999755.index
-3421819425.index
-2202167482.index
-2828169528.index
-2205290751.index
+2987220926.index
+721686020.index

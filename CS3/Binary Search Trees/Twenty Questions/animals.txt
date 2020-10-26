@@ -1,5 +1,9 @@
 Has feathers?
 Barnyard?
+Can it swim?
+Does it croak?
+frog
+goose
 chicken
 owl
 Is it a mammal?

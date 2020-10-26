@@ -27,17 +27,21 @@ public class AStar {
 		}
 		else {
 			if(c > -1 && r > -1 && r < curr.maze.length && c < curr.maze.length) {
-				if(r > 0 && !curr.visited[r-1][c] && curr.maze[r-1][c] != 0) {
+				if(r-1 > 0 && !curr.visited[r-1][c] && curr.maze[r-1][c] != 0) {
 					path.offer(curr.move(r-1, c));
+					return aStarSearch(path.peek(), r-1, c);
 				}
-				if(c > 0 && !curr.visited[r][c+1] && curr.maze[r][c+1] != 0) {
+				if(c-1 > 0 && !curr.visited[r][c-1] && curr.maze[r][c-1] != 0) {
 					path.offer(curr.move(r, c-1));
+					return aStarSearch(path.peek(), r, c-1);
 				}
-				if(r < curr.maze.length-1 && !curr.visited[r+1][c] && curr.maze[r+1][c] != 0) {
+				if(r+1 < curr.maze.length && !curr.visited[r+1][c] && curr.maze[r+1][c] != 0) {
 					path.offer(curr.move(r+1, c));
+					return aStarSearch(path.peek(), r+1, c);
 				}
-				if(c < curr.maze[r].length-1 && !curr.visited[r][c-1] && curr.maze[r][c-1] != 0) {
+				if(c+1 < curr.maze[r].length && !curr.visited[r][c+1] && curr.maze[r][c+1] != 0) {
 					path.offer(curr.move(r, c+1));
+					return aStarSearch(path.peek(), r, c+1);
 				}
 			}
 		}
