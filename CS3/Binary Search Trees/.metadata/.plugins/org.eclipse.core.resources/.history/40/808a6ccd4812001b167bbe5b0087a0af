@@ -1,7 +1,0 @@
-
-public class IntTree {
-	private IntTreeNode overallRoot;
-	private void print() {
-		
-	}
-}

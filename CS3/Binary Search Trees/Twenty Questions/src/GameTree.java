@@ -18,7 +18,6 @@ public class GameTree {
 	 * Binary Search Tree.
 	 */
 	private class GameTreeNode {
-
 		public String data;					// The String values that it is holding
 		public Type type;					// Whether or not the node is a question or answer
 		public GameTreeNode yes, no;		// The children of the current node
@@ -75,7 +74,6 @@ public class GameTree {
 			// Pull the current line from the text file into a String object
 			String line = scan.nextLine();
 			// Set the current element to be equal to the current line from the scanner
-			System.out.println(line);
 			currentNode.changeData(line);
 			// If the current node is also a question, search its two children as well
 			if(currentNode.isQuestion()) {
@@ -123,8 +121,6 @@ public class GameTree {
 	 *         at a leaf.
 	 */
 	public boolean foundAnswer() {
-		// TODO This may prove to not work depending on how the adding of a
-		// 		question works for this program. 
 		return !this.curr.isQuestion(); 
 	} 
 
@@ -164,7 +160,7 @@ public class GameTree {
 	}
 	/**
 	 * Private pair to toString that allows the program to 
-	 * recursively print the BST in an post-order fashion.
+	 * recursively print the BST.
 	 * @param root		The current node being searched
 	 * @param level		The level of the current node
 	 * @param output	The current String representation of the BST
@@ -198,6 +194,13 @@ public class GameTree {
 		}
 
 	}
+	/**
+	 * If the computer looses, it gets smarter. This method will edit the current
+	 * text file that it is reading from and replace it with the new version
+	 * so that in the future, it knows the answer.
+	 * @param root	The current node that we are looking at
+	 * @param write	The file that we are writing to
+	 */
 	private void saveGame(GameTreeNode root, PrintWriter write) {
 		if(root != null) {
 			write.println(root.data);

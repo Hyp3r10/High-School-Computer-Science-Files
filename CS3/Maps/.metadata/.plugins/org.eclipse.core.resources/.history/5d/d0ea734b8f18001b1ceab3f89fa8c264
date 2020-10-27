@@ -1,0 +1,11 @@
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.HashMap;
+
+public class Maps101 {
+	public static void main(String[] args) {
+		Map<Integer, String> team1 = new TreeMap<Integer, String>();
+		Map<Integer, String> team2 = new TreeMap<Integer, String>();
+		
+	}
+}
