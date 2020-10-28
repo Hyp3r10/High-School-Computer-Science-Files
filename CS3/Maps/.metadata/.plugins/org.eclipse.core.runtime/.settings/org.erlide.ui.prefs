@@ -21,4 +21,4 @@
 //editor/colors/variablecolor=212,196,169
 //editor/colors/variablestyle=0
 eclipse.preferences.version=1
-overriddenByCSS=,editor/colors/keywordcolor,editor/colors/commentstyle,editor/colors/arrowstyle,editor/colors/keywordstyle,editor/colors/floatstyle,editor/colors/stringstyle,editor/colors/integerstyle,editor/colors/charstyle,editor/colors/variablestyle,editor/colors/defaultstyle,editor/colors/atomstyle,editor/colors/integercolor,editor/colors/arrowcolor,editor/colors/charcolor,editor/colors/commentcolor,
+overriddenByCSS=,editor/colors/integercolor,editor/colors/keywordcolor,editor/colors/commentstyle,editor/colors/arrowstyle,editor/colors/arrowcolor,editor/colors/keywordstyle,editor/colors/floatstyle,editor/colors/charcolor,editor/colors/stringstyle,editor/colors/integerstyle,editor/colors/charstyle,editor/colors/variablestyle,editor/colors/commentcolor,editor/colors/defaultstyle,editor/colors/atomstyle,

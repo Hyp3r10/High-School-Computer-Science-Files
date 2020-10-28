@@ -1,5 +1,5 @@
 eclipse.preferences.version=1
-overriddenByCSS=,syntaxcolor.live.bracket.matching.italic,syntaxcolor.live.bracket.matching.strikethrough,syntaxcolor.symbol.system,syntaxcolor.live.bracket.matching.underline,syntaxcolor.live.bracket.matching.enabled,syntaxcolor.live.bracket.matching.bold,syntaxcolor.symbol.conflict.local,syntaxcolor.number.literal,syntaxcolor.comment,
+overriddenByCSS=,syntaxcolor.symbol.conflict.local,syntaxcolor.live.bracket.matching.italic,syntaxcolor.live.bracket.matching.strikethrough,syntaxcolor.symbol.system,syntaxcolor.number.literal,syntaxcolor.live.bracket.matching.underline,syntaxcolor.live.bracket.matching.enabled,syntaxcolor.comment,syntaxcolor.live.bracket.matching.bold,
 syntaxcolor.comment=115,135,155
 syntaxcolor.live.bracket.matching.bold=false
 syntaxcolor.live.bracket.matching.color=204,147,147

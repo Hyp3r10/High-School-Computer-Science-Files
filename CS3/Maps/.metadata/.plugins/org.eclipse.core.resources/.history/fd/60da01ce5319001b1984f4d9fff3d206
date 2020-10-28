@@ -1,0 +1,47 @@
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
+
+public class Relatives
+{
+	private Map<String,Set<String>> map;
+
+	public Relatives()	{
+		this.map = new TreeMap<String, Set<String>>();
+	}
+
+	public void setPersonRelative(String line)
+	{
+		String[] personRelative = line.split(" ");
+		Set<String> relatives = new TreeSet<String>();
+		if(this.map.containsKey(personRelative[0])) {
+			this.map.put(personRelative[0], this.map.get(personRelative[0]).add(personRelative[1]));
+		}
+		else {
+			this.map.put(key, value)
+		}
+
+	}
+
+
+	public String getRelatives(String person)
+	{
+		return "";
+	}
+
+
+	public String toString()
+	{
+		String output="";
+
+
+
+
+
+
+
+
+		return output;
+	}
+}
