@@ -1,0 +1,45 @@
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class HashTable {
+	private LinkedList[] table;	// Array of LinkedLists used to store the data
+	/**
+	 * Default constructor that instantiates the hash table
+	 */
+	public HashTable() {
+		table = new LinkedList[10];
+		for(int i = 0; i < table.length; i++) {
+			table[i] = new LinkedList<Integer>();
+		}
+	}
+	/**
+	 * Adds the passed object into the hash table
+	 * @param obj	The object being added
+	 */
+	public void add(Object obj) {
+		System.out.println("add");
+		this.table[this.hashCode(obj)].add(obj);
+	}
+	/**
+	 * Helper method that generates the hashCode for the passed object
+	 * @param obj	The object that we are generating the hash code for
+	 * @return		The hash code of the object
+	 */
+	private int hashCode(Object obj) {
+		return obj.hashCode()%10;
+	}
+	@Override
+	public String toString() {
+		String output="HASHTABLE\n";
+		int index = 0;
+		for(LinkedList<Integer> list : this.table) {
+			output += "bucket " + index++ + ": ";
+			for(int temp : list) {
+				output += temp + " ";
+			}
+			output += "\n";
+		}
+		return output;
+	}
+}

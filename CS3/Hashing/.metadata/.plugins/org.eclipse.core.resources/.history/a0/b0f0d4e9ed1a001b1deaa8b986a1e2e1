@@ -1,0 +1,30 @@
+
+public class Number {
+	private int theValue;	// The value of this object
+	/**
+	 * Constructs a Number object with the passed value
+	 * @param value	The value of the Number
+	 */
+	public Number(int value) {
+		this.theValue = value;
+	}	
+	
+	public int getValue() {
+		return theValue;
+	}
+	
+	public boolean equals(Object obj)
+	{
+		return false;
+	} 
+	
+	public int hashCode()
+	{
+		return 0;
+	}
+
+	public String toString()
+	{
+		return "";
+	}	
+}

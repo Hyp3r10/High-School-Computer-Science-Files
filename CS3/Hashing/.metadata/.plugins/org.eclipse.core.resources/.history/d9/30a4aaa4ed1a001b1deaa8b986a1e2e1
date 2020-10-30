@@ -1,0 +1,28 @@
+
+import java.util.LinkedList;
+import java.util.Scanner;
+import java.io.File;
+
+public class HashTableRunner
+{
+  public static void main ( String[] args )
+  {
+		try{
+			//make a new table			
+			HashTable tester = new HashTable();
+			//read from the file			
+			Scanner scan = new Scanner(System.in);
+			//load stuff into the table			
+			int numElements = scan.nextInt();
+			for(int i = 0; i < numElements; i++) {
+				tester.add(scan.nextInt());
+			} 
+			//print out the table
+			System.out.println(tester);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Houston, we have a problem!");
+		}
+  }
+}

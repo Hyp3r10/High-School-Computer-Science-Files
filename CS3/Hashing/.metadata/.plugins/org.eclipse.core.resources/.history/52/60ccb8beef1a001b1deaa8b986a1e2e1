@@ -1,0 +1,40 @@
+
+public class Word
+{
+	private String theValue;
+	
+	//write a constructor
+	
+	
+	
+	//write the getValue method
+	/**
+	 * Returns the value of this Word object
+	 * @return the value of this Word object
+	 */
+	public String getValue() {
+		return theValue;
+	}
+	
+	
+	//write the equals method
+	@Override
+	public boolean equals(Object obj) {
+		return this.theValue == ((Word) obj).getValue();
+	} 
+	
+	
+	//write the hashCode method
+	@Override
+	public int hashCode() {
+		String vowels = this.theValue.replaceAll("[^aeiouy]", "");
+		return (vowels.length() * this.theValue.length()) % 10;
+	}
+	
+	
+	//write the toString method
+	@Override
+	public String toString() {
+		return "" + this.theValue;
+	}
+}

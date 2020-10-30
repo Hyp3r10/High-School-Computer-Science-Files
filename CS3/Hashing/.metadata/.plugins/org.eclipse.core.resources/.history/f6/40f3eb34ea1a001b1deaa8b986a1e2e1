@@ -1,0 +1,17 @@
+import java.util.LinkedList;
+
+public class HashTable103 {
+	public static void main(String[] args) {
+		
+	}
+}
+class Table {
+	private LinkedList<Integer>[] table;
+	@SuppressWarnings("unchecked")
+	public Table(int size) {
+		this.table = new LinkedList[size];
+		for(LinkedList<Integer> temp : table) {
+			temp = new LinkedList<Integer>();
+		}
+	}
+}

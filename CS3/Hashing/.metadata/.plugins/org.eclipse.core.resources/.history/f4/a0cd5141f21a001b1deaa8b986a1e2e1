@@ -1,0 +1,6 @@
+public class EmployeeDatabase {
+	class Entry {
+		
+	}
+	public Employee[] hashTable;
+}

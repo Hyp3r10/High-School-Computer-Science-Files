@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 5 elements from project &apos;Twenty Questions&apos;&#x0D;&#x0A;- Original project: &apos;Twenty Questions&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     actors.txt&#x0D;&#x0A;     animals_long.txt&#x0D;&#x0A;     animals.txt&#x0D;&#x0A;     short.txt&#x0D;&#x0A;     Twenty Questions GUI demo.mp4" description="Delete elements" element1="animals_long.txt" element2="animals.txt" element3="short.txt" element4="Twenty Questions GUI demo.mp4" element5="actors.txt" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="5" stamp="1604085947091" subPackages="false" version="1.0"/>
+</session>

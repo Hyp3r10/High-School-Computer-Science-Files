@@ -1,0 +1,10 @@
+import java.util.LinkedList;
+
+public class HashTable102 {
+	public static void main(String[] args) {
+		LinkedList[] hashTable = new LinkedList[10];
+		for(LinkedList temp : hashTable) {
+			System.out.println(temp);
+		}
+	}
+}

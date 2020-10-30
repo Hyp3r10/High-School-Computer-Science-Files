@@ -1,0 +1,30 @@
+import java.util.LinkedList;
+
+public class HashTable103 {
+	public static void main(String[] args) {
+		Table t = new Table(10);
+	}
+}
+class Table {
+	private LinkedList<Integer>[] table;
+	@SuppressWarnings("unchecked")
+	public Table(int size) {
+		this.table = new LinkedList[size];
+		for(int i = 0; i < this.table.length; i++) {
+			table[i] = new LinkedList<Integer>(); 
+		}
+	}
+	public void add(int val) {
+		this.table[this.hashCode(val)].add(val);
+	}
+	@Override
+	public String toString() {
+		String output = "";
+		for(LinkedList list : this.table) {
+			
+		}
+	}
+	public int hashCode(int val) {
+		return val % table.length;
+	} 
+}
