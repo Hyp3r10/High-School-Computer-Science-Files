@@ -3,8 +3,8 @@ import java.util.Scanner;
 import java.util.TreeMap;
 
 public class Acronyms {
-	private Map<String,String> acronymTable;	//
-	private String sent = "";					// The sentence being 
+	private Map<String,String> acronymTable;	// The Map indicating what each acronym stands for
+	private String sent = "";					// The sentence being constructed
 	/**
 	 * Default constructor that instantiates the TreeMap to be a blank Map.
 	 */
@@ -48,8 +48,7 @@ public class Acronyms {
 	public String toString() {
 		String output = "==== MAP CONTENTS ====\n\n";
 		output += this.acronymTable.toString().replaceAll(",", "\n");
-		output += "\n\n==== READ LINES ====\n\n";
-		output += this.convert(this.sent);
+		output += "\n\n==== READ LINES ====\n";
 		return output;	
 	}
 }

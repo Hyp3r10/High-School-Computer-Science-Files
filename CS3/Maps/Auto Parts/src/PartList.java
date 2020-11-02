@@ -8,14 +8,18 @@ import java.util.Collections;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class PartList
-{
-	private TreeMap<Part, Integer> partsMap;
-
+public class PartList {
+	private TreeMap<Part, Integer> partsMap;	// Map that references the number of each part needed 
+	/**
+	 * Default constructor used to instantiate a blank map for partsMap
+	 */
 	public PartList() {
 		this.partsMap = new TreeMap<Part, Integer>();
 	}
-
+	/**
+	 * Takes the file name and creates the partsMap to reflect the order being requested
+	 * @param fileName	The name of the file being read in
+	 */
 	public PartList(String fileName) {
 		this();
 		try {
@@ -41,7 +45,7 @@ public class PartList
 			out.println(e);
 		}
 	}
-
+	@Override
 	public String toString() {
 		String output="";
 		for(Part temp : this.partsMap.keySet()) {

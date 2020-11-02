@@ -1,19 +1,26 @@
 import java.util.Map;
 import java.util.TreeMap;
 
-public class Histogram
-{
+public class Histogram {
 	private Map<String,Integer> histogram;
-
+	/**
+	 * Default constructor to instantiate a blank histogram object
+	 */
 	public Histogram() {
 		this.histogram = new TreeMap<String, Integer>();
 	}
-
+	/**
+	 * Constructor that takes a sentence and initializes the histogram to reflect the number of each character
+	 * @param sent	The sentence being read in
+	 */
 	public Histogram(String sent) {
 		this.histogram = new TreeMap<String, Integer>();
 		this.setSentence(sent);
 	}
-	
+	/**
+	 * Takes the sentence and sets the histogram to reflect the sentence and its parts
+	 * @param sentence	The sentence being made into a histogram
+	 */
 	public void setSentence(String sentence) {
 		String[] line = sentence.split(" ");
 		this.histogram.clear();
@@ -25,9 +32,8 @@ public class Histogram
 			this.histogram.put(character, numCharacters+1);
 		}
 	}
-
-	public String toString()
-	{
+	@Override
+	public String toString() {
 		String output="char\t1---5----10\n";
 		for(String character : this.histogram.keySet()) {
 			int numElements = this.histogram.get(character);

@@ -1,9 +1,10 @@
-import java.util.Arrays;
-
 public class Part implements Comparable<Part> {
-	private String make = "", model = "";
-	private int year = 0;
-
+	private String make = "", model = "";	// The two String halves of the auto part list
+	private int year = 0;					// The year of the car
+	/**
+	 * Constructor that takes in the information from the part and parses it into its parts
+	 * @param line	The set of information to be parsed
+	 */
 	public Part(String line) {
 		String[] list = line.split(" ");
 		int i = 0;
@@ -20,8 +21,7 @@ public class Part implements Comparable<Part> {
 		}
 		this.year = Integer.parseInt(temp);
 	}
-
-	//have to have compareTo if implements Comparable
+	@Override
 	public int compareTo( Part rhs ) {
 		if(this.make.compareTo(rhs.make) < 0) {
 			return -1;
@@ -49,7 +49,7 @@ public class Part implements Comparable<Part> {
 			}
 		}
 	}
-
+	@Override
 	public String toString() {
 		return this.make + this.year + "  " + this.model;
 	}

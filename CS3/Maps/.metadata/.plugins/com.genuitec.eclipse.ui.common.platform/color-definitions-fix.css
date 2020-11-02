@@ -1648,10 +1648,6 @@ IEclipsePreferences#org-eclipse-e4-CSS {
 		'org.eclipse.e4.CSS.syntaxColorer.tokenStyles.string.color=204,147,147'
 		'org.eclipse.e4.CSS.syntaxColorer.tokenStyles.ClassID.color=223,190,149'
 }
-IEclipsePreferences#org-eclipse-epp-mpc-ui {
-	preferences:
-		'native-borders=false'
-}
 IEclipsePreferences#org-eclipse-jdt-ui {
 	preferences:
 		'content_assist_completion_replacement_background=200,200,0'
@@ -1668,19 +1664,18 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'java_doc_link=168,147,204'
 		'java_doc_tag=147,147,204'
 		'java_keyword=141,203,226'
-		'java_keyword_bold=false'
 		'java_keyword_return=141,203,226'
-		'java_keyword_return_bold=false'
 		'java_multi_line_comment=115,135,155'
 		'java_operator=240,239,208'
 		'java_single_line_comment=127,159,127'
 		'java_string=204,147,147'
-		'matchingBracketsColor=244,245,246'
+		'matchingBracketsColor=96,109,118'
 		'pf_coloring_argument=141,203,226'
 		'pf_coloring_assignment=226,226,226'
 		'pf_coloring_comment=127,159,127'
 		'pf_coloring_key=226,226,226'
 		'pf_coloring_value=204,147,147'
+		'semanticHighlighting.abstractClass.bold=true'
 		'semanticHighlighting.abstractClass.color=62,171,230'
 		'semanticHighlighting.abstractClass.enabled=true'
 		'semanticHighlighting.annotation.bold=false'
@@ -1709,7 +1704,6 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'semanticHighlighting.field.italic=false'
 		'semanticHighlighting.field.strikethrough=false'
 		'semanticHighlighting.field.underline=false'
-		'semanticHighlighting.inheritedField.color=143,143,191'
 		'semanticHighlighting.interface.bold=false'
 		'semanticHighlighting.interface.color=202,230,130'
 		'semanticHighlighting.interface.enabled=true'
@@ -1746,7 +1740,6 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'semanticHighlighting.number.italic=false'
 		'semanticHighlighting.number.strikethrough=false'
 		'semanticHighlighting.number.underline=false'
-		'semanticHighlighting.recordKeyword.color=197,116,48'
 		'semanticHighlighting.staticField.bold=false'
 		'semanticHighlighting.staticField.color=147,162,204'
 		'semanticHighlighting.staticField.enabled=true'
@@ -1766,7 +1759,6 @@ IEclipsePreferences#org-eclipse-jdt-ui {
 		'semanticHighlighting.staticMethodInvocation.strikethrough=false'
 		'semanticHighlighting.staticMethodInvocation.underline=false'
 		'semanticHighlighting.varKeyword.color=197,116,48'
-		'semanticHighlighting.yieldKeyword.color=197,116,48'
 		'sourceHoverBackgroundColor=161,152,121'
 }
 IEclipsePreferences#org-eclipse-jst-jsp-ui {
@@ -1782,7 +1774,6 @@ IEclipsePreferences#org-eclipse-jst-jsp-ui {
 }
 IEclipsePreferences#org-eclipse-mylyn-wikitext-ui {
 	preferences:
-		'block-bc=font-family: monospace; color: #569cd6;'
 		'block-h1=font-size: 120%; font-weight: bold; color: #118bbd;'
 		'block-h2=font-size: 110%; font-weight: bold; color: #118bbd;'
 		'block-h3=font-size: 105%; font-weight: bold; color: #118bbd;'
@@ -1919,12 +1910,8 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'AbstractTextEditor.Color.SelectionBackground.SystemDefault=false'
 		'AbstractTextEditor.Color.SelectionForeground=146,157,165'
 		'AbstractTextEditor.Color.SelectionForeground.SystemDefault=false'
-		'LSP4EReadOccurrenceIndicationColor=26,95,140'
-		'LSP4ETextOccurrenceIndicationColor=26,95,140'
-		'LSP4EWriteOccurrenceIndicationColor=26,95,140'
 		'PHPReadOccurrenceIndicationColor=65,65,4'
 		'PHPWriteOccurrenceIndicationColor=65,65,4'
-		'TextOccurrenceIndicationColor=27, 98, 145'
 		'asOccurencesIndicationColor=65,65,4'
 		'breakpointIndicationColor=49,115,187'
 		'currentIPColor=80,80,80'
@@ -1932,7 +1919,6 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'filteredSearchResultIndicationColor=26,95,140'
 		'findBlockColor=255,165,0'
 		'findIndicationColor=47,58,119'
-		'fullcoverage_color=5,71,5'
 		'hyperlinkColor=111,197,238'
 		'hyperlinkColor.SystemDefault=false'
 		'infoIndicationColor=86,194,170'
@@ -1940,12 +1926,10 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'lineNumberColor=192,192,192'
 		'linked.slave.color=66,156,255'
 		'matchingTagIndicationColor=65,65,4'
-		'nocoverage_color=95,4,4'
 		'occurrenceIndicationColor=65,65,4'
 		'org.eclipse.cdt.ui.occurrenceIndicationColor=65,65,4'
 		'org.eclipse.cdt.ui.writeOccurrenceIndicationColor=65,65,4'
 		'overrideIndicatorColor=75,116,113'
-		'partialcoverage_color=95,95,0'
 		'printMarginColor=192,192,192'
 		'pydevOccurrenceIndicationColor=65,65,4'
 		'searchResultHighlighting=false'
@@ -1955,10 +1939,6 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'secondaryIPColor=80,80,80'
 		'spellingIndicationColor=253,170,211'
 		'writeOccurrenceIndicationColor=65,65,4'
-}
-IEclipsePreferences#org-eclipse-ui-genericeditor {
-	preferences:
-		'matchingBracketsColor=244,245,246'
 }
 IEclipsePreferences#org-eclipse-ui-workbench {
 	preferences:
@@ -1986,6 +1966,14 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'doctypeExternalPubref=0,254,254'
 		'doctypeExtrenalSysref=106,213,160'
 		'doctypeName=0,254,254'
+		'dtdComment=115,130,140'
+		'dtdData=186,92,92'
+		'dtdDefault=255,255,255'
+		'dtdKeyword=255,191,191'
+		'dtdString=89,224,134'
+		'dtdSymbol=255,191,191'
+		'dtdTag=96,96,255'
+		'dtdTagName=96,96,255'
 		'entityReference=212,0,255'
 		'org.eclipse.debug.ui.console.background=0,0,0'
 		'org.eclipse.debug.ui.console.stream.err=255,127,127'
@@ -2002,10 +1990,7 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.egit.ui.IgnoredResourceForegroundColor=157,167,175'
 		'org.eclipse.egit.ui.UncommittedChangeBackgroundColor=25,29,31'
 		'org.eclipse.egit.ui.UncommittedChangeForegroundColor=216,220,223'
-		'org.eclipse.jdt.ui.ColoredLabels.inherited=143,143,191'
 		'org.eclipse.jdt.ui.ColoredLabels.writeaccess_highlight=52,46,35'
-		'org.eclipse.jdt.ui.Javadoc.backgroundColor=48,54,59'
-		'org.eclipse.jdt.ui.Javadoc.foregroundColor=235,237,239'
 		'org.eclipse.jdt.ui.abstractMethodInvocationHighlighting=255,255,255'
 		'org.eclipse.jdt.ui.annotationElementReferenceHighlighting=255,255,255'
 		'org.eclipse.jdt.ui.annotationHighlighting=143,155,163'
@@ -2052,19 +2037,19 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.jdt.ui.typeArgumentHighlighting=255,255,0'
 		'org.eclipse.jdt.ui.typeParameterHighlighting=247,173,123'
 		'org.eclipse.jdt.ui.typeVariableDeclarationHighlighting=247,173,123'
-		'org.eclipse.jface.REVISION_NEWEST_COLOR=185,124,52'
-		'org.eclipse.jface.REVISION_OLDEST_COLOR=25,29,31'
-		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=120,135,145'
-		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=73,83,90'
+		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.end=28,31,34'
+		'org.eclipse.mylyn.tasks.ui.colors.category.gradient.start=11,13,14'
 		'org.eclipse.mylyn.tasks.ui.colors.foreground.completed=110,124,135'
 		'org.eclipse.mylyn.tasks.ui.colors.foreground.overdue.for.others=255,191,191'
 		'org.eclipse.mylyn.tasks.ui.colors.foreground.past.due=255,23,245'
-		'org.eclipse.mylyn.tasks.ui.colors.foreground.past.scheduled=50,97,159'
-		'org.eclipse.mylyn.tasks.ui.colors.foreground.task.active=113,77,119'
-		'org.eclipse.mylyn.tasks.ui.colors.foreground.thisweek.scheduled=73,83,90'
+		'org.eclipse.mylyn.tasks.ui.colors.foreground.past.scheduled=140,92,255'
+		'org.eclipse.mylyn.tasks.ui.colors.foreground.task.active=249,151,255'
+		'org.eclipse.mylyn.tasks.ui.colors.foreground.thisweek.scheduled=255,255,255'
 		'org.eclipse.mylyn.tasks.ui.colors.foreground.today.completed=92,146,110'
-		'org.eclipse.mylyn.tasks.ui.colors.foreground.today.scheduled=50,97,159'
+		'org.eclipse.mylyn.tasks.ui.colors.foreground.today.scheduled=140,92,255'
 		'org.eclipse.mylyn.tasks.ui.colors.incoming.background=11,13,14'
+		'org.eclipse.recommenders.snipmatch.rcp.searchResultBackgroundColor=0,0,0'
+		'org.eclipse.recommenders.snipmatch.rcp.searchboxbackground=11,13,14'
 		'org.eclipse.search.ui.match.highlight=73,83,90'
 		'org.eclipse.ui.editors.backgroundColor=0,0,0'
 		'org.eclipse.ui.editors.currentLineColor=7,8,8'
@@ -2072,7 +2057,6 @@ IEclipsePreferences#org-eclipse-ui-workbench {
 		'org.eclipse.ui.editors.foregroundColor=255,255,255'
 		'org.eclipse.ui.editors.lineNumberRulerColor=120,135,145'
 		'org.eclipse.ui.editors.printMarginColor=62,70,76'
-		'org.eclipse.ui.showkeys.backgroundColor=182,190,195'
 		'piBorder=0,254,254'
 		'tagAttributeName=255,0,255'
 		'tagAttributeValue=212,0,255'
@@ -2171,15 +2155,6 @@ IEclipsePreferences#org-eclipse-wst-jsdt-ui {
 		'semanticHighlighting.methodDeclarationName.strikethrough=false'
 		'semanticHighlighting.methodDeclarationName.underline=false'
 		'tagName=223,190,149'
-}
-IEclipsePreferences#org-eclipse-wst-sse-ui {
-	preferences:
-		'content_assist_completion_replacement_background=200,200,0'
-		'content_assist_completion_replacement_foreground=194,0,0'
-		'content_assist_parameters_background=48,54,59'
-		'content_assist_parameters_foreground=235,237,239'
-		'content_assist_proposals_background=48,54,59'
-		'content_assist_proposals_foreground=235,237,239'
 }
 IEclipsePreferences#org-eclipse-wst-xml-ui {
 	preferences:
