@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;EmployeeDatabaseLinear.java&apos; to &apos;Employee Database/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;Employee Database&apos;&#x0D;&#x0A;- Destination element: &apos;Employee Database/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;EmployeeDatabaseLinear.java&apos;" description="Copy compilation unit" destination="/src&lt;" element1="/src&lt;{EmployeeDatabaseLinear.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1604351675597" units="1" version="1.0"/>
+</session>

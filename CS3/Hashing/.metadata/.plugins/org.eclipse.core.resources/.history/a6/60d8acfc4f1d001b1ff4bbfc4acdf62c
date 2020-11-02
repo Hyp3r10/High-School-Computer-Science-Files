@@ -1,0 +1,68 @@
+public class EmployeeDatabaseLinear {
+	class Entry {
+		int ID;
+		Employee employee;
+		public Entry(int ID, Employee emp) { this.ID = ID; this.employee = emp; }
+		public String toString() { return "" + this.ID + " - " + this.employee.toString(); }
+	}
+	public Entry[] hashTable;
+	public EmployeeDatabaseLinear() {
+		this.hashTable = new Entry[11];
+	}
+	public EmployeeDatabaseLinear(int size) {
+		this.hashTable = new Entry[size];
+	}
+	public int hashCode(int ID) {
+		return (ID + this.hashTable.length / 13 % this.hashTable.length);
+	}
+	public Employee put(int key, String val) {
+		Employee emp = new Employee(val);
+		int pos = this.hashCode(key);
+		int count = 0;
+		do {
+			if(count == this.hashTable.length) {
+				System.out.println("Hash Table is Full");
+				break;
+			}
+			if(this.hashTable[pos] == null) {
+				Entry temp = new Entry(key, emp);
+				this.hashTable[pos] = temp;
+				return emp;
+			}
+			else {
+				System.out.println("Collision " + emp);
+			}
+			pos = (pos + 1) % this.hashTable.length;
+			count++;
+		} while(count != this.hashTable.length);
+		return null;
+	}
+	public Employee get(int key) {
+		int count = 0;
+		int pos = this.hashCode(key);
+		do {
+			if(count == this.hashTable.length) {
+				System.out.println("Target is not in the Hash Table");
+				break;
+			}
+			else if(this.hashTable[pos] == null) {
+				System.out.println("Target is not in the Hash Table");
+				break;
+			}
+			else if(this.hashTable[pos].ID == key) {
+				return this.hashTable[pos].employee;
+			}
+			pos = (pos + 1) % this.hashTable.length;
+			count++;
+		} while(count != this.hashTable.length);
+		return null;
+	}
+	@Override
+	public String toString() {
+		String output = "";
+		for(Entry temp : this.hashTable) {
+			output += temp + "\n";
+		}
+		return output;
+	}
+} 

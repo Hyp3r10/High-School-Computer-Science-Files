@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Tester {
+	public static void main(String[] args) {
+		ArrayList<TreeMap<Integer, String>> temp = new ArrayList<TreeMap<Integer, String>>();
+		
+		EmployeeDatabaseLinear linearTester = new EmployeeDatabaseLinear();
+		EmployeeDatabaseQuadratic quadraticTester = new EmployeeDatabaseQuadratic();
+	}
+}

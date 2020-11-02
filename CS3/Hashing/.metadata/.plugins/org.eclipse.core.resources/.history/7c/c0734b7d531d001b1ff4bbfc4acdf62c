@@ -1,0 +1,7 @@
+
+public class Tester {
+	public static void main(String[] args) {
+		EmployeeDatabaseLinear linearTester = new EmployeeDatabaseLinear();
+		EmployeeDatabaseQuadratic quadraticTester = new EmployeeDatabaseQuadratic();
+	}
+}

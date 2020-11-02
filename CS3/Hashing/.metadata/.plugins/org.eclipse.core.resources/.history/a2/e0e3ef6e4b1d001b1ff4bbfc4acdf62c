@@ -1,0 +1,9 @@
+public class EmployeeDatabase {
+	class Entry {
+		int ID;
+		Employee employee;
+		public Entry(int ID, Employee emp) { this.ID = ID; this.employee = emp; }
+		
+	}
+	public Employee[] hashTable;
+}

@@ -1,0 +1,18 @@
+
+public class Tester {
+	public static void main(String[] args) {
+		EmployeeDatabaseLinear tester = new EmployeeDatabaseLinear();
+		tester.put(10, "one");
+		tester.put(100, "two");
+		tester.put(32, "three");
+		tester.put(45, "four");
+		tester.put(58, "five");
+		tester.put(126, "six");
+		tester.put(1, "seven");
+		tester.put(29, "eight");
+		tester.put(200, "nine");
+		tester.put(400, "ten");
+		tester.put(15, "eleven");
+		System.out.println(tester);
+	}
+}

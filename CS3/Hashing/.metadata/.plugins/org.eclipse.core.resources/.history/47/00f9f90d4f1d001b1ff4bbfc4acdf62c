@@ -1,0 +1,7 @@
+
+public class Tester {
+	public static void main(String[] args) {
+		EmployeeDatabaseLinear tester = new EmployeeDatabaseLinear();
+		tester.put(key, val)
+	}
+}
