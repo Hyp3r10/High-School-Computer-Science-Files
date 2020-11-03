@@ -1,5 +1,0 @@
-import java.util.TreeMap;
-
-public class EmployeeDatabase {
-	public Employee[] hashTable;
-}

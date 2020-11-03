@@ -1,0 +1,25 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class QuadraticTester {
+	public static void main(String[] args) throws IOException {
+		ArrayList<String> names = new ArrayList<String>();
+		ArrayList<Integer> IDs = new ArrayList<Integer>();
+		Scanner scan = new Scanner(new File("Large Data Set.txt"));
+		while(scan.hasNextLine()) {
+			String[] parts = scan.nextLine().split(" ");
+			IDs.add(Integer.parseInt(parts[0]));
+			names.add(parts[1] + " " + parts[2]);
+		}
+		double a = 0.50;
+		double buildTableTimer = System.currentTimeMillis();
+		EmployeeDatabaseQuadratic quadraticTester = new EmployeeDatabaseQuadratic(names.size() + (int)(names.size() * a));
+		for(int i = 0; i < names.size(); i++) {
+			quadraticTester.put(IDs.get(i), names.get(i));
+		}
+		System.out.println("Build Table Time: " + (System.currentTimeMillis() - buildTableTimer)/1000.0 + " seconds");
+		System.out.println("Collisions: " + linearTester.collisionCounter);
+	}
+}

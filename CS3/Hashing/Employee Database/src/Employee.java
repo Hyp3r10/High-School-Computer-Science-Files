@@ -1,4 +1,3 @@
-
 public class Employee {
 	public String name;
 	public Employee(String name) {
