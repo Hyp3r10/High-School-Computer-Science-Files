@@ -14,4 +14,4 @@ js_sl_comment=127,159,127
 js_ssi=196,196,183
 js_string=204,147,147
 js_task_tag=147,147,204
-overriddenByCSS=,js_keyword_return,js_reserved,js_keyword,js_default,js_string,js_ssi,js_task_tag,java_doc_keyword,
+overriddenByCSS=,js_default,js_keyword_return,js_string,js_reserved,js_ssi,js_task_tag,js_keyword,java_doc_keyword,

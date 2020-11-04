@@ -1,25 +1,25 @@
 Type of Hashing: Linear Probing
 
-Hash Function Used: 
+Hash Function Used: ((ID + (ID % this.hashTable.length)) % this.hashTable.length)
 
 Number of records added to the table: 50000
-Table Size: 166666
-Load Factor: 0.3
+Table Size: 74626
+Load Factor: 0.67
 
-Total Insertion Time: 0.0092357 seconds
-Average Insertion time per element: 1.84714E-7 seconds
+Total Insertion Time: 0.0090432 seconds
+Average Insertion time per element: 1.80864E-7 seconds
 
-Total Table Insertion Collisions: 2057
-Average Table Insertion Collisions: 0.04114
+Total Table Insertion Collisions: 36714
+Average Table Insertion Collisions: 0.73428
 
-Number of collisions vs. Number of Insertions: 4.114%
+Number of collisions vs. Number of Insertions: 73.428%
 
-Total Successful Search Time: 2.939E-4 seconds
-Average Successful Search Time: 2.939E-7 seconds
-Total Probes Needed: 1043
-Average Probes Needed: 1.043
+Total Successful Search Time: 3.976E-4 seconds
+Average Successful Search Time: 3.976E-7 seconds
+Total Probes Needed: 1745
+Average Probes Needed: 1.745
 
-Total Unsuccessful Search Time: 2.343E-4 seconds
-Average Unsuccessful Search Time: 2.343E-7 seconds
-Total Probes Needed: 1068
-Average Probes Needed: 1.068
+Total Unsuccessful Search Time: 2.844E-4 seconds
+Average Unsuccessful Search Time: 2.844E-7 seconds
+Total Probes Needed: 4362
+Average Probes Needed: 4.362

@@ -6,7 +6,10 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value="quadratic"/>
 		<list key="findhistory">
+			<item value="quad"/>
 			<item value="linear"/>
+			<item value="linaer"/>
+			<item value="quadratic"/>
 			<item value="louis"/>
 			<item value="tester"/>
 			<item value="Number"/>

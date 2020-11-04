@@ -15,7 +15,7 @@ public class QuadraticTester {
 			IDs.add(Integer.parseInt(parts[0]));
 			names.add(parts[1] + " " + parts[2]);
 		}
-		double a = 0.30;
+		double a = 0.67;
 		EmployeeDatabaseQuadratic quadraticTester = new EmployeeDatabaseQuadratic((int) ((double) names.size() / a));
 		double buildTableTimer = System.nanoTime();
 		for(int i = 0; i < names.size(); i++) {
@@ -62,7 +62,7 @@ public class QuadraticTester {
 		// Output
 		PrintWriter out = new PrintWriter(new File("QuadraticTester.out"));
 		out.println("Type of Hashing: Quadratic Probing");
-		out.println("\nHash Function Used: ");
+		out.println("\nHash Function Used: ((ID + (ID % this.hashTable.length)) % this.hashTable.length)");
 		out.println("\nNumber of records added to the table: " + quadraticTester.size + "\nTable Size: " + quadraticTester.hashTable.length + "\nLoad Factor: " + a);
 		out.println("\nTotal Insertion Time: " + buildTableTimer + " seconds\n" + "Average Insertion time per element: " + buildTableTimer / quadraticTester.size + " seconds");
 		out.println("\nTotal Table Insertion Collisions: " + quadraticTester.collisionCounter  + "\nAverage Table Insertion Collisions: " + (double) quadraticTester.collisionCounter / quadraticTester.size);

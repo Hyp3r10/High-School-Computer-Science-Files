@@ -1,6 +1,0 @@
-
-public class Maps102 {
-	public static void main(String[] args) {
-		Map<Character, Integer> map1 = new TreeMap<Character, Integer>()l
-	}
-}

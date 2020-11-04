@@ -1,25 +1,25 @@
 Type of Hashing: Quadratic Probing
 
-Hash Function Used: 
+Hash Function Used: ((ID + (ID % this.hashTable.length)) % this.hashTable.length)
 
 Number of records added to the table: 50000
-Table Size: 166666
-Load Factor: 0.3
+Table Size: 74626
+Load Factor: 0.67
 
-Total Insertion Time: 0.012317 seconds
-Average Insertion time per element: 2.4634E-7 seconds
+Total Insertion Time: 0.0089435 seconds
+Average Insertion time per element: 1.7887E-7 seconds
 
-Total Table Insertion Collisions: 7377
-Average Table Insertion Collisions: 0.14754
+Total Table Insertion Collisions: 27546
+Average Table Insertion Collisions: 0.55092
 
-Number of collisions vs. Number of Insertions: 14.754000000000001%
+Number of collisions vs. Number of Insertions: 55.092%
 
-Total Successful Search Time: 2.942E-4 seconds
-Average Successful Search Time: 2.942E-7 seconds
-Total Probes Needed: 1147
-Average Probes Needed: 1.147
+Total Successful Search Time: 4.21E-4 seconds
+Average Successful Search Time: 4.2099999999999997E-7 seconds
+Total Probes Needed: 1535
+Average Probes Needed: 1.535
 
-Total Unsuccessful Search Time: 2.256E-4 seconds
-Average Unsuccessful Search Time: 2.256E-7 seconds
-Total Probes Needed: 1340
-Average Probes Needed: 1.34
+Total Unsuccessful Search Time: 5.316E-4 seconds
+Average Unsuccessful Search Time: 5.316E-7 seconds
+Total Probes Needed: 3036
+Average Probes Needed: 3.036

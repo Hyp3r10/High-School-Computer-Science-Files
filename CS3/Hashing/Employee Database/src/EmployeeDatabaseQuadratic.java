@@ -59,7 +59,8 @@ public class EmployeeDatabaseQuadratic {
 	 * @return		The hash-code for the ID
 	 */
 	public int hashCode(int ID) {
-		return (int) ((((long) ID * ID) / 9973L) % this.hashTable.length);
+		return ((ID + (ID % this.hashTable.length)) % this.hashTable.length);
+		//return (int) ((((long) ID * ID) / 9973L) % this.hashTable.length);
 	}
 	/**
 	 * Adds the passed Entry object into the hashTable data structure
@@ -70,8 +71,7 @@ public class EmployeeDatabaseQuadratic {
 	public Employee put(int key, String val) {
 		Employee emp = new Employee(val);
 		int pos = this.hashCode(key);
-		int original = pos;
-		int count = 0;
+		int original = pos,	count = 0;
 		do {
 			if(count == this.hashTable.length) {
 				// System.out.println("Hash Table is Full");
@@ -85,7 +85,7 @@ public class EmployeeDatabaseQuadratic {
 			}
 			else { this.collisionCounter++; }
 			count++;
-			pos = (original + (int) Math.pow(count, 2)) % this.hashTable.length;
+			pos = (int) (pos + ((long) count * count)) % this.hashTable.length;
 		} while(count != this.hashTable.length+1);
 		return null;
 	}
@@ -98,7 +98,7 @@ public class EmployeeDatabaseQuadratic {
 	public Employee get(int key) {
 		int count = 0;
 		int pos = this.hashCode(key);
-		int original = pos;
+		int original = this.hashCode(key);
 		do {
 			this.currentProbes++;
 			if(count == this.hashTable.length) {
@@ -113,9 +113,9 @@ public class EmployeeDatabaseQuadratic {
 				return this.hashTable[pos].employee;
 			}
 			count++;
-			pos = (original + (int) Math.pow(count, 2)) % this.hashTable.length;
+			pos = (int) (pos + ((long) count * count) );
 			
-		} while(count != this.hashTable.length);
+		} while(count != this.hashTable.length+1);
 		return null;
 	}
 	@Override

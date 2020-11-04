@@ -5,4 +5,4 @@ color_normal=226,226,226
 color_number=234,184,130
 color_string=204,147,147
 eclipse.preferences.version=1
-overriddenByCSS=,color_keyword,color_normal,color_number,color_comment,
+overriddenByCSS=,color_normal,color_number,color_comment,color_keyword,

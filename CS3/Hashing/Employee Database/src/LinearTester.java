@@ -15,7 +15,7 @@ public class LinearTester {
 			IDs.add(Integer.parseInt(parts[0]));
 			names.add(parts[1] + " " + parts[2]);
 		}
-		double a = 0.30;
+		double a = 0.67;
 		EmployeeDatabaseLinear linearTester = new EmployeeDatabaseLinear((int) ((double) names.size() / a));
 		double buildTableTimer = System.nanoTime();
 		for(int i = 0; i < names.size(); i++) {
@@ -62,7 +62,7 @@ public class LinearTester {
 		// Output
 		PrintWriter out = new PrintWriter(new File("LinearTester.out"));
 		out.println("Type of Hashing: Linear Probing");
-		out.println("\nHash Function Used: ");
+		out.println("\nHash Function Used: ((ID + (ID % this.hashTable.length)) % this.hashTable.length)");
 		out.println("\nNumber of records added to the table: " + linearTester.size + "\nTable Size: " + linearTester.hashTable.length + "\nLoad Factor: " + a);
 		out.println("\nTotal Insertion Time: " + buildTableTimer + " seconds\n" + "Average Insertion time per element: " + buildTableTimer / linearTester.size + " seconds");
 		out.println("\nTotal Table Insertion Collisions: " + linearTester.collisionCounter  + "\nAverage Table Insertion Collisions: " + (double) linearTester.collisionCounter / linearTester.size);

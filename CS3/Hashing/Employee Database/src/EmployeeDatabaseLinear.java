@@ -112,7 +112,7 @@ public class EmployeeDatabaseLinear {
 			}
 			pos = (pos + 1) % this.hashTable.length;
 			count++;
-		} while(count != this.hashTable.length);
+		} while(count != this.hashTable.length+1);
 		return null;
 	}
 	@Override
