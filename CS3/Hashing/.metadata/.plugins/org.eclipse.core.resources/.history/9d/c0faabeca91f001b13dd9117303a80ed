@@ -1,0 +1,9 @@
+
+public class Person {
+	public String firstName;
+	public String lastName;
+	public Person(String first, String last) {
+		this.firstName = first;
+		this.lastName = last;
+	}
+}

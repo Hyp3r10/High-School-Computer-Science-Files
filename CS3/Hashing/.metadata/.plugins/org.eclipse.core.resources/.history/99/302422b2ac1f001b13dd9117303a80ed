@@ -1,0 +1,25 @@
+
+public class PhoneNumber implements Comparable<PhoneNumber> {
+	public String phoneNumber;
+	public int[] parts; 
+	public PhoneNumber(String numbers) {
+		this.phoneNumber = numbers;
+		String[] strParts = numbers.split("-");
+		this.parts = new int[strParts.length];
+		for(int i = 0; i < strParts.length; i++) {
+			this.parts[i] = Integer.parseInt(strParts[i]);
+		}
+	}
+	@Override
+	public int hashCode() {
+		
+	}
+	@Override
+	public boolean equals(Object o) {
+		PhoneNumber other = (PhoneNumber) o;
+		return this.phoneNumber.equals(other.phoneNumber);
+	}
+	public int compareTo(Person other) {
+		if(this.parts[0] < other)
+	}
+}

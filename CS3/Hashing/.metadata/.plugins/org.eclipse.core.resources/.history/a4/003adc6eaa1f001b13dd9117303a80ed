@@ -1,0 +1,22 @@
+
+public class Person {
+	public String firstName;	// The first name of the person
+	public String lastName;		// The last name of the person
+	/**
+	 * Constructs a Person object with the passed variables
+	 * @param first	The person's first name
+	 * @param last	The person's last name
+	 */
+	public Person(String first, String last) {
+		this.firstName = first;
+		this.lastName = last;
+	}
+	@Override
+	public int hashCode() {
+		return (this.firstName.charAt(0) + this.lastName.charAt(0)) % (this.firstName.length() + this.lastName.length());
+	}
+	@Override
+	public boolean equals(Person other) {
+		
+	}
+}

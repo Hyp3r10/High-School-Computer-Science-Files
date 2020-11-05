@@ -1,0 +1,9 @@
+
+public class PhoneNumber {
+	public String phoneNumber;
+	public String[] parts;
+	public PhoneNumber(String numbers) {
+		this.phoneNumber = numbers;
+		this.parts = numbers.split("-")
+	}
+}

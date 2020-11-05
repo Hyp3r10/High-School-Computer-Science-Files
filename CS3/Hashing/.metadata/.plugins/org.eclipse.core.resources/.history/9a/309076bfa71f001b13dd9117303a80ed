@@ -1,0 +1,18 @@
+import java.util.LinkedList;
+
+public class PhoneBook {
+	class Entry {
+		public Person person;
+		public PhoneNumber number; 
+		public Entry(Person p, PhoneNumber n) {
+			this.person = p;
+			this.number = n;
+		}
+		@Override
+		public String toString() {return "" + this.person + ": " + this.number; }
+	}
+	public LinkedList<Entry>[] hashTable;
+	public PhoneBook(int size) {
+		this.hashTable = new LinkedList<Entry>();
+	}
+}

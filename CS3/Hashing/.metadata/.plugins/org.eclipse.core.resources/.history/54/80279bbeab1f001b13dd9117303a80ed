@@ -1,0 +1,6 @@
+
+public class PhoneNumber {
+	public String phoneNumber;
+	public String[] parts;
+	
+}
