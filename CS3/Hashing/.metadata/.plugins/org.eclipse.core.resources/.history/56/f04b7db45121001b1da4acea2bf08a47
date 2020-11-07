@@ -1,0 +1,148 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Arrays;
+
+public class MyHashTable<T, E> implements IMapGeneric<T, E> {
+	@SuppressWarnings("hiding")
+	class Entry<T, E> {
+		public Entry<T, E> next;
+		public T key;
+		public E val; 
+		public Entry(T k, E v) {
+			this.key = k;
+			this.val = v;
+			this.next = null;
+		}
+		@Override
+		public String toString() {return "" + this.key.toString() + ": " + this.val.toString(); }
+	}
+	public int size; 
+	public Entry[] hashTable;
+	public MyHashTable() {
+		this.hashTable = new Entry[12];
+	}
+	public PhoneNumber put(Person key, PhoneNumber val) {
+		int hc = key.hashCode();
+		Entry curr = new Entry(key, val);
+		Entry temp = this.hashTable[hc];
+		if(temp != null) {
+			while(temp.next != null) {
+				if(temp.person.equals(key)) {
+					return temp.number;
+				}
+				temp = temp.next;
+			}
+			temp.next = curr;
+		}
+		else {
+			this.hashTable[hc] = curr;
+		}
+		size++;
+		return val;
+	}
+	@Override
+	public PhoneNumber get(Person person) {
+		int hc = person.hashCode();
+		Entry temp = this.hashTable[hc];
+		while(temp != null) {
+			if(temp.person.equals(person)) {
+				return temp.number;
+			}
+			temp = temp.next;
+		}
+		return null;
+	}
+	@Override
+	public int size() {
+		return this.size;
+	}
+	@SuppressWarnings("unused")
+	@Override
+	public PhoneNumber remove(Person person) {
+		int hc = person.hashCode();
+		Entry pred = this.hashTable[hc];
+		if(pred.person.equals(person)) {
+			this.hashTable[hc] = pred.next;
+			return pred.number;
+		}
+		else {
+			Entry succ = pred.next;
+			while(succ != null && !succ.person.equals(person)) {
+				pred = pred.next;
+				succ = succ.next;
+			}
+			// We've searched the whole LinkedList for the element and it wasn't there
+			if(succ == null) {
+				// Element wasn't there, so don't decrement the logical size
+				return null;
+			}
+			// We've found the element and therefore we need to remove it
+			else {
+				pred.next = succ.next;
+				this.size--;
+				return succ.number;
+			}
+		}
+	}
+	@Override
+	public String toString() {
+		try {
+			PrintWriter out = new PrintWriter(new File("MyHashTable.out"));
+			String output = "";
+			int count = 0;
+			for(Entry tempEntry : this.hashTable) {
+				output += "Bucket " + ++count + ": ";
+				while(tempEntry != null) {
+					output += tempEntry + ", ";
+					tempEntry = tempEntry.next;
+				}
+				output = output.substring(0, output.length()-2);
+				output +=  "\n";
+			}
+			out.append(output);
+			out.close();
+			return output;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	@Override
+	public T put(E key, T val) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public T get(E key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public T remove(E key) {
+		int hc = key.hashCode();
+		Entry pred = this.hashTable[hc];
+		if(pred.key.equals(key)) {
+			this.hashTable[hc] = pred.next;
+			return pred.val;
+		}
+		else {
+			Entry succ = pred.next;
+			while(succ != null && !succ.person.equals(person)) {
+				pred = pred.next;
+				succ = succ.next;
+			}
+			// We've searched the whole LinkedList for the element and it wasn't there
+			if(succ == null) {
+				// Element wasn't there, so don't decrement the logical size
+				return null;
+			}
+			// We've found the element and therefore we need to remove it
+			else {
+				pred.next = succ.next;
+				this.size--;
+				return succ.number;
+			}
+		}
+	}
+}

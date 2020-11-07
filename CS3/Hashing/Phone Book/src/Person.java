@@ -13,7 +13,7 @@ public class Person implements Comparable<Person> {
 	}
 	@Override
 	public int hashCode() {
-		return (this.firstName.charAt(0) + this.lastName.charAt(0)) % (this.firstName.length() + this.lastName.length());
+		return (this.firstName.charAt(0) + this.lastName.charAt(0)) % (this.firstName.length() + this.lastName.length()) % 12;
 	}
 	@Override
 	public boolean equals(Object o) {
@@ -39,5 +39,9 @@ public class Person implements Comparable<Person> {
 				return 0;
 			}
 		}
+	}
+	@Override
+	public String toString() {
+		return this.firstName + " " + this.lastName;
 	}
 }

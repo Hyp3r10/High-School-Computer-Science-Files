@@ -1,0 +1,114 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Arrays;
+
+import PhoneBook.Entry;
+
+public class MyHashTable<T, E> implements IMapGeneric<T, E> {
+	@SuppressWarnings("hiding")
+	class Entry<T, E> {
+		public Entry<T, E> next;
+		public E key;
+		public T val; 
+		public Entry(E k, T v) {
+			this.key = k;
+			this.val = v;
+			this.next = null;
+		}
+		@Override
+		public String toString() {return "" + this.key.toString() + ": " + this.val.toString(); }
+	}
+	public int size; 
+	public Entry<T, E>[] hashTable;
+	@SuppressWarnings("unchecked")
+	public MyHashTable() {
+		this.hashTable = new Entry[20];
+	}
+	@Override
+	public int size() {
+		return this.size;
+	}
+	@Override
+	public String toString() {
+		try {
+			PrintWriter out = new PrintWriter(new File("MyHashTable.out"));
+			String output = "";
+			int count = 0;
+			for(Entry<T, E> tempEntry : this.hashTable) {
+				output += "Bucket " + ++count + ": ";
+				while(tempEntry != null) {
+					output += tempEntry + ", ";
+					tempEntry = tempEntry.next;
+				}
+				output = output.substring(0, output.length()-2);
+				output +=  "\n";
+			}
+			out.append(output);
+			out.close();
+			return output;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	@Override
+	public T put(E key, T val) {
+		int hc = key.hashCode();
+		Entry<T, E> curr = new Entry<T, E>(key, val);
+		Entry<T, E> temp = this.hashTable[hc];
+		if(temp != null) {
+			while(temp.next != null) {
+				if(temp.key.equals(key)) {
+					return temp.val;
+				}
+				temp = temp.next;
+			}
+			temp.next = curr;
+		}
+		else {
+			this.hashTable[hc] = curr;
+		}
+		size++;
+		return val;
+	}
+	@Override
+	public T get(E key) {
+		int hc = key.hashCode();
+		Entry<T, E> temp = this.hashTable[hc];
+		while(temp != null) {
+			if(temp.key.equals(key)) {
+				return temp.val;
+			}
+			temp = temp.next;
+		}
+		return null;
+	}
+	@Override
+	public T remove(E key) {
+		int hc = key.hashCode();
+		Entry<T, E> pred = this.hashTable[hc];
+		if(pred.key.equals(key)) {
+			this.hashTable[hc] = pred.next;
+			return pred.val;
+		}
+		else {
+			Entry<T, E> succ = pred.next;
+			while(succ != null && !succ.key.equals(key)) {
+				pred = pred.next;
+				succ = succ.next;
+			}
+			// We've searched the whole LinkedList for the element and it wasn't there
+			if(succ == null) {
+				// Element wasn't there, so don't decrement the logical size
+				return null;
+			}
+			// We've found the element and therefore we need to remove it
+			else {
+				pred.next = succ.next;
+				this.size--;
+				return succ.val;
+			}
+		}
+	}
+}

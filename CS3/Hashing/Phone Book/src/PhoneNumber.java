@@ -51,4 +51,8 @@ public class PhoneNumber implements Comparable<PhoneNumber> {
 			}
 		}
 	}
+	@Override
+	public String toString() {
+		return this.phoneNumber;
+	}
 }

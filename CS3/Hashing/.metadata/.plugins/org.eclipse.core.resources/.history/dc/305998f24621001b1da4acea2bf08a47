@@ -1,0 +1,9 @@
+import java.io.File;
+import java.util.Scanner;
+
+public class PhoneBookTester {
+	public static void main(String[] args) throws IOException {
+		PhoneBook tester = new PhoneBook();
+		Scanner scan = new Scanner(new File("White Pages.txt"));
+	}
+}

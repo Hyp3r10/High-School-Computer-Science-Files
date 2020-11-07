@@ -1,0 +1,7 @@
+
+public class PhoneBookTester {
+	public static void main(String[] args) {
+		PhoneBook tester = new PhoneBook();
+		
+	}
+}

@@ -1,0 +1,92 @@
+public class PhoneBook implements IMap{
+	class Entry {
+		public Entry next;
+		public Person person;
+		public PhoneNumber number; 
+		public Entry(Person p, PhoneNumber n) {
+			this.person = p;
+			this.number = n;
+			this.next = null;
+		}
+		@Override
+		public String toString() {return "" + this.person + ": " + this.number; }
+	}
+	public int size; 
+	public Entry[] hashTable;
+	public PhoneBook() {
+		this.hashTable = new Entry[100];
+	}
+	public PhoneNumber put(Person key, PhoneNumber val) {
+		int hc = key.hashCode();
+		Entry curr = new Entry(key, val);
+		Entry temp = this.hashTable[hc];
+		if(temp != null) {
+			while(temp.next != null) {
+				temp = temp.next;
+			}
+			temp.next = curr;
+		}
+		else {
+			this.hashTable[hc] = curr;
+		}
+		size++;
+		return val;
+	}
+	@Override
+	public PhoneNumber get(Person person) {
+		int hc = person.hashCode();
+		Entry temp = this.hashTable[hc];
+		while(temp != null) {
+			if(temp.person.equals(person)) {
+				return temp.number;
+			}
+			temp = temp.next;
+		}
+		return null;
+	}
+	@Override
+	public int size() {
+		return this.size;
+	}
+	@SuppressWarnings("unused")
+	@Override
+	public PhoneNumber remove(Person person) {
+		int hc = person.hashCode();
+		Entry pred = this.hashTable[hc];
+		if(pred.person.equals(person)) {
+			this.hashTable[hc] = pred.next;
+			return pred.number;
+		}
+		else {
+			Entry succ = pred.next;
+			while(succ != null || !succ.person.equals(person)) {
+				pred = pred.next;
+				succ = succ.next;
+			}
+			// We've searched the whole LinkedList for the element and it wasn't there
+			if(succ == null) {
+				// Element wasn't there, so don't decrement the logical size
+				return null;
+			}
+			// We've found the element and therefore we need to remove it
+			else {
+				pred.next = succ.next;
+				this.size--;
+				return succ.number;
+			}
+		}
+	}
+	@Override
+	public String toString() {
+		String output = "";
+		int count = 0;
+		for(Entry tempEntry : this.hashTable) {
+			while(tempEntry != null) {
+				output += tempEntry + " ";
+				tempEntry = tempEntry.next;
+			}
+			output += "\nBucket " + ++count + ": ";
+		}
+		return output;
+	}
+}
