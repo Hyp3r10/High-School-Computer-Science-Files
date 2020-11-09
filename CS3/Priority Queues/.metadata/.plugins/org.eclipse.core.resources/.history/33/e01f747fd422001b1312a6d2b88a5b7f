@@ -1,0 +1,48 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
+public class WorstFit {
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(new File("input20.txt"));
+		PriorityQueue<Disk> disks = new PriorityQueue<Disk>();
+		String line = scan.nextLine();
+		int diskNumber = 0;
+		while(!line.equals("")) {
+			Disk smallest = disks.poll();
+			// There aren't any disks in the PriorityQueue
+			if(smallest == null) {
+				smallest = new Disk(diskNumber++);
+				smallest.add(Integer.parseInt(line));
+			}
+			else {
+				Integer size = Integer.parseInt(line);
+				// There is enough storage on the current disk to add this storage to this disk
+				if(smallest.canAdd(size)) {
+					smallest.add(size);
+				}
+				// There is not enough storage... create a new disk
+				else {
+					smallest = new Disk(diskNumber++);
+					smallest.add(size);
+				}
+			}
+			disks.add(smallest);
+			line = scan.nextLine();
+		}
+		
+		
+		// Output
+		double totalSize = 0.0;
+		for(Disk disk : disks) {
+			totalSize += disk.getUsedSpace();
+		}
+		System.out.println("Total size: " + totalSize / 1000000 + " GB");
+		System.out.println("Disks req'd = " + disks.size() + "\n");
+		System.out.println("\t# Avail");
+		while(!disks.isEmpty()) {
+			System.out.print("\t" + disks.poll());
+		}
+	}
+}

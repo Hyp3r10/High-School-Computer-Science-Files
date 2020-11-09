@@ -1,0 +1,6 @@
+
+public class WorstFit {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(new File("input20.txt"))
+	}
+}

@@ -1,5 +1,5 @@
 
-public class Student {
+public class Student implements Comparable<Student> {
 	private int ID;
 	private String name;
 	private int grade;
@@ -14,31 +14,33 @@ public class Student {
 	public int getID() {
 		return ID;
 	}
-	public void setID(int iD) {
-		ID = iD;
-	}
 	public String getName() {
 		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
 	}
 	public int getGrade() {
 		return grade;
 	}
-	public void setGrade(int grade) {
-		this.grade = grade;
-	}
 	public double getGpa() {
 		return gpa;
 	}
-	public void setGpa(double gpa) {
-		this.gpa = gpa;
+	@Override
+	public boolean equals(Object other) {
+		return this.ID == ((Student) other).ID;
+	}
+	@Override
+	public int compareTo(Student other) {
+		if(this.equals(other)) {
+			return 0;
+		}
+		else if(this.ID < other.ID) {
+			return -1;
+		}
+		else {
+			return 1;
+		}
 	}
 	@Override
 	public String toString() {
 		return "Student [ID=" + ID + ", name=" + name + ", grade=" + grade + ", gpa=" + gpa + "]";
 	}
-	
-	
 }

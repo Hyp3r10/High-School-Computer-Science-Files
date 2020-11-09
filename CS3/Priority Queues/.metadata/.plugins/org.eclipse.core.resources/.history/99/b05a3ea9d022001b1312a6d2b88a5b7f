@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class Disk implements Comparable<Disk> {
+	private Integer remainingCapacityMB;
+	private ArrayList<Integer> partitions;
+	public Disk() {
+		this.remainingCapacityMB = 1000;
+		this.partitions = new ArrayList<Integer>();
+	}
+	public boolean canAdd(Integer capacity) {
+		return (this.remainingCapacityMB - capacity) >= 0;
+	}
+	public int add(Integer other) {
+		this.partitions.add(other);
+		this.remainingCapacityMB - other;
+	}
+	@Override
+	public boolean equals(Object other) {
+		return this.remainingCapacityMB.equals(((Disk) other).remainingCapacityMB);
+	}
+	@Override
+	public int compareTo(Disk o) {
+		return this.remainingCapacityMB.compareTo(o.remainingCapacityMB);
+	}
+}

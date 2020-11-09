@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Disk implements Comparable<Disk> {
+	private Integer remainingCapacityMB;
+	private ArrayList<Integer> partitions;
+	@Override
+	public boolean equals(Object other) {
+		return this.remainingCapacityMB.equals(((Disk) other).remainingCapacityMB);
+	}
+	@Override
+	public int compareTo(Disk o) {
+		return this.remainingCapacityMB.compareTo(o.remainingCapacityMB);
+	}
+}
