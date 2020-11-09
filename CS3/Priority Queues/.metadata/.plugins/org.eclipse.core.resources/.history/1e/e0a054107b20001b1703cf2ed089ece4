@@ -1,0 +1,7 @@
+
+public class Student101 {
+	private int ID;
+	private String name;
+	private int grade;
+	private double gpa;
+}
