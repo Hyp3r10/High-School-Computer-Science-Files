@@ -3,6 +3,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class PhoneBookTester {
+	/**
+	 * All output will also be stored in the "PhoneBook.out" file as well as the console
+	 */
 	public static void main(String[] args) throws IOException {
 		PhoneBook tester = new PhoneBook();
 		Scanner scan = new Scanner(new File("White Pages.txt"));

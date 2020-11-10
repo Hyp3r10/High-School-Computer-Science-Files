@@ -23,4 +23,4 @@ editor.coloring2.number=234,184,130
 editor.coloring2.number\#dark\#=234,184,130
 editor.coloring2.string=204,147,147
 editor.coloring2.string\#dark\#=204,147,147
-overriddenByCSS=,editor.coloring2.keyword,editor.coloring2.keyword\#dark\#,editor.coloring2.keyword_boolean,editor.coloring2.keyword_boolean\#dark\#,editor.coloring2.keyword_self\#dark\#,editor.coloring2.default,editor.coloring2.character\#dark\#,editor.coloring2.attribute\#dark\#,editor.coloring2.string,editor.coloring2.macro_call\#dark\#,editor.coloring2.comment\#dark\#,editor.coloring2.doc_comment\#dark\#,editor.coloring2.number,editor.coloring2.lifetime,
+overriddenByCSS=,editor.coloring2.keyword_self\#dark\#,editor.coloring2.default,editor.coloring2.character\#dark\#,editor.coloring2.attribute\#dark\#,editor.coloring2.keyword,editor.coloring2.keyword\#dark\#,editor.coloring2.string,editor.coloring2.macro_call\#dark\#,editor.coloring2.comment\#dark\#,editor.coloring2.doc_comment\#dark\#,editor.coloring2.keyword_boolean,editor.coloring2.number,editor.coloring2.keyword_boolean\#dark\#,editor.coloring2.lifetime,

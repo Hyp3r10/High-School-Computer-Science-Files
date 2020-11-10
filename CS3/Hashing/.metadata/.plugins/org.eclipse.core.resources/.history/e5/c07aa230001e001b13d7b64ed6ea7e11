@@ -1,6 +1,0 @@
-Linear Probling
-
-Number of records added to the table: 50000	Table Size: 75000	Load Factor: 0.5
-Total Insertion Time: 0.012	Average Insertion time per element: 2.4E-7
-Total Table Insertion Collisions: 37532	Average Table Insertion Collisions: 0.75064
-Number of collisions vs. Number of Insertsions: 0.0%

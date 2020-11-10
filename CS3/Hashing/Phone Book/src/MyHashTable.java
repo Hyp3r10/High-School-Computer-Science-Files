@@ -34,7 +34,7 @@ public class MyHashTable<T, E> implements IMapGeneric<T, E> {
 	 */
 	@SuppressWarnings("unchecked")
 	public MyHashTable() {
-		this.hashTable = new Entry[20];
+		this.hashTable = new Entry[12];
 	}
 	/**
 	 * Constructs a new HashTable of passed size
