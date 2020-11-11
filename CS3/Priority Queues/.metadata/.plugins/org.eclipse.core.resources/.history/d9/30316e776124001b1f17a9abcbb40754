@@ -1,0 +1,179 @@
+public class MinHeap {
+	public Integer[] heap;	// The array backing the heap
+	private int size; 		// The logical size of the heap
+	public final int DEFAULT_CAPACITY = 8;
+	public MinHeap() {
+		this.heap = new Integer[this.DEFAULT_CAPACITY];
+		this.size = 0;
+	}
+	public MinHeap(int...vals) {
+		for(int temp : vals) {
+			this.insert(temp);
+		}
+	}
+	/**
+	 * @return	The logical size of the heap
+	 */
+	public int getSize() {
+		return this.size;
+	}
+	/**
+	 * @return	If the heap is empty
+	 */
+	public boolean isEmpty() {
+		return this.size == 0;
+	}
+	/**
+	 * Returns the minimum value in the heap without popping it off
+	 * @return	The minimum value in the heap
+	 */
+	public int peekMinimum() {
+		return this.heap[1];
+	}
+	/**
+	 * Returns the left child of the passed index
+	 * @param index	The node that we are currently looking at
+	 * @return		The value of the left child node
+	 */
+	public int getLeftChild(int index) {
+		return this.heap[(2 * index)];
+	}
+	/**
+	 * Returns the right child of the passed index
+	 * @param index	The node that we are currently looking at
+	 * @return		The value of the right child node
+	 */
+	public int getRightChild(int index) {
+		return this.heap[((2 * index) + 1)];
+	}
+	/**
+	 * Returns the value of the parent to this (child) index
+	 * @param index	The node that we are currently looking at
+	 * @return		The value of the parent node
+	 */
+	public int getParent(int index) {
+		return this.heap[(index / 2)];
+	}
+	/**
+	 * Doubles the array's capacity, when adding an element 
+	 * would exceed current capacity
+	 */
+	private void doubleCapacity() {
+		Integer[] oldHeap = this.heap;
+		this.heap = new Integer[oldHeap.length*2];
+		for(int i = 1; i < oldHeap.length; i++) {
+			this.heap[i] = oldHeap[i];
+		}
+	}
+	/**
+	 * Inserts the passed value into the min-heap
+	 * Calls doubleCapacity() if the size is needed 
+	 * to be greater to perform this action
+	 * @param value	The value to be inserted
+	 */
+	public void insert(int value) {
+		
+		if(this.size+1 == this.heap.length) {
+			this.doubleCapacity();
+		}
+		this.heap[++this.size] = value;
+		this.bubbleUp(this.size);
+	}
+	/**
+	 * Recursive helper method that allows a value added to
+	 * the heap to "bubble up" to its correct position
+	 * @param index	The index that we are currently looking at
+	 */
+	private void bubbleUp(int index) {
+		if(index >= 2 && this.heap[index] < this.heap[(index / 2)]) {
+			int parentIndex = (index / 2);
+			int parentValue = this.heap[parentIndex];
+			int currentValue = this.heap[index];
+			this.heap[parentIndex] = currentValue;
+			this.heap[index] = parentValue;
+			this.bubbleUp(parentIndex);
+		}
+		else {
+			return;
+		}
+	}
+	/**
+	 * Returns the minimum value and removes it from the heap
+	 * Calls shiftDown() to restructure the tree
+	 * @return	The smallest value removed from the heap
+	 */
+	public int popMinimum() {
+		int minVal = this.heap[1];
+		this.heap[1] = this.heap[this.size];
+		this.shiftDown(1);
+		this.size--;
+		return minVal;
+	}
+	/**
+	 * Recursive helper method that allows a value added to
+	 * the head to "sift down" (bubble down) to its correct 
+	 * position in the heap
+	 * @param index	The current node being searched
+	 */
+	private void shiftDown(int index) {
+		if(this.heap[index] != null && index >= 1) {
+			Integer left = null;
+			Integer right = null;
+			if(this.hasLeftChild(index)) { left = this.getLeftChild(index); }
+			if(this.hasRightChild(index)) { right = this.getRightChild(index); }
+			System.out.println(left + " " + right);
+			if(right == null || left < right) {
+				int parentValue = this.heap[index];
+				this.heap[index] = this.heap[(2 * index)];
+				this.heap[(2 * index)] = parentValue;
+				this.shiftDown((2 * index));
+			}
+			else if(left == null || right <= left){
+				int parentValue = this.heap[index];
+				this.heap[index] = this.heap[(2 * index) + 1];
+				this.heap[(2 * index) + 1] = parentValue;
+				this.shiftDown((2 * index) + 1);
+			}
+		}
+		else {
+			return;
+		}
+	}
+	private boolean hasRightChild(int index) {
+		return this.heap[(index * 2) + 1] != null;
+	}
+	private boolean hasLeftChild(int index) {
+		return this.heap[(index * 2)] != null;
+	}
+	@Override
+	public String toString() {
+		String output = "";
+		for (int i = 1; i <= getSize(); i++)
+			output += heap[i] + ", ";
+		return output.substring(0, output.lastIndexOf(",")); //lazily truncate last comma
+	}
+	/** method borrowed with minor modifications from the Internet somewhere, for printing */
+	public void display() {
+		int nBlanks = 32, itemsPerRow = 1, column = 0, j = 1;
+		String dots = "...............................";
+		System.out.println(dots + dots);
+		while (j <= this.getSize())
+		{
+			if (column == 0)
+				for (int k = 0; k < nBlanks; k++)
+					System.out.print(' ');
+			System.out.print((heap[j] == null)? "" : heap[j]);
+			if (++column == itemsPerRow) {
+				nBlanks /= 2;
+				itemsPerRow *= 2;
+				column = 0;
+				System.out.println();
+			}
+			else
+				for (int k = 0; k < nBlanks * 2 - 2; k++)
+					System.out.print(' ');
+			j++;
+		}
+		System.out.println("\n" + dots + dots);
+	}
+}
