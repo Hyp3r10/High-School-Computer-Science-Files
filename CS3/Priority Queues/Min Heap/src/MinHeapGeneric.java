@@ -1,20 +1,24 @@
-public class MinHeapGeneric<T> {
+import java.lang.reflect.Array;
+
+public class MinHeapGeneric<T extends Comparable<T>> {
 	public T[] heap;						// The array backing the heap
 	private int size; 						// The logical size of the heap
 	public final int DEFAULT_CAPACITY = 8;	// The defualt size of the heap
 	/**
-	 * Defualt constructor that initializes a new heap
+	 * Default constructor that initializes a new heap
 	 */
+	@SuppressWarnings("unchecked")
 	public MinHeapGeneric() {
-		this.heap = new T[this.DEFAULT_CAPACITY];
+		this.heap = (T[]) new Comparable[this.DEFAULT_CAPACITY];
 		this.size = 0;
 	}
 	/**
 	 * Constructs a MinHeap with the passed initial values of vals
 	 * @param vals	The initial values of the heap
 	 */
+	@SuppressWarnings("unchecked")
 	public MinHeapGeneric(T...vals) {
-		this.heap = new T[this.DEFAULT_CAPACITY];
+		this.heap = (T[]) new Comparable[this.DEFAULT_CAPACITY];
 		this.size = 0;
 		for(T temp : vals) {
 			this.insert(temp);
@@ -88,9 +92,10 @@ public class MinHeapGeneric<T> {
 	 * Doubles the array's capacity, when adding an element 
 	 * would exceed current capacity
 	 */
+	@SuppressWarnings("unchecked")
 	private void doubleCapacity() {
-		Integer[] oldHeap = this.heap;
-		this.heap = new Integer[oldHeap.length*2];
+		T[] oldHeap = this.heap;
+		this.heap = (T[]) new Comparable[oldHeap.length*2];
 		for(int i = 1; i < oldHeap.length; i++) {
 			this.heap[i] = oldHeap[i];
 		}
@@ -101,7 +106,7 @@ public class MinHeapGeneric<T> {
 	 * to be greater to perform this action
 	 * @param value	The value to be inserted
 	 */
-	public void insert(int value) {
+	public void insert(T value) {
 
 		if(this.size+1 == this.heap.length) {
 			this.doubleCapacity();
@@ -115,7 +120,7 @@ public class MinHeapGeneric<T> {
 	 * @param index	The index that we are currently looking at
 	 */
 	private void bubbleUp(int index) {
-		if(index >= 2 && this.heap[index] < this.heap[(index / 2)]) {
+		if(index >= 2 && this.heap[index].compareTo(this.heap[(index / 2)]) < 0) {
 			int parentIndex = (index / 2);
 			this.swap(index, parentIndex);
 			this.bubbleUp(parentIndex);
@@ -126,8 +131,8 @@ public class MinHeapGeneric<T> {
 	 * Calls shiftDown() to restructure the tree
 	 * @return	The smallest value removed from the heap
 	 */
-	public int popMinimum() {
-		int minVal = this.heap[1];
+	public T popMinimum() {
+		T minVal = this.heap[1];
 		this.heap[1] = this.heap[this.size];
 		this.shiftDown(1);
 		this.size--;
@@ -143,8 +148,8 @@ public class MinHeapGeneric<T> {
 		// As long as the index is in bounds and the index isn't 0 or less (i.e., out of bounds to the left)
 		if(this.heap[index] != null && index >= 1) {
 			// Variables that are used for determining where to shift elements
-			Integer left = null;
-			Integer right = null;
+			T left = null;
+			T right = null;
 			int leftIndex = this.leftChildIndex(index);
 			int rightIndex = this.rightChildIndex(index);
 			
@@ -162,12 +167,12 @@ public class MinHeapGeneric<T> {
 				return;
 			}
 			// Has no right child or the left child is less than the right
-			else if(right == null || left < right) {
+			else if(right == null || left.compareTo(right) < 0) {
 				this.swap(index, leftIndex);
 				this.shiftDown(leftIndex);
 			}
 			// Has no left child or the right child is less than the left
-			else if(left == null || right <= left){
+			else if(left == null || right.compareTo(left) <= 0){
 				this.swap(index, rightIndex);
 				this.shiftDown(rightIndex);
 			}
@@ -223,7 +228,7 @@ public class MinHeapGeneric<T> {
 	 * @param index2	The second index to be swapped with the first
 	 */
 	private void swap(int index1, int index2) {
-		int temp = this.heap[index1];
+		T temp = this.heap[index1];
 		this.heap[index1] = this.heap[index2];
 		this.heap[index2] = temp;
 	}

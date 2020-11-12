@@ -5,6 +5,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="[]"/>
 			<item value="MB"/>
 			<item value="882266"/>
 		</list>
