@@ -1,7 +1,9 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.PriorityQueue;
+import java.util.Scanner;
 /**
  * This class acts as the Node for the tree being built in HuffmanTree
  * @author MatthewSheldon
@@ -25,6 +27,13 @@ class Node implements Comparable<Node> {
 	 * @param weight	The weight of this node
 	 */
 	public Node(Character character, Integer weight) {
+		this.character = character;
+		this.weight = weight;
+		this.left = null;
+		this.right = null;
+		this.type = Type.LEAF;
+	}
+	public void updateCurrent(Character character, Integer weight) {
 		this.character = character;
 		this.weight = weight;
 		this.left = null;
@@ -99,18 +108,74 @@ public class HuffmanTree {
 		this.root = nodes.poll();
 	}
 	/**
+	 * Constructor that will reconstruct the tree from a
+	 * file. This is used for decoding an encoded message.
+	 * @param codeFile		The name of the file we are reading in from
+	 * @throws IOException	
+	 */
+	public HuffmanTree(String codeFile) throws IOException {
+		Scanner scan = new Scanner(new File(codeFile));
+		this.buildTree(scan);
+	}
+	/**
+	 * Reads from the scanner and instantiates the tree 
+	 * using the path and ascii values from the input.
+	 * @param scan	The scanner where we are reading in input from
+	 */
+	private void buildTree(Scanner scan) {
+		this.root = new Node(null, 0);
+		while(scan.hasNextLine()) {
+			int asciiValue = Integer.parseInt(scan.nextLine());
+			String[] path = scan.nextLine().split("");
+			Node current = this.root;
+			for(String choice : path) {
+				if(choice.equals("0") && current.left == null) {
+					current.updateLeft(new Node(null, 0));
+				} 
+				else if(current.right == null) {
+					current.updateRight(new Node(null, 0));
+				}
+				current = choice.equals("0") ? current.left : current.right;
+			}
+			current.updateCurrent((char) asciiValue, 0);
+		}
+	}
+	/**
 	 * Writes the Huffman encoding tree in a file using 
 	 * a standard format to the specified filename
 	 * @param filename	The name of the file to output the 
 	 * 					decoder of the current HuffmanTree
+	 * @throws FileNotFoundException
 	 */
-	public void write(String filename) {
-		try {
-			PrintWriter out = new PrintWriter(new File(filename));
-			this.recursiveSearch(out, this.root, "");
-			out.close();
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+	public void write(String filename) throws FileNotFoundException{
+		PrintWriter out = new PrintWriter(new File(filename));
+		this.recursiveSearch(out, this.root, "");
+		out.close();
+	}
+	/**
+	 * Takes the input stream and outputs the decoded message into 
+	 * the passed filename of outFile
+	 * @param in		The input stream of the decoded message
+	 * @param outFile	The name of the file to output to
+	 * @throws FileNotFoundException
+	 */
+	public void decode(BitInputStream in, String outFile) throws FileNotFoundException {
+		PrintWriter out = new PrintWriter(new File(outFile));
+		int currBit = in.readBit();
+		Node current = this.root;
+		while(true) {
+			current = currBit == 0 ? current.left : current.right;
+			if(current.isLeaf()) {
+				if(current.character != 256) {
+					out.print(current.character);
+					current = this.root;
+				}
+				else {
+					out.close();
+					return;
+				}
+			}
+			currBit = in.readBit();
 		}
 	}
 	/**

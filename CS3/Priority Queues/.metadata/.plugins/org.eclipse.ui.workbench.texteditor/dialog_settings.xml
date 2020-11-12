@@ -4,12 +4,15 @@
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="MinHeapGeneric&lt;Integer&gt;"/>
 		<list key="findhistory">
+			<item value="MinHeap"/>
 			<item value="[]"/>
 			<item value="MB"/>
 			<item value="882266"/>
 		</list>
 		<list key="replacehistory">
+			<item value="MinHeapGeneric&lt;Integer&gt;"/>
 		</list>
 	</section>
 </section>

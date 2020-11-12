@@ -14,33 +14,41 @@ public class MinHeap {
 	 * @param vals	The initial values of the heap
 	 */
 	public MinHeap(int...vals) {
-		this.heap = new Integer[this.DEFAULT_CAPACITY];
-		this.size = 0;
-		for(int temp : vals) {
-			this.insert(temp);
+		this.heap = new Integer[vals.length+1];
+		this.size = vals.length;
+		for(int i = 1; i < this.heap.length; i++) {
+			this.heap[i] = vals[i-1];
 		}
-//		for(int i = 1; i < vals.length-1; i++) {
-//			this.buildHeap(vals, i);	
-//		}
+		this.buildHeap();
 	}
-//	private void buildHeap(int[] vals, int index) {
-//		int smallest = index;	
-//		int leftIndex = this.leftChildIndex(index);
-//		int rightIndex = this.rightChildIndex(index);
-//		
-//		if(this.inBounds(leftIndex) && this.inBounds(rightIndex)) {
-//			if(vals[leftIndex] < vals[rightIndex] && leftIndex < rightIndex) {
-//				smallest = leftIndex;
-//			}
-//			if(vals[rightIndex] < vals[leftIndex] && rightIndex < leftIndex) {
-//				smallest = rightIndex;
-//			}
-//			if(smallest != index) {
-//				this.swap(index, smallest);
-//				this.buildHeap(vals, smallest);
-//			}
-//		}
-//	}
+	/**
+	 * Calls the method heapify() from index of
+	 * heap.length/2 to 1. Used to pre-build the
+	 * heap to satisfy min-heap properties.
+	 */
+	private void buildHeap() {
+		for(int i = this.heap.length/2; i >= 1; i--) {
+			this.heapify(i);
+		}
+	}
+	/**
+	 * Recursively calls itself until each sub-heap satisfies 
+	 * the conditions of being a min-heap
+	 * @param index	The index of the current node being tested
+	 */
+	private void heapify(int index) {
+		int smallestIndex = index;
+		if(this.inBounds(this.leftChildIndex(index)) && this.hasLeftChild(index) && this.getLeftChild(index) < this.heap[smallestIndex]) {
+			smallestIndex = this.leftChildIndex(index);
+		}
+		if(this.inBounds(this.rightChildIndex(index)) && this.hasRightChild(index) && this.getRightChild(index) < this.heap[smallestIndex]) {
+			smallestIndex = this.rightChildIndex(index);
+		}
+		if(smallestIndex != index) {
+			this.swap(index, smallestIndex);
+			this.heapify(smallestIndex);
+		}
+	}
 	/**
 	 * @return	The logical size of the heap
 	 */

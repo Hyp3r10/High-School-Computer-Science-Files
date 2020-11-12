@@ -20,5 +20,8 @@ public class Runner {
 		HuffmanTree tester = new HuffmanTree(characters);
 		TreePrinter.printTree(tester.root);
 		tester.write("happy hip hop.out");
+		
+		tester = new HuffmanTree("happy hip hop.out");
+		TreePrinter.printTree(tester.root);
 	}
 }
