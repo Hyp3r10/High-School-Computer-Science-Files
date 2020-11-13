@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class WorstFitDecreasing {
 	public static void main(String[] args) throws IOException {
-		Scanner scan = new Scanner(new File("input1000.txt"));
+		Scanner scan = new Scanner(new File("input20.txt"));
 		PriorityQueue<Disk> disks = new PriorityQueue<Disk>();
 		ArrayList<Integer> storageSizes = new ArrayList<Integer>();
 

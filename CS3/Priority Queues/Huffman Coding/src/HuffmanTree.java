@@ -163,7 +163,8 @@ public class HuffmanTree {
 		PrintWriter out = new PrintWriter(new File(outFile));
 		int currBit = in.readBit();
 		Node current = this.root;
-		while(true) {
+		while(currBit != -1) {
+			System.out.print(currBit);
 			current = currBit == 0 ? current.left : current.right;
 			if(current.isLeaf()) {
 				if(current.character != 256) {
@@ -174,6 +175,7 @@ public class HuffmanTree {
 					out.close();
 					return;
 				}
+				
 			}
 			currBit = in.readBit();
 		}
