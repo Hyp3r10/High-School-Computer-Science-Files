@@ -33,6 +33,12 @@ class Node implements Comparable<Node> {
 		this.right = null;
 		this.type = Type.LEAF;
 	}
+	/**
+	 * Update the current node to have a new character and weight
+	 * of that from the passed variables.
+	 * @param character	The character to change this node to be equal to
+	 * @param weight	The weight to change this node to be equal to
+	 */
 	public void updateCurrent(Character character, Integer weight) {
 		this.character = character;
 		this.weight = weight;
@@ -147,38 +153,10 @@ public class HuffmanTree {
 	 * 					decoder of the current HuffmanTree
 	 * @throws FileNotFoundException
 	 */
-	public void write(String filename) throws FileNotFoundException{
+	public void write(String filename) throws FileNotFoundException {
 		PrintWriter out = new PrintWriter(new File(filename));
 		this.recursiveSearch(out, this.root, "");
 		out.close();
-	}
-	/**
-	 * Takes the input stream and outputs the decoded message into 
-	 * the passed filename of outFile
-	 * @param in		The input stream of the decoded message
-	 * @param outFile	The name of the file to output to
-	 * @throws FileNotFoundException
-	 */
-	public void decode(BitInputStream in, String outFile) throws FileNotFoundException {
-		PrintWriter out = new PrintWriter(new File(outFile));
-		int currBit = in.readBit();
-		Node current = this.root;
-		while(currBit != -1) {
-			System.out.print(currBit);
-			current = currBit == 0 ? current.left : current.right;
-			if(current.isLeaf()) {
-				if(current.character != 256) {
-					out.print(current.character);
-					current = this.root;
-				}
-				else {
-					out.close();
-					return;
-				}
-				
-			}
-			currBit = in.readBit();
-		}
 	}
 	/**
 	 * Helper method that recursively searches the HuffmanTree searching 
@@ -196,6 +174,33 @@ public class HuffmanTree {
 				out.println(path);
 			}
 			this.recursiveSearch(out, curr.right, path+"1");
+		}
+	}
+	/**
+	 * Takes the input stream and outputs the decoded message into 
+	 * the passed filename of outFile
+	 * @param in		The input stream of the decoded message
+	 * @param outFile	The name of the file to output to
+	 * @throws FileNotFoundException
+	 */
+	public void decode(BitInputStream in, String outFile) throws FileNotFoundException {
+		PrintWriter out = new PrintWriter(new File(outFile));
+		int currBit = in.readBit();
+		Node current = this.root;
+		while(currBit != -1) {
+			current = currBit == 0 ? current.left : current.right;
+			if(current.isLeaf()) {
+				if(current.character != 256) {
+					out.print(current.character);
+					current = this.root;
+				}
+				else {
+					out.close();
+					return;
+				}
+				
+			}
+			currBit = in.readBit();
 		}
 	}
 }
