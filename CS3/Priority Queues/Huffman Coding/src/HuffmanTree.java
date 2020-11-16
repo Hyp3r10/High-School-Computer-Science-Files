@@ -112,6 +112,7 @@ public class HuffmanTree {
 			nodes.add(newNode);
 		}
 		this.root = nodes.poll();
+		TreePrinter.printTree(this.root);
 	}
 	/**
 	 * Constructor that will reconstruct the tree from a
@@ -145,6 +146,7 @@ public class HuffmanTree {
 			}
 			current.updateCurrent((char) asciiValue, 0);
 		}
+		
 	}
 	/**
 	 * Writes the Huffman encoding tree in a file using 

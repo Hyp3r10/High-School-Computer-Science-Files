@@ -1,0 +1,23 @@
+
+public class Backtracking101 {
+	public static void main(String[] args) {
+		printBinary(3);
+	}
+	public void printBinary(int length) {
+		if(length == 0) {
+			System.out.println();
+		}
+		else {
+			printBinaryHelper("", length);
+		}
+	}
+	private void printBinaryHelper(String curr, int length) {
+		if(curr.length() == length) {
+			System.out.print(curr + " ");
+		}
+		else {
+			printBinaryHelper(curr + "0", length);
+			printBinaryHelper(curr + "1", length);
+		}
+	}
+}
