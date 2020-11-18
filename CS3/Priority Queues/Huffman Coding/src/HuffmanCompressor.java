@@ -88,6 +88,6 @@ public class HuffmanCompressor {
 	 * @throws IOException
 	 */
 	public void expand(String codeFile, String fileName) throws IOException {
-		decoder.decode(new BitInputStream(codeFile), fileName);
+		decoder.decode(new BitInputStream(codeFile.substring(0, codeFile.indexOf('.')) + ".gabby"), fileName);
 	}
 }
