@@ -112,7 +112,6 @@ public class HuffmanTree {
 			nodes.add(newNode);
 		}
 		this.root = nodes.poll();
-		TreePrinter.printTree(this.root);
 	}
 	/**
 	 * Constructor that will reconstruct the tree from a

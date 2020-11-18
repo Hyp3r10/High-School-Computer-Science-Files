@@ -2161,3 +2161,72 @@ java.net.UnknownHostException: marketplace.eclipse.org
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-11-17 14:37:05.442 -----------------------------------------------
+eclipse.buildId=4.16.0.I20200604-0540
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.jface 2 0 2020-11-17 14:37:34.431
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-11-17 14:37:34.431
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1bbef3c7,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@35995029,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-11-17 14:37:41.853
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'H:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-11-17 15:27:29.892
+!MESSAGE Exception caught while accessing pack file H:\High-School-Computer-Science-Files\.git\objects\pack\pack-4c820e130b7e0af9b1c85f2be09ce84e3d4ea7b7.pack, the pack file might be corrupt. Caught 1 consecutive errors while trying to read this pack.
+!STACK 0
+java.io.IOException: An unexpected network error occurred
+	at java.io.RandomAccessFile.readBytes(Native Method)
+	at java.io.RandomAccessFile.read(Unknown Source)
+	at java.io.RandomAccessFile.readFully(Unknown Source)
+	at org.eclipse.jgit.internal.storage.file.PackFile.read(PackFile.java:724)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.load(WindowCache.java:508)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.getOrLoad(WindowCache.java:595)
+	at org.eclipse.jgit.internal.storage.file.WindowCache.get(WindowCache.java:385)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.pin(WindowCursor.java:327)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.copy(WindowCursor.java:226)
+	at org.eclipse.jgit.internal.storage.file.PackFile.readFully(PackFile.java:614)
+	at org.eclipse.jgit.internal.storage.file.PackFile.load(PackFile.java:796)
+	at org.eclipse.jgit.internal.storage.file.PackFile.get(PackFile.java:284)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedObject(ObjectDirectory.java:455)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openPackedFromSelfOrAlternate(ObjectDirectory.java:413)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectory.openObject(ObjectDirectory.java:404)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:132)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.reset(CanonicalTreeParser.java:191)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator0(CanonicalTreeParser.java:226)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:204)
+	at org.eclipse.jgit.treewalk.CanonicalTreeParser.createSubtreeIterator(CanonicalTreeParser.java:1)
+	at org.eclipse.jgit.treewalk.TreeWalk.enterSubtree(TreeWalk.java:1270)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:826)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:477)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.lambda$6(IndexDiffCacheEntry.java:687)
+	at org.eclipse.egit.core.UnitOfWork.run(UnitOfWork.java:115)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:680)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:674)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:420)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
