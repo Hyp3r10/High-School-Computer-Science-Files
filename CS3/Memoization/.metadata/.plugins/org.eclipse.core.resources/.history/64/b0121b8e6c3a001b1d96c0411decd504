@@ -1,0 +1,67 @@
+import java.util.TreeMap;
+
+public class MinimumCoins {
+	public TreeMap<Integer, Integer> totalToCoins;
+	public int minCoinsArray(int total, int[] coins) {
+
+	}
+	public int minCoinsMap(int total, int[] coins) {
+		totalToCoins = new TreeMap<Integer, Integer>();
+		totalToCoins.put(1, 1);
+		this.minCoinsMapHelper(total, coins);
+		return this.totalToCoins.get(total);
+	}
+	private int minCoinsMapHelper(int total, int[] coins) {
+		int currTotal = total;
+		if(this.totalToCoins.containsKey(total)) {
+			return this.totalToCoins.get(total);
+		}
+		if(total == 1) {
+			return;
+		}
+		while(currTotal != 0) {
+			int currentSmallest = Integer.MAX_VALUE;
+			// Run through the coins from highest value to lowest value testing to see if we can make change using this coin.
+			for(int i = 0; i < coins.length; i++) {
+				int result = currTotal - coins[i];
+				int val = -1;
+				// If we can make change using this coin...
+				if(result >= 0) {
+					System.out.println(total + " can make change with " + coins[i] + " = " + result);
+					
+					// If we already know what the minimum number of coins needed to make the current total - current coin is...
+					if(totalToCoins.containsKey(result)) {
+						// and we already know both of the values, no extra calculations are needed
+						if(totalToCoins.containsKey(total-result)) {
+							val = totalToCoins.get(result) + totalToCoins.get(total-result);
+						}
+						// but we don't know what the smallest number of coins needed to make up the rest is, calculate it
+						else {
+							val = totalToCoins.get(result) + this.minCoinsMap(total-result, coins);
+						}
+					}
+					// We don't know what the minimum number of coins needed to make the current total - current coin is...
+					else {
+						// But we do know what the minimum number of coins needed to make the remaining total, then just calculate the current total - current coin
+						if(totalToCoins.containsKey(total-result)) {
+							val = this.minCoinsMap(result, coins) + totalToCoins.get(total-result);
+						}
+						// And we don't know either value, then calculate both
+						else {
+							val = this.minCoinsMap(result, coins) + this.minCoinsMap(total-result, coins);
+						}
+					}
+				}
+				if(val < currentSmallest) {
+					currentSmallest = val;
+				}
+			}
+			this.totalToCoins.put(total, currentSmallest);
+		}
+		return this.totalToCoins.get(total);
+	}
+	public static void main(String[] args) {
+		MinimumCoins tester = new MinimumCoins();
+		System.out.println(tester.minCoinsMap(11, new int[] {9,6,5,1}));
+	}
+}

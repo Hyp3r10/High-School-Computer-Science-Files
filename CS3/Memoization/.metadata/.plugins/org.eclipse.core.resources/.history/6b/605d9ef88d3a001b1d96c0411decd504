@@ -1,0 +1,51 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+public class Thievery {
+	public static void main(String[] args) throws FileNotFoundException {
+		Scanner scan = new Scanner(new File("Knapsack.dat"));
+		Thievery tester = new Thievery();
+		int numTimes = scan.nextInt(); scan.nextLine();
+		while(numTimes-->0) {
+			scan.nextLine();
+			String[] line = scan.nextLine().split(" - ");
+			int numItems = Integer.parseInt(line[0]);
+			int maxWeight = Integer.parseInt(line[1]);
+			System.out.println(numTimes + " " + maxWeight);
+			int[] weights = new int[numItems];
+			int[] vals = new int[numItems];
+			for(int i = 0; i < numItems; i++) {
+				weights[i] = scan.nextInt();
+			}
+			for(int i = 0; i < numItems; i++) {
+				vals[i] = scan.nextInt();
+			}
+			int maxVal = Integer.MIN_VALUE;
+			for(int i = 0; i < numItems; i++) {
+				int result = tester.knapsack(weights, vals, maxWeight, i, 0, 0);
+				if(result >= maxVal) {
+					maxVal = result;
+				}
+			}
+			System.out.println(maxVal);
+		}
+	}
+	public int knapsack(int[] weights, int[] vals, int index, int maxWeight, int currWeight, int currVal) {
+		currWeight += weights[index];
+		if(currWeight > maxWeight) {
+			return currVal;
+		}
+		else {
+			currVal += vals[index];
+			int maxVal = Integer.MIN_VALUE;
+			for(int i = index+1; i < weights.length; i++) {
+				int newVal = this.knapsack(weights, vals, i, maxWeight, currWeight, currVal);
+				if(newVal > maxVal) {
+					maxVal = newVal;
+				}
+			}
+			return maxVal;
+		}
+	}
+}

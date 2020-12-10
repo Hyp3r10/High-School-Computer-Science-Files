@@ -1,0 +1,35 @@
+A classic application of a DFS, you can use recursion (implicit stack) or a Stack object to explore all connected nodes in the graph.
+
+An "adjacency map" (where each vertex is mapped to a list of its edges) graph representation would be a good choice, mapping a room (as a String) to all its connected rooms (using a List<String> or just String concatenation).
+
+You can remember visited nodes with a List<String>, Set<String>, or simple String concatenation and an indexOf call.
+
+Using recursion (implicit stack):
+
+method hasConnection_DFS between room one and room two
+{
+   if a direct connection exists between room one and two   
+       we have a match!
+
+   else 
+       get the list of connections for current room
+
+       loop through all of the connections
+           if you have not checked the current spot
+               mark current spot as "visited"
+               check to see a connection exists between this spot and the destination (the recursive call)
+}
+
+Or with an explicit stack, with a graph G, source vertex V, and destination vertex W:
+
+1  method DFS-stack(G, V, W):
+2      let S be a stack
+3      S.push(V)
+4      while S is not empty
+5          V = S.pop()
+6          if V equals W, a connection exists!  Otherwise:
+7          if V hasn't been discovered:
+8              label V as discovered
+9              for all edges (connections / other rooms) from V to W 
+0                  S.push(W)
+

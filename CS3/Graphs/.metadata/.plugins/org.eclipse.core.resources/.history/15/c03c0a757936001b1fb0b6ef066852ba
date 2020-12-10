@@ -1,0 +1,14 @@
+import java.util.PriorityQueue;
+
+public class Dijkstra {
+	public Graph graph;
+	public Dijkstra(Graph graph) {
+		this.graph = graph;
+	}
+	private void dijkstra(int source, int destination) {
+		Vertex[] vertices = graph.vertices;
+		vertices[source].setDistanceTo(0.0);
+		PriorityQueue<Vertex> toSearch = new PriorityQueue<Vertex>();
+		toSearch.add(vertices[source]);
+	}
+}

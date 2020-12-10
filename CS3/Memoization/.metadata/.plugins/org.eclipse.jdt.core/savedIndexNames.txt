@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\punch\Documents\GitHub\High-School-Computer-Science-Files\CS3\Memoization\.metadata\.plugins\org.eclipse.jdt.core
+1374411706.index
+2196199803.index
+2037269717.index

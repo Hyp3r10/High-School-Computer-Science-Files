@@ -1,0 +1,71 @@
+import java.util.Arrays;
+import java.util.TreeMap;
+
+public class MinimumCoins {
+	public TreeMap<Integer, Integer> totalToCoins;
+	public int[] memo;
+	public int minCoinsArray(int total, int[] coins) {
+		memo = new int[total+1];
+		memo[0] = 0;
+		memo[1] = 1;
+		System.out.println(Arrays.toString(memo));
+		this.minCoinsArrayHelper(total, coins);
+		System.out.println(Arrays.toString(memo));
+		return memo[total];
+	}
+	private int minCoinsArrayHelper(int total, int[] coins) {
+		if(memo[total] != 0) {
+			return memo[total]; 
+		}
+		int minCoinsNeeded = Integer.MAX_VALUE;
+		for(int i = 0; i < coins.length; i++) {
+			int result = total - coins[i];
+			int val = Integer.MAX_VALUE;
+			if(result >= 0) {
+				val = minCoinsArrayHelper(result, coins) + 1;
+			}
+			if(val < minCoinsNeeded) {
+				minCoinsNeeded = val;
+			}
+		}
+		memo[total] = minCoinsNeeded;
+		return minCoinsNeeded;
+	}
+	
+	public int minCoinsMap(int total, int[] coins) {
+		totalToCoins = new TreeMap<Integer, Integer>();
+		totalToCoins.put(0, 0);
+		totalToCoins.put(1, 1);	
+		this.minCoinsMapHelper(total, coins);
+		return this.totalToCoins.get(total);
+	}
+	private int minCoinsMapHelper(int total, int[] coins) {
+		if(this.totalToCoins.containsKey(total)) {
+			return totalToCoins.get(total); 
+		}
+		int minCoinsNeeded = Integer.MAX_VALUE;
+		for(int i = 0; i < coins.length; i++) {
+			int result = total - coins[i];
+			int val = Integer.MAX_VALUE;
+			if(result >= 0) {
+				val = minCoinsMapHelper(result, coins) + 1;
+			}
+			if(val < minCoinsNeeded) {
+				minCoinsNeeded = val;
+			}
+		}
+		this.totalToCoins.put(total, minCoinsNeeded);
+		return minCoinsNeeded;
+	}
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		MinimumCoins tester = new MinimumCoins();
+		System.out.println(tester.minCoinsMap(1000, new int[] {12,8,5,2,1}));
+		System.out.println(tester.minCoinsArray(1000, new int[] {12,8,5,2,1}));
+	}
+}

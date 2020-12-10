@@ -1,0 +1,106 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+
+public class Pascal {
+	class Node implements Comparable<Node> {
+		public long r, c;
+		public Node(long r, long c) {
+			this.r = r;
+			this.c = c;
+		}
+		public int compareTo(Node other) {
+			if(this.r == other.r && this.c == other.c) {
+				return 0;
+			}
+			else if(this.r < other.r) {
+				return -1;
+			}
+			else if(this.r > other.r) {
+				return 1; 
+			}
+			else {
+				if(this.c < other.c) {
+					return -1;
+				}
+				else {
+					return 1;
+				}
+			}
+		}
+	}
+	public TreeMap<Node, Long> memo;
+	public TreeMap<Long, List<Long>> pascal;
+	public Pascal() {
+		memo = new TreeMap<Node, Long>();
+		memo.put(new Node(0, 0), 1L);
+		pascal = new TreeMap<Long, List<Long>>();
+		List<Long> tempList = new ArrayList<Long>();
+		tempList.add(1L);
+		pascal.put(0L, tempList);
+	}
+	public long pascal(long row, long col) {
+		if(!pascal.containsKey(row)) {
+			this.generateRow(row);
+		}
+		Node loc = new Node(row, col);
+		if(row == 0L || col == 0L || col == (long) row+1) {
+			return 1L;
+		}
+		if(row < 0L || col < 0L) {
+			return 0L;
+		}
+		if(memo.containsKey(loc)) {
+			return memo.get(loc);
+		} 
+		else {
+			long result = pascal(row-1, col-1) + pascal(row-1, col);
+			memo.put(loc, result);
+			return result;
+		}
+		
+	}
+	public void generateRow(long row) {
+		if(row < 0L) {
+			return;
+		}
+		if(row-1 >= 0L && !pascal.containsKey(row-1)) {
+			this.generateRow(row-1);
+		}
+		else {
+			List<Long> listForRow = new ArrayList<Long>();
+			Node startNode = new Node(row, 0L);
+			memo.put(startNode, 1L);
+			listForRow.add(1L);
+			for(long i = 1L; i < row; i++) {
+				Node internalNode = new Node(row, i);
+				long val = memo.get(new Node(row-1, i)) + memo.get(new Node(row-1, i-1));
+				memo.put(internalNode, val);
+				listForRow.add(val);
+			}
+			if(row > 0L) {
+				Node endNode = new Node(row, row);
+				memo.put(endNode, 1L);
+				listForRow.add(1L);
+			}
+			this.pascal.put(row, listForRow);
+		}
+	}
+	public void printPascalRow(long row) {
+		String output = "";
+		if(!pascal.containsKey(row)) {
+			this.generateRow(row);
+		}
+		List<Long> numsOnRow = pascal.get(row);
+		for(Long temp : numsOnRow) {
+			output += temp + " ";
+		}
+		System.out.println(output.trim());
+	}
+	public static void main(String[] args) {
+		Pascal tester = new Pascal();
+		for(long i = 0L; i < 40L; i++) {
+			tester.printPascalRow(i);
+		}
+	}
+}

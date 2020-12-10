@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;Shortest Path&apos;&#x0D;&#x0A;- Original project: &apos;Shortest Path&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Dijkstra.java&#x0D;&#x0A;     Graph.java&#x0D;&#x0A;     Vertex.java" description="Delete elements" element1="/src&lt;{Dijkstra.java" element2="/src&lt;{Graph.java" element3="/src&lt;{Vertex.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1607373163467" subPackages="false" version="1.0"/>
+</session>

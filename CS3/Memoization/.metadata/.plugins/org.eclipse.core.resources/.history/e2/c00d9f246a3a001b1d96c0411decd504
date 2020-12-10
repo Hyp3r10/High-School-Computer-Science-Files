@@ -1,0 +1,14 @@
+import java.util.TreeMap;
+
+public class MinimumCoins {
+	public TreeMap<Integer, Integer> totalToCoins;
+	public int minCoinsArray(int total, int[] coins) {
+
+	}
+	public int minCoinsMap(int total, int[] coins) {
+		totalToCoins = new TreeMap<Integer, Integer>();
+		int currTotal = total;
+		
+		return totalToCoins.get(total);
+	}
+}

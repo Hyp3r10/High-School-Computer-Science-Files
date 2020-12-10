@@ -1,0 +1,8 @@
+
+public class MemoizationProblemsRunner {
+	public static void main(String[] args) {
+		Pascal pascalTester = new Pascal();
+		pascalTester.printPascalRow(9);
+		pascalTester.printPascalRow(40);
+	}
+}

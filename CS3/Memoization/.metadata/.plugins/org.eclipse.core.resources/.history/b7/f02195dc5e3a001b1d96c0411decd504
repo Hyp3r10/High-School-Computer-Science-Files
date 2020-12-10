@@ -1,0 +1,72 @@
+public class NumberOfPaths {
+	class Node implements Comparable<Node> {
+		public int r, c;
+		public int val;
+		public Node(int r, int c) {
+			this.r = r;
+			this.c = c;
+			this.val = 0;
+		}
+		public void updateVal(int newVal) {
+			this.val = newVal;
+		}
+		public boolean equals(Node other) {
+			return this.r == other.r && this.c == other.c;
+		}
+		@Override
+		public int compareTo(Node other) {
+			if(this.equals(other)) { return 0; }
+			else {
+				int compR = Integer.compare(this.r, other.r);
+				if(compR == 0) { return Integer.compare(this.c, other.c); }
+				return compR;
+			}
+		}
+	} 
+	public Node[][] memo;
+	public int R, C;
+	public int numPaths(int[][] grid) {
+		this.R = grid.length;
+		this.C = grid[0].length;
+		memo = new Node[R][C];
+		for(int i = 0; i < R; i++) {
+			for(int j = 0; j < C; j++) {
+				memo[i][j] = new Node(i, j);
+			}
+		}
+		this.dp(memo[this.R-1][0]);
+		for(Node[] arr : memo) {
+			for(Node temp : arr) {
+				System.out.print(temp.val + " ");
+			}
+			System.out.println();
+		}
+		return memo[0][C-1].val;
+	}
+	private void dp(Node curr, boolean[][] visited) {
+		visited[curr.r][curr.c] = true;
+		if(this.inBounds(curr.r-1, curr.c)) {
+			memo[curr.r-1][curr.c].updateVal(curr.val + 1);
+			dp(memo[curr.r-1][curr.c], visited);
+		}
+		if(this.inBounds(curr.r, curr.c+1)) {
+			memo[curr.r][curr.c+1].updateVal(curr.val + 1);
+			dp(memo[curr.r][curr.c+1], visited);
+		}
+		if(this.inBounds(curr.r-1, curr.c)) {
+			memo[curr.r-1][curr.c].updateVal(curr.val + 1);
+			dp(memo[curr.r-1][curr.c], visited);
+		}
+		if(this.inBounds(curr.r, curr.c-1)) {
+			memo[curr.r][curr.c-1].updateVal(curr.val + 1);
+			dp(memo[curr.r][curr.c-1], visited);
+		}
+	}
+	private boolean inBounds(int currR, int currC) {
+		return (currR >= 0) && (currR < this.R) && (currC >= 0) && (currC < this.C);
+	}
+	public static void main(String[] args) {
+		NumberOfPaths tester = new NumberOfPaths();
+		System.out.println(tester.numPaths(new int[3][4]));
+	}
+}

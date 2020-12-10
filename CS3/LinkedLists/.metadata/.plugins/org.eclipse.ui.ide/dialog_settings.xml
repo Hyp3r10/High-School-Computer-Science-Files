@@ -18,6 +18,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\punch\Documents\GitHub\High-School-Computer-Science-Files\CS3\LinkedLists"/>
 			<item value="H:\High-School-Computer-Science-Files\CS3\LinkedLists"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

@@ -1,0 +1,46 @@
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeSet;
+
+public class NumberOfPaths {
+	class Node implements Comparable<Node> {
+		public int r, c;
+		public int val;
+		public Node(int r, int c) {
+			this.r = r;
+			this.c = c;
+			this.val = Integer.MIN_VALUE;
+		}
+		public void updateVal(int newVal) {
+			this.val = newVal;
+		}
+		public boolean equals(Node other) {
+			return this.r == other.r && this.c == other.c;
+		}
+		@Override
+		public int compareTo(Node other) {
+			if(this.equals(other)) { return 0; }
+			else {
+				int compR = Integer.compare(this.r, other.r);
+				if(compR == 0) { return Integer.compare(this.c, other.c); }
+				return compR;
+			}
+		}
+	} 
+	public Node[][] memo;
+	public Set<Stack<Node>> uniquePaths;
+	public int R, C;
+	public int numPaths(int r, int c) {
+		this.R = r;
+		this.C = c;
+		memo = new Node[R][C];
+		for(int i = 0; i < R; i++) {
+			for(int j = 0; j < C; j++) {
+				memo[i][j] = new Node(r, c);
+			}
+		}
+		uniquePaths = new TreeSet<Stack<Node>>();
+		return uniquePaths.size();
+	}
+	private dp(Node curr, )
+}

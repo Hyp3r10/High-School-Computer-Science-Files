@@ -1,0 +1,18 @@
+
+public class MemoizationProblemsRunner {
+	public static void main(String[] args) {
+		double timer = System.nanoTime();
+		Pascal pascalTester = new Pascal();
+		pascalTester.printPascalRow(9);
+		System.out.println();
+		pascalTester.printPascalRow(40);
+		System.out.println();
+		
+		NumberOfPaths pathTester = new NumberOfPaths();
+		System.out.println("Test case\tnew int[2][4]: " + pathTester.numPaths(new int[2][4]) + "\n");
+		System.out.println("Test case\tnew int[3][4]: " + pathTester.numPaths(new int[3][4]) + "\n");
+		System.out.println("Test case\tnew int[20][12]: " + pathTester.numPaths(new int[20][12]) + "\n");
+		
+		System.out.println("Executed in " + (double) (System.nanoTime()-timer) / 1000000000  + " seconds... not 24 hours :P");
+	}
+}

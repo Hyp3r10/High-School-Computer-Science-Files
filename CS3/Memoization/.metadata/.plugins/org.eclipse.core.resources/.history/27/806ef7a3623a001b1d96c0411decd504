@@ -1,0 +1,28 @@
+public class NumberOfPaths {
+	public int[][] memo;
+	public int R, C;
+	public int numPaths(int[][] grid) {
+		this.R = grid.length;
+		this.C = grid[0].length;
+		memo = grid;
+		this.dp(memo[0][0], 0, 0);
+		return memo[R-1][C-1];
+	}
+	private void dp(int curr, int r, int c) {
+		if(this.inBounds(r+1, c)) {
+			memo[r+1][c]++;
+			dp(memo[r+1][c], r+1, c);
+		}
+		if(this.inBounds(r, c+1)) {
+			memo[r][c+1]++;
+			dp(memo[r][c+1], r, c+1);
+		}
+	}
+	private boolean inBounds(int currR, int currC) {
+		return (currR >= 0) && (currR < this.R) && (currC >= 0) && (currC < this.C);
+	}
+	public static void main(String[] args) {
+		NumberOfPaths tester = new NumberOfPaths();
+		System.out.println(tester.numPaths(new int[2][4]));
+	}
+}
