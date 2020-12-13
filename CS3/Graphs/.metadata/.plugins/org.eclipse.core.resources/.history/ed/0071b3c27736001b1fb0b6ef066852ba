@@ -1,7 +1,0 @@
-
-public class Dijkstra {
-	public Graph graph;
-	public Dijkstra(Graph graph) {
-		this.graph = graph;
-	}
-}
