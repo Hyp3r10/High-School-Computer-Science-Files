@@ -1,0 +1,47 @@
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MaximumPathSum {
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(System.in);
+		ArrayList<ArrayList<Integer>> tempTriangle = new ArrayList<ArrayList<Integer>>();
+		String input = scan.nextLine();
+		while(!input.equals("")) {
+			String[] line = input.split(" ");
+			ArrayList<Integer> tempList = new ArrayList<Integer>();
+			for(String temp : line) {
+				tempList.add(Integer.parseInt(temp));
+			}
+			tempTriangle.add(tempList);
+			input = scan.nextLine();
+		}
+		int[][] dp = generateDP(tempTriangle);
+		System.out.println(dp[0][0]);
+		
+	}
+	public static int[][] generateDP(ArrayList<ArrayList<Integer>> dpList) {
+		int[][] dp = new int[dpList.size()][0];
+		int count = 0;
+		for(ArrayList<Integer> currList : dpList) {
+			int[] tempArr = new int[currList.size()];
+			for(int i = 0; i < currList.size(); i++) {
+				tempArr[i] = currList.get(i);
+			}
+			dp[count++] = tempArr;
+		}
+		return dp;
+	}
+	public static void dp(int row, int[][] dp) {
+		if(row == 0) {
+			return;
+		}
+		else {
+			for(int i = 0; i < dp[row].length-1; i++) {
+				dp[row-1][row-i] += Math.max(dp[row][i], dp[row][i+1]);
+			}
+			dp(row+1, dp);
+		}
+	}
+}

@@ -10,6 +10,7 @@ public class Bottles {
 		while(numTimes-->0) {
 			Scanner line = new Scanner(scan.nextLine());
 			ArrayList<Integer> volumes = new ArrayList<Integer>();
+			line.nextInt();
 			while(line.hasNextInt()) {
 				volumes.add(line.nextInt());
 			}
