@@ -1,0 +1,39 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MinimumCoins {
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(new File("coins.dat"));
+		int numTimes = scan.nextInt();
+		while(numTimes-->0) {
+			int target = scan.nextInt(); scan.nextLine();
+			int[] dp = new int[target+1];
+			String[] line = scan.nextLine().split(" ");
+			int[] coins = new int[line.length];
+			for(int i = 0; i < line.length; i++) {
+				coins[i] = Integer.parseInt(line[i]);
+			}
+			dp(1, coins, dp);
+			System.out.println(Arrays.toString(dp));
+			System.out.println(dp[target]);
+		}
+	}
+	public static void dp(int index, int[] coins, int[] dp) {
+		if(index == dp.length-1) {
+			return;
+		}
+		else {
+			int min = Integer.MAX_VALUE;
+			for(int i = 0; i < coins.length; i++) {
+				if(index - coins[i] >= 0) {
+					min = Math.min(min, dp[index - coins[i]] + 1);
+				}
+			}
+			dp[index] = min;
+			dp(index+1, coins, dp);
+		}
+	}
+}

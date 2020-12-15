@@ -1,0 +1,31 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class RodCutting {
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(System.in);
+		int length = scan.nextInt();
+		int[] prices = new int[length+1];
+		for(int i = 0; i < length+1; i++) {
+			prices[i] = scan.nextInt();
+		}
+		int[] dp = new int[length+1];
+		System.out.println("Max value for rod of length " + length + " -> " + dp[length]);
+	}
+	public static void dp(int[] prices, int[] dp, int index) {
+		if(index == dp.length) {
+			return;
+		}
+		else if(index == 1) {
+			dp[index] = prices[index];
+		}
+		else {
+			int max = Integer.MIN_VALUE;
+			for(int i = 1; i <= index; i++) {
+				max = Math.max(max, prices[i] + dp[index-i]);
+			}
+			dp[index] = max;
+			dp(prices, dp, index+1);
+		}
+	}
+}

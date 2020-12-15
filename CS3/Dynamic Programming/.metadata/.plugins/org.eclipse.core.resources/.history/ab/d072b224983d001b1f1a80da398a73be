@@ -1,0 +1,40 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class CountPaths {
+	public static int R, C;
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(System.in);
+		int numTimes = scan.nextInt();
+		while(numTimes-->0) {
+			R = scan.nextInt();
+			C = scan.nextInt();
+			
+		}
+	}
+	/**
+	 * Private helper method that recursively searches
+	 * the matrix for number of paths to a given point (r,c)
+	 * @param r	The current row
+	 * @param c	The current column
+	 */
+	private void dp(int r, int c) {
+		if(this.inBounds(r+1, c)) {
+			dp[r+1][c]++;
+			dp(r+1, c);
+		}
+		if(this.inBounds(r, c+1)) {
+			dp[r][c+1]++;
+			dp(r, c+1);
+		}
+	}
+	/**
+	 * Checks to see if the point (currR,currC) is in bounds
+	 * @param currR	The current row
+	 * @param currC	The current column
+	 * @return		If (currR,currC) is in bounds
+	 */
+	private boolean inBounds(int currR, int currC) {
+		return (currR >= 0) && (currR < this.R) && (currC >= 0) && (currC < this.C);
+	}
+}
