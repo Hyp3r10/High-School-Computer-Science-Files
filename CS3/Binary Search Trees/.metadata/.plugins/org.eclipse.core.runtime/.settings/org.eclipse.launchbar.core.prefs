@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:GameTreeTest,org.eclipse.launchbar.core.descriptorType.default\:Runner,org.eclipse.launchbar.core.descriptorType.default\:Temp,org.eclipse.launchbar.core.descriptorType.default\:GameOf20GUI
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:GameOf20GUI/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:GameOf20GUI/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,12 @@
+11
+Chell 42
+ATLAS 0
+P-body 0
+Wheatley 99
+Lonely 52
+Cave 123
+Caroline 123
+Rattmann 1
+SpaceCore 0
+Lonely 12
+Rick 9

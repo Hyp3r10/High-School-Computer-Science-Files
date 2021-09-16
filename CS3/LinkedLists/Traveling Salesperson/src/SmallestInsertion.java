@@ -25,7 +25,7 @@ public class SmallestInsertion
     	Scanner in = null;
     	
     	try {
-    		in = new Scanner(new File("tsp1000.txt")); //change to test other files
+    		in = new Scanner(new File("mona-20k.txt")); //change to test other files
     	}
     	catch (IOException ex) {}
     	

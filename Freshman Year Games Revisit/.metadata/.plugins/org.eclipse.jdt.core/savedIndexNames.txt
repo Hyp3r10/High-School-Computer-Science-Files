@@ -1,2 +1,0 @@
-INDEX VERSION 1.131+C:\Users\Matthew Sheldon\Documents\GitHub\High-School-Computer-Science-Files\Freshman Year Games Revisit\.metadata\.plugins\org.eclipse.jdt.core
-2128372432.index

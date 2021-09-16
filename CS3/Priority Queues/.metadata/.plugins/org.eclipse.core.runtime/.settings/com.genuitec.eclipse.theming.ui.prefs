@@ -1,15 +1,13 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=96ddbbc82c06eae67a0c97261b18e65171ea8579
 applyBackground=false
-approved.defs.file.last.changed.time=1599254320000
+approved.defs.file.last.changed.time=1624986146000
 configurationInstallLocation=/C\:/Users/punch/eclipse/java-2020-06/eclipse/
 eclipse.preferences.version=1
 iconcolormode=primary
 includeThemingInOomph=false
-<<<<<<< HEAD
-last.download.attempt.time=1606428466810
-lastConfiguration=1606428448952
-=======
-last.download.attempt.time=1605647153056
-lastConfiguration=1605645447519
->>>>>>> 96ddbbc82c06eae67a0c97261b18e65171ea8579
+last.download.attempt.time=1626578093978
+lastConfiguration=1626578083494
 newinstall=true
 workbench.theme=Dark Gray

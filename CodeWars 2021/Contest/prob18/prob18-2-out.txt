@@ -1,0 +1,2 @@
+Bicycle can generate 0.03 watts/second
+WHOA, HEAVY!

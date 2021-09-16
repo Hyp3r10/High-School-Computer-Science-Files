@@ -1,1 +1,0 @@
-{"name":"Project: Exile Development Team","maxHealth":15,"health":15,"exp":0,"defense":0,"level":1,"attack":0,"gold":0,"town":0,"critChance":3.0,"critMult":1.5,"equip":[{"name":"Rusty blade","effect":"Attack 5","type":"weapon","amount":1,"value":5}],"consume":[{"name":"Beggar's health potion","effect":"Heals 10 health","amount":2,"heal":10}]}

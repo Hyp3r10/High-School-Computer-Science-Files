@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This is the styling of the page -->
+<head>
+	<title>Hawk Fest 2021</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		* {
+			margin: 0 auto;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		@font-face {
+			font-family: 'LeavesAndGround';
+			src: url('Fonts/LeavesAndGround.woff2') format('woff2'),
+				url('Fonts/LeavesAndGround.woff') format('woff'),
+				url('Fonts/LeavesAndGround.ttf') format('truetype'),
+				url('Fonts/LeavesAndGround.svg#LeavesAndGround') format('svg');
+			font-weight: lighter;
+			font-style: normal;
+			font-display: swap;
+		}
+
+		/* Style the header */
+		header {
+			background-color: black;
+			display: block;
+			text-align: center;
+			font-size: 5vmin;
+			color: white;
+			height: 10vh;
+			line-height: 10vh;
+			margin: 0;
+		}
+
+		/* Style to add the flags surrounding the name of the coutnry */
+		header h2 img {
+			height: 5vmin;
+			width: auto;
+		}
+
+		/* Create two columns/boxes that floats next to each other */
+		nav {
+			float: left;
+			text-align: center;
+			width: 30%;
+			height: 85vh;
+			background: #718ef5;
+		}
+
+		/* Styling for the buttons */
+		a {
+			background-color: #222e99;
+			text-align: center;
+			display: block;
+			color: white;
+			box-sizing: border-box;
+			border: solid #22255a 0.5vmin;
+			font-size: 4vmin;
+			margin-bottom: 6vmin;
+			text-decoration: none;
+		}
+
+		/* Changes to the buttons when hovering over */
+		a:hover {
+			background-color: #22255a;
+			cursor: pointer;
+		}
+
+		/* Styling for the HawkFest Logo */
+		a img {
+			display: block;
+			font-size: 3vmin;
+			width: 10vmin;
+			height: auto;
+			text-align: center;
+		}
+
+		/* Style the list inside the menu */
+		nav ul {
+			list-style-type: none;
+			text-align: justify;
+		}
+
+		/* This is the style for the article section where most 
+			of the content for a given country will be located */
+		article {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #f1f1f1;
+			float: left;
+			padding: 10px;
+			width: 70%;
+			height: 85vh;
+			font-size: 2.5vmin;
+			overflow-y: auto;
+		}
+
+		/* This will make the images respective to the screen size */
+		article img {
+			width: 50vmin;
+			height: auto;
+		}
+
+		/* This will make the videos respective to the screen size */
+		article video {
+			width: 50vmin !important;
+			height: auto !important;
+		}
+
+		/* Clear floats after the columns */
+		section::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Style the footer */ 
+		footer {
+			background-color: #22255a;
+			font-size: 5vmin;
+			text-align: center;
+			color: white;
+			height: 5vh;
+			line-height: 5vh;
+		}
+	</style>
+</head>
+
+<!-- This is the main content of the page -->
+<body style="font-family: 'LeavesAndGround'; font-weight: normal; font-style: normal;">
+	<!-- 
+		This is the Name of the country
+		(and maybe the logo with a globe that takes you back to the landing site)
+	-->
+	<header>
+		<h2>
+			<img src="General Info/LesothoFlag.png" alt="LesothoFlag.png">
+			Lesotho
+			<img src="General Info/LesothoFlag.png" alt="LesothoFlag.png">
+		</h2>
+	</header>
+
+		<!-- 
+			This is the Middle block that contains the navigation 
+			between information and the space for the information itself 
+		-->
+		<section>
+		<!-- This is the segment with the naviagation between information for a given country -->
+		<nav>
+			<ul>
+				<a href="https://hebronhigh.github.io/hawkfest/">
+					<img alt="Home" src="WhiteOutlineLogo.png">
+					Home
+				</a>
+				<a href="General Info.html">General Info</a>
+				<a href="Traditions and Holidays.html">Traditions and Holidays</a>
+				<a href="Music.html">Music</a>
+				<a href="Games.html">Games</a>
+				<a href="Food.html">Food</a>
+				<a href="Dress.html">Dress</a>
+			</ul>
+		</nav>
+
+		<!-- This is the segment with the content for a given information type -->
+		<article>
+		</article>
+	</section>
+
+<!-- This is the footer that will show what tab is currently being viewed -->
+	<footer>
+		<p>Music | Hawk Fest 2021</p>
+	</footer>
+</body>

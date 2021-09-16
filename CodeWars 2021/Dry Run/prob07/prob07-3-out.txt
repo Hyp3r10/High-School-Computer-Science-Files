@@ -1,0 +1,3 @@
+Lonely Cubes: 5
+Duplicate Cube Assignments: 2
+Test Subjects without Cubes: 1
